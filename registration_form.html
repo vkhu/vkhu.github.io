@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Vài bước nữa thôi bạn sẽ chính thức gia nhập đại gia đình bookism!">
+    <title>Đăng kí thành viên</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'/>
+    <link href="style.css" rel="stylesheet" type='text/css'/>
+	<link href="reset.css" rel="stylesheet" type='text/css'/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'/>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"/>
+	<style>
+		body{
+			background-color: #65afce;
+            background-image: url(images/registration/background.jpg);
+            overflow-x:hidden;
+            font-family: 'Gotham', sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+<!-- nav items -->
+    <nav class="nav-primary" id="nav-primary">
+        
+        <!--ava/log in-->
+        <a href="registration_form.html">
+            <div class="menu_ava">
+                <span class="mid-align"></span><img class="mid-align" src="images/question_mark.jpg">
+            </div>
+        </a>
+        <div class="log_in_txt">
+            <a href="registration_form.html" style="color:#fff;text-decoration:none;">đăng<br>nhập</a>
+        </div>
+        
+        <!--main menu-->
+        <div class="row menu_main" style="margin:auto;">
+            
+            <!--home-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="homepage.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/home_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">trang<br>chủ</p>
+                </a>
+            </div>
+            
+            <!--library-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="thuvien.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/lib_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">thư<br>viện</p>
+                </a>
+            </div>
+            
+            <!--article-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="articles.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/article_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">bài<br>viết</p>
+                </a>
+            </div>
+            
+            <!--about-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="about.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/about_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">về<br>bookism</p>
+                </a>
+            </div>
+            
+            <!--FAQ-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="faq.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/faq_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">faq</p>
+                </a>
+            </div>
+            
+            <!--contact-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="contact.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/contact_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">liên<br>hệ</p>
+                </a>
+            </div>
+            
+        </div>
+        
+        <!--for logged in user-->
+        <div class="row menu_main" style="margin:auto;">
+            
+            <!--setting-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="setting.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/setting_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">tùy<br>chỉnh</p>
+                </a>
+            </div>
+    
+            <!--logout-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="log_out.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/logout_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">đăng<br>xuất</p>
+                </a>
+            </div>
+        
+        </div>
+
+    </nav>
+
+<!-- header bar -->
+    <header class="mobile-helper-bar" style="width:100%;text-align:center;background:rgba(101,175,206,.25);">
+		<!-- menu -->
+		<button class="hamburger" id="off-canvas-toggle"><img src="images/menu.png"></button>
+        <form class="search">
+            <input class="searchTerm" placeholder="Tìm kiếm..."/>
+        </form>
+    </header>
+
+<!-- main content -->
+<div class="page-content" id="page-content">
+
+	<!-- placeholder -->
+	<div style="width:100%;height:5em;"></div>
+    
+    <div class="reg_form">
+        <div style="background:#1a5970;width:100%;padding:1em;text-align:center;">
+            <img src="images/registration/logo.jpg" style="max-width:4em;">
+        </div>
+        
+        <div style="padding:1em;">
+
+            <p style="text-align:center;color:#000;font-size:2em;text-transform:uppercase;margin:1em 0 1em 0">dùng thử miễn phí 14 ngày!</p>
+
+            <!--fb reg-->
+            <a href="#" style="color:#fff;text-decoration:none;">
+                <div style="background:#3b5998;padding:1em;text-align:center;max-width:20em;margin:auto;color:#fff;font-size:1.2em;border-radius:5px">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <span class="socicon">b</span>
+                        </div>
+                        <div class="col-xs-10" style="border-left:1px solid rgba(255,255,255,.3);">
+                            <span>Đăng kí qua Facebook</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!--normal reg-->
+            <form id="reg" style="margin-bottom:1em;">
+                    <div class="row">
+                        <div class="col-sm-6" style="margin-top:1.2em;">
+                            <p style="font-size:1.2em;">Nick&#58;</p>
+                            <input type="text" placeholder="VD: thanh nguyen94" required>
+                        </div>
+                        <div class="col-sm-6" style="margin-top:1.2em;">
+                            <p style="font-size:1.2em;">Mật khẩu&#58;</p>
+                            <input type="text" placeholder="VD: cabbage" required>
+                        </div>
+                        <div class="col-sm-12" style="margin-top:1.2em;">
+                            <p style="font-size:1.2em;">Email&#58;</p>
+                            <input type="text" placeholder="VD: bookism.net@gmail.com" required>
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="checkbox" name="subscribe" value="subscribe" checked> Mình muốn được cập nhật tin tức từ Bookism.
+                        </div>
+                        <div class="col-sm-12" style="margin-top:1.2em;">
+                            <input type="submit" value="Hoàn tất">
+                        </div>
+                    </div>
+                </form>
+
+        </div>
+    </div>
+    
+</div>
+    
+    <script src="http://code.jquery.com/jquery.js">
+    </script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+        // Show the off-canvas navigation
+        $('#off-canvas-toggle').click(function() {
+            $('#nav-primary').toggleClass('off-canvas-show');
+        });
+
+        $('#nav-primary').removeClass('off-canvas-show');
+
+        // Hide the off-canvas nav when clicking a link
+        $('#nav-primary').find('a').on('click', function(e) {
+            $('#nav-primary').removeClass('off-canvas-show');
+        });
+
+        // Hide the off-canvas nav when clicking outside
+        $('#page-content').on('click', function(e) {
+            $('#nav-primary').removeClass('off-canvas-show');
+        });
+    </script>
+
+</body>
+</html>

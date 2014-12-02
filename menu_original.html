@@ -1,0 +1,51 @@
+<!-- nav items -->
+    <nav class="nav-primary" id="nav-primary">
+      <ul>
+        <li><a href="homepage.html" class="navlink">
+			Trang chủ
+		</a></li>
+        <li><a href="thuvien.html" class="navlink">
+			Thư viện
+		</a></li>
+        <li><a href="articles.html" class="navlink">
+			bài viết
+		</a></li>
+        <li><a href="about.html" class="navlink">
+			Về Bookism
+		</a></li>
+        <li><a href="contact.html" class="navlink">
+			Liên hệ
+		</a></li>
+      </ul>
+    </nav>
+
+<!-- header bar -->
+	<header class="mobile-helper-bar" style="width:100%;text-align:center;">
+		<!-- menu -->
+		<button class="hamburger" id="off-canvas-toggle"><img src="images/menu.png"></button>
+        <form class="search">
+            <input class="searchTerm" placeholder="Tìm kiếm..."/>
+        </form>
+    </header>
+
+<script src="http://code.jquery.com/jquery.js">
+</script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script>
+// Show the off-canvas navigation
+$('#off-canvas-toggle').click(function() {
+	$('#nav-primary').toggleClass('off-canvas-show');
+});
+
+	$('#nav-primary').removeClass('off-canvas-show');
+
+// Hide the off-canvas nav when clicking a link
+$('#nav-primary').find('a').on('click', function(e) {
+	$('#nav-primary').removeClass('off-canvas-show');
+});
+
+// Hide the off-canvas nav when clicking outside
+$('#page-content').on('click', function(e) {
+	$('#nav-primary').removeClass('off-canvas-show');
+});
+</script>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Kho sách di động của bookism.">
+    <title>Thư viện - bookism</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<style>
+		body{
+			background-color:#65afce;
+			overflow-x: hidden;			
+			font-family: 'Gotham', sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+<!-- nav items -->
+    <nav class="nav-primary" id="nav-primary">
+
+        <!--ava/log in-->
+        <a href="registration_form.html">
+            <div class="menu_ava">
+                <span class="mid-align"></span><img class="mid-align" src="images/question_mark.jpg">
+            </div>
+        </a>
+        <div class="log_in_txt">
+            <a href="registration_form.html" style="color:#fff;text-decoration:none;">đăng<br>nhập</a>
+        </div>
+
+        <!--main menu-->
+        <div class="row menu_main" style="margin:auto;">
+
+            <!--home-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="homepage.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/home_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">trang<br>chủ</p>
+                </a>
+            </div>
+
+            <!--library-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="thuvien.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/lib_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">thư<br>viện</p>
+                </a>
+            </div>
+
+            <!--article-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="articles.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/article_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">bài<br>viết</p>
+                </a>
+            </div>
+
+            <!--about-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="about.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/about_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">về<br>bookism</p>
+                </a>
+            </div>
+
+            <!--FAQ-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="faq.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/faq_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">faq</p>
+                </a>
+            </div>
+
+            <!--contact-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="contact.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/contact_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">liên<br>hệ</p>
+                </a>
+            </div>
+
+        </div>
+
+        <!--for logged in user-->
+        <div class="row menu_main" style="margin:auto;">
+
+            <!--setting-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="setting.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/setting_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">tùy<br>chỉnh</p>
+                </a>
+            </div>
+
+            <!--logout-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="log_out.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/logout_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">đăng<br>xuất</p>
+                </a>
+            </div>
+
+        </div>
+
+    </nav>
+
+<!-- header bar -->
+	<header class="mobile-helper-bar" style="width:100%;">
+		<!-- menu -->
+		<button class="hamburger" id="off-canvas-toggle"><img src="images/menu.png"></button>
+		<!-- search-->
+        <form class="search">
+            <input class="searchTerm" placeholder="Tìm kiếm..."/>
+        </form>
+    </header>
+
+<!-- main content -->
+<div class="page-content" id="page-content">
+
+	<!-- placeholder -->
+	<div style="width:100%;height:5em;"></div>
+
+	<!-- the book -->
+	<div class="white-canvas">
+
+        <!-- ribbon -->
+        <div class="ribbon">
+			<div class="ribbon-out-up-left">
+				<div class="ribbon-out-down-left"></div>
+			</div>
+			<div class="ribbon-out-up-right">
+				<img src="images/library/ribbon-point.png" alt="library" style="height:100%;width:100%;">
+			</div>
+            
+            <!-- social share -->
+			<div class="row" style="margin:auto;">
+				<div class="col-xs-3" style="text-align:center;">
+					<img src="images/library/social_f.png" alt="facebook" style="margin-top:1em;margin-bottom:1em;max-width:3em;height:auto">
+				</div>
+				<div class="col-xs-3" style="text-align:center;">
+					<img src="images/library/social_bird.png" alt="twitter" style="margin-top:1em;margin-bottom:1em;max-width:3em;height:auto">
+				</div>
+				<div class="col-xs-3" style="text-align:center;">
+					<img src="images/library/social_p.png" alt="pinterest" style="margin-top:1em;margin-bottom:1em;max-width:3em;height:auto">
+				</div>
+				<div class="col-xs-3" style="text-align:center;">
+					<img src="images/library/social_t.png" alt="tumblr" style="margin-top:1em;margin-bottom:1em;max-width:3em;height:auto">
+				</div>
+			</div>
+			
+		</div>
+
+        <!-- intro -->
+		<div class="row" style="padding:3em 2em 0 2em;">
+			<div class="col-md-12">
+				<div class="row">
+
+				    <!-- left side -->
+					<div class="col-md-6">
+						<div style="max-width:40em;text-align:center;margin:auto;">
+							<img src="images/library/preview_book.png" style="width:100%;height:auto;">
+						</div>
+						<div style="margin-top:2.5em;margin-bottom:2.5em;text-align:center;">
+							<a href="book_content.html"><div class="CTA_button"><span class="CTA_text">ĐỌC ONLINE</span></div></a>
+						</div>
+					</div>
+
+                    <!--right side-->
+					<div class="col-md-6">
+
+                        <!--prev title-->
+						<h1 class="h1prev">chiến trận giữa hai tinh cầu (war of the worlds)</h1>
+						<h2 class="h2prev">tác giả&#58; <a href="#">H. G. Wells</a></h2>
+
+						<div class="row" style="margin:2em 2.5em 2em 2.5em;">
+						<!--rating general-->
+							<div class="col-sm-4" style="text-align:center">
+								<p class="rating_prev">4.0</p>
+								<p style="color:#2e748e;font-size:2em">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+								<p>89 lượt bầu</p>
+							</div>
+
+						<!--rating details-->
+							<div class="col-sm-8">
+								<div class="row">
+									<div style="float:left;width:20%;text-align:center;line-height:1em;margin-top:1em;">
+										<span>&#9733; 5</span>
+									</div>
+									<div style="margin-top:1em;float:right;width:80%">
+										<div style="width:90%;height:1em;border:2px solid #2e748e;">
+											<div style="width:57%;height:100%;background-color:#2e748e;"></div>
+										</div>
+									</div>
+									<div style="float:left;width:20%;text-align:center;line-height:1em;margin-top:1em;">
+										<span>&#9733; 4</span>
+									</div>
+									<div style="margin-top:1em;float:right;width:80%">
+										<div style="width:90%;height:1em;border:2px solid #2e748e;">
+											<div style="width:12%;height:100%;background-color:#2e748e;"></div>
+										</div>
+									</div>
+									<div style="float:left;width:20%;text-align:center;line-height:1em;margin-top:1em;">
+										<span>&#9733; 3</span>
+									</div>
+									<div style="margin-top:1em;float:right;width:80%">
+										<div style="width:90%;height:1em;border:2px solid #2e748e;">
+											<div style="width:22%;height:100%;background-color:#2e748e;"></div>
+										</div>
+									</div>
+									<div style="float:left;width:20%;text-align:center;line-height:1em;margin-top:1em;">
+										<span>&#9733; 2</span>
+									</div>
+									<div style="margin-top:1em;float:right;width:80%">
+										<div style="width:90%;height:1em;border:2px solid #2e748e;">
+											<div style="width:8%;height:100%;background-color:#2e748e;"></div>
+										</div>
+									</div>
+									<div style="float:left;width:20%;text-align:center;line-height:1em;margin-top:1em;">
+										<span>&#9733; 1</span>
+									</div>
+									<div style="margin-top:1em;float:right;width:80%">
+										<div style="width:90%;height:1em;border:2px solid #2e748e;">
+											<div style="width:1%;height:100%;background-color:#2e748e;"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+                            
+                            <div class="col-sm-12">
+                                    <p style="text-align:center;margin-top:2em;"><a href="#review">Xem đánh giá chi tiết</a></p>                                
+                            </div>
+                            
+						</div>
+
+					<!--description-->
+						<p class="h2prev">Giới thiệu&#58;</p>
+						<p>It is the cusp of World War I. The Austro-Hungarians and Germans have their Clankers, steam-driven iron machines loaded with guns and ammunition. The British Darwinists employ genetically fabricated animals as their weaponry. Their Leviathan is a whale airship, and the most masterful beast in the British fleet.</p>
+						<p>Aleksandar Ferdinand, a Clanker, and Deryn Sharp, a Darwinist, are on opposite sides of the war. But their paths cross in the most unexpected way, taking them both aboard the Leviathan on a fantastical, around-the-world adventure….One that will change both their lives forever.</p>
+					</div>
+                    
+				</div>
+			</div>
+		</div>
+
+		<!--chapter list-->
+		<div style="height:15em;overflow:auto;margin-top:2em;">
+		<div class="randomshit">
+			<a href="#">
+				<div class="chaptermenu">
+					<p class="chaptermenu_title">Giới thiệu</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chaptermenu">
+					<p class="chaptermenu_title">Chương 1</p>
+					<p class="chaptermenu_text" style="color:#000;">Tiền Chiến</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chaptermenu">
+					<p class="chaptermenu_title">Chương 2</p>
+					<p class="chaptermenu_text" style="color:#000;">Ngôi Sao Băng</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chaptermenu">
+					<p class="chaptermenu_title">Chương 3</p>
+					<p class="chaptermenu_text" style="color:#000;">Tại Bãi Cỏ Horsell</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chaptermenu">
+					<p class="chaptermenu_title">Chương 4</p>
+					<p class="chaptermenu_text" style="color:#000;">Ống Xy-Lanh Hé Mở</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chaptermenu">
+					<p class="chaptermenu_title">Chương 5</p>
+					<p class="chaptermenu_text" style="color:#000;">Tia Nhiệt</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chaptermenu">
+					<p class="chaptermenu_title">Chương 6</p>
+					<p class="chaptermenu_text" style="color:#000;">Tia Nhiệt Ở Đường Chobham</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chaptermenu">
+					<p class="chaptermenu_title">Chương 7</p>
+					<p class="chaptermenu_text" style="color:#000;">Ngôi Sao Băng</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chaptermenu">
+					<p class="chaptermenu_title">Chương 8</p>
+					<p class="chaptermenu_text" style="color:#000;">Đêm Thứ Sáu</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chaptermenu">
+					<p class="chaptermenu_title">Chương 9</p>
+					<p class="chaptermenu_text" style="color:#000;">Cuộc Chiến Bắt Đầu</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chaptermenu">
+					<p class="chaptermenu_title">Chương 10</p>
+					<p class="chaptermenu_text" style="color:#000;">Bên Cửa Sổ</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="chaptermenu">
+					<p class="chaptermenu_title">Chương 11</p>
+					<p class="chaptermenu_text" style="color:#000;">Cảnh Hủy Diệt Ở Weybridge Và Shepperton Qua Mắt Tôi</p>
+				</div>
+			</a>
+		</div>
+		</div>
+        
+	</div>
+		
+	<div class="page-divide" id="review"></div>
+
+	<!-- the reviews -->
+	<div class="white-canvas" style="padding:2em;">
+        <div class="row">
+            
+            <!-- recent review -->
+            <div class="col-md-6" style="margin-top:2em;">
+
+                <!-- header -->
+                <div>
+                    <p class="h2prev">các đánh giá gần đây:</p>
+                </div>
+
+                <!-- 1st reviewer -->
+                <div class="row" style="margin-top:2em;">
+
+                    <!-- ava -->
+                    <div class="col-xs-3">
+                        <div class="ava_review"></div>
+                        <p style="text-align:center;font-weight:900;margin-top:.5em;">alan moore</p>
+                    </div>
+
+                    <!-- content -->
+                    <div class="col-xs-9">
+                        <p style="font-size:1.2em;">
+                            <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                            <span style="margin-left:1em;">đọc cũng hay, giọng văn hơi cổ, nhưng nhìn chung là tốt</span>
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- 2nd reviewer -->
+                <div class="row" style="margin-top:2em;">
+
+                    <!-- ava -->
+                    <div class="col-xs-3">
+                        <div class="ava_review"></div>
+                        <p style="text-align:center;font-weight:900;margin-top:.5em;">jack ryder</p>
+                    </div>
+
+                    <!-- content -->
+                    <div class="col-xs-9">
+                        <p style="font-size:1.2em;">
+                            <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                            <span style="margin-left:1em;">đọc cũng hay, giọng văn hơi cổ, nhưng nhìn chung là tốt</span>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <!--write your review-->
+            <div class="col-md-6" style="margin-top:2em;">
+
+                <!-- header -->
+                <div>
+                    <p class="h2prev">đánh giá của bạn:</p>
+                </div>
+                
+                <p style="color:#2e748e;font-size:2em;">&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                
+                <form id="new_review" style="margin-top:2em">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <input type="text" placeholder="Tên hiển thị">
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="text" placeholder="E-mail">
+                        </div>
+                        <div class="col-sm-12">
+                            <textarea placeholder="Đánh giá..."></textarea>
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="submit" value="Gửi">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    
+	<div class="page-divide"></div>
+    
+</div>
+<script src="http://code.jquery.com/jquery.js">
+</script>
+<script>
+// Show the off-canvas navigation
+$('#off-canvas-toggle').click(function() {
+	$('#nav-primary').toggleClass('off-canvas-show');
+});
+
+	$('#nav-primary').removeClass('off-canvas-show');
+
+// Hide the off-canvas nav when clicking a link
+$('#nav-primary').find('a').on('click', function(e) {
+	$('#nav-primary').removeClass('off-canvas-show');
+});
+
+// Hide the off-canvas nav when clicking outside
+$('#page-content').on('click', function(e) {
+	$('#nav-primary').removeClass('off-canvas-show');
+});
+</script>
+<script>
+    $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+</body>
+</html>
+

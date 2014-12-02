@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Tủ sách di động của bạn. Đọc truyện online mọi lúc, mọi nơi.">
+    <title>về bookism</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<style>
+		body{
+			background-color:#65afce;
+			overflow-x: hidden;			
+			font-family: 'Gotham', sans-serif;
+            padding:0 1em 0 1em;
+		}
+        a:hover, a:visited, a:link, a:active{
+            text-decoration: none;
+        }
+	</style>
+</head>
+
+<body>
+<!-- nav items -->
+    <nav class="nav-primary" id="nav-primary">
+
+        <!--ava/log in-->
+        <a href="registration_form.html">
+            <div class="menu_ava">
+                <span class="mid-align"></span><img class="mid-align" src="images/question_mark.jpg">
+            </div>
+        </a>
+        <div class="log_in_txt">
+            <a href="registration_form.html" style="color:#fff;text-decoration:none;">đăng<br>nhập</a>
+        </div>
+
+        <!--main menu-->
+        <div class="row menu_main" style="margin:auto;">
+
+            <!--home-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="homepage.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/home_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">trang<br>chủ</p>
+                </a>
+            </div>
+
+            <!--library-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="thuvien.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/lib_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">thư<br>viện</p>
+                </a>
+            </div>
+
+            <!--article-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="articles.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/article_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">bài<br>viết</p>
+                </a>
+            </div>
+
+            <!--about-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="about.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/about_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">về<br>bookism</p>
+                </a>
+            </div>
+
+            <!--FAQ-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="faq.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/faq_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">faq</p>
+                </a>
+            </div>
+
+            <!--contact-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="contact.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/contact_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">liên<br>hệ</p>
+                </a>
+            </div>
+
+        </div>
+
+        <!--for logged in user-->
+        <div class="row menu_main" style="margin:auto;">
+
+            <!--setting-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="setting.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/setting_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">tùy<br>chỉnh</p>
+                </a>
+            </div>
+
+            <!--logout-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="log_out.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/logout_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">đăng<br>xuất</p>
+                </a>
+            </div>
+
+        </div>
+
+    </nav>
+
+<!-- header bar -->
+	<header class="mobile-helper-bar" style="width:100%;text-align:center;">
+		<!-- menu -->
+		<button class="hamburger" id="off-canvas-toggle"><img src="images/menu.png"></button>
+		<!-- search-->
+        <form class="search">
+            <input class="searchTerm" placeholder="Tìm kiếm..."/>
+        </form>
+    </header>
+
+<!-- main content -->
+<div class="page-content" id="page-content">
+
+	<!-- placeholder -->
+	<div style="width:100%;height:5em;"></div>
+
+	<!-- icon -->
+	<div class="top-page-image">
+		<img src="images/about/about_icon.jpg" alt="library" style="width:100%;">
+	</div>
+
+    <!-- tagline -->
+    <div class="top-page-tagline">
+        <div style="max-width:30em;margin:auto">
+            <h3 class="tagline-big">Mình làm quen nhé&#33;</h3>
+        </div>
+        <h1 class="tagline">chất lượng &#8226; sáng tạo &#8226; tin cậy &#8226; gắn kết</h1>
+    </div>
+    
+    <!--top bar-->
+    <div style="margin:auto;border-top:1px solid #fff;max-width:37em;margin-top:3em;margin-bottom:1em;"></div>
+    
+    <!--hotlink to section-->
+    <div class="row" style="max-width:50em;margin:auto;text-align:center;">
+        
+        <!--history-->
+        <div class="col-sm-3 col-xs-6" style="margin-top:1em;">
+            <a href="#un">
+                <div>
+                    <img src="images/about/history_icon.jpg" style="max-height:2em;">
+                    <p style="text-transform:uppercase;color:#fff;margin-top:1em;">lược sử<br>bookism</p>
+                </div>
+            </a>
+        </div>
+        
+        <!--values-->
+        <div class="col-sm-3 col-xs-6" style="margin-top:1em;">
+            <a href="#deux">
+                <div>
+                    <img src="images/about/value_icon.jpg" style="max-height:2em;">
+                    <p style="text-transform:uppercase;color:#fff;margin-top:1em;">giá trị<br>cốt lõi</p>
+                </div>
+            </a>
+        </div>
+        
+        <!--parnership-->
+        <div class="col-sm-3 col-xs-6" style="margin-top:1em;">
+            <a href="#trois">
+                <div>
+                    <img src="images/about/partner_icon.jpg" style="max-height:2em;">
+                    <p style="text-transform:uppercase;color:#fff;margin-top:1em;">CÁC BÊN<br>ĐỐI TÁC</p>
+                </div>
+            </a>
+        </div>
+        
+        <!--team-->
+        <div class="col-sm-3 col-xs-6" style="margin-top:1em;">
+            <a href="#quatre">
+                <div>
+                    <img src="images/about/team_icon.jpg" style="max-height:2em;">
+                    <p style="text-transform:uppercase;color:#fff;margin-top:1em;">đội ngũ<br>hoạt động</p>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+    
+    <!--bottom bar-->
+    <div style="max-width:45em;height:2em;margin:auto;border-left:1px solid #fff;border-right:1px solid #fff;border-bottom:1px solid #fff;"></div>
+    
+    <!--white col-->
+    <div class="white-col-about"></div>
+    
+    <!--white cir-->
+    <div class="white-cir-about" id="un"><p>I</p></div>
+
+    <!--history headline-->
+    <p class="about-sec-head">lược sử<br>bookism</p>
+    <div style="max-width:40em;margin:auto;margin-top:2em;margin-bottom:2em;">
+        <img src="images/about/timeline.jpg" style="max-width:100%;height:auto;">
+    </div>
+    
+    <!--history full-->
+    <div class="row" style="max-width:50em;margin:auto;color:#fff;line-height:1.5em;text-align:justify;">
+        <div class="col-sm-6" style="margin-top:1em;">Ấy nhưng các anh em khác không như chúng ta. Các anh em ta không được khỏe. Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</div>
+        <div class="col-sm-6" style="margin-top:1em;">Ấy nhưng các anh em khác không như chúng ta. Các anh em ta không được khỏe. Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</div>
+    </div>
+
+    <!--small white circle-->
+    <div style="background:#fff;border-radius:100%;height:1em;width:1em;border:1px solid #fff;box-shadow:0 0 0 .2em #65b0cc inset;margin:auto;margin-top:2em;"></div>
+    
+    <!--white col-->
+    <div class="white-col-about"></div>
+
+    <!--white cir-->
+    <div class="white-cir-about" id="deux"><p>II</p></div>
+
+    <!--value headline-->
+    <p class="about-sec-head">giá trị<br>cốt lõi</p>
+    <div style="max-width:30em;margin:auto;margin-top:2em;margin-bottom:2em;">
+        <img src="images/about/value.jpg" style="max-width:100%;height:auto;">
+    </div>
+    
+    <!--value full-->
+    <div class="row" style="max-width:50em;margin:auto;color:#fff;line-height:1.5em;text-align:justify;">
+        <div class="col-sm-6" style="margin-top:1em;"><span style="text-transform:uppercase;font-weight:900;">Cộng đồng &mdash;</span> Ấy nhưng các anh em khác không như chúng ta. Các anh em ta không được khỏe. Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</div>
+        <div class="col-sm-6" style="margin-top:1em;"><span style="text-transform:uppercase;font-weight:900;">sáng tạo &mdash;</span> Ấy nhưng các anh em khác không như chúng ta. Các anh em ta không được khỏe. Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</div>
+        <div class="col-sm-6" style="margin-top:1em;"><span style="text-transform:uppercase;font-weight:900;">phát triển &mdash;</span> Ấy nhưng các anh em khác không như chúng ta. Các anh em ta không được khỏe. Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</div>
+        <div class="col-sm-6" style="margin-top:1em;"><span style="text-transform:uppercase;font-weight:900;">chất lượng &mdash;</span> Ấy nhưng các anh em khác không như chúng ta. Các anh em ta không được khỏe. Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</div>
+    </div>
+
+    <!--small white circle-->
+    <div style="background:#fff;border-radius:100%;height:1em;width:1em;border:1px solid #fff;box-shadow:0 0 0 .2em #65b0cc inset;margin:auto;margin-top:2em;"></div>
+
+    <!--white col-->
+    <div class="white-col-about"></div>
+
+    <!--white cir-->
+    <div class="white-cir-about" id="trois"><p>III</p></div>
+
+    <p class="about-sec-head">các bên<br>đối tác</p>
+    <div style="max-width:16em;margin:auto;margin-top:2em;margin-bottom:2em;">
+        <img src="images/about/partner.jpg" style="max-width:100%;height:auto;">
+    </div>
+    
+    <!--partner full-->
+    <div class="row" style="max-width:70em;margin:auto;text-align:center;">
+        
+        <!--NXB 1-->
+        <div class="col-sm-6" style="padding:1.5em;">
+            <div class="nxb_card">
+                <div class="nxb_logo_fit_w" style="background-image: url(images/about/nxb_1.jpg);"></div>
+            </div>
+        </div>
+
+        <!--NXB 2-->
+        <div class="col-sm-6" style="padding:1.5em;">
+            <div class="nxb_card">
+                <div class="nxb_logo_fit_h" style="background-image: url(images/about/nxb_2.jpg);"></div>
+            </div>
+        </div>
+
+        <!--NXB 3-->
+        <div class="col-sm-6" style="padding:1.5em;">
+            <div class="nxb_card">
+                <div class="nxb_logo_fit_h" style="background-image: url(images/about/nxb_3.jpg);"></div>
+            </div>
+        </div>
+    
+        <!--NXB 4-->
+        <div class="col-sm-6" style="padding:1.5em;">
+            <div class="nxb_card">
+                <div class="nxb_logo_fit_h" style="background-image: url(images/about/nxb_4.jpg);"></div>
+            </div>
+        </div>
+        
+        <div class="col-md-12" style="margin-top:2em;color:#fff;">
+            <p>Để hợp tác phát hành truyện tại bookism<br>xin hãy <a href="contact.html" style="color:#000;font-weight:700;text-decoration:underline;">liên hệ</a> với chúng tôi</p>
+        </div>
+    </div>
+
+    <!--small white circle-->
+    <div style="background:#fff;border-radius:100%;height:1em;width:1em;border:1px solid #fff;box-shadow:0 0 0 .2em #65b0cc inset;margin:auto;margin-top:2em;"></div>
+    
+    <!--white col-->
+    <div class="white-col-about"></div>
+
+    <!--white cir-->
+    <div class="white-cir-about" id="quatre"><p>IV</p></div>
+
+    <p class="about-sec-head">đội ngũ<br>hoạt động</p>
+    <div class="row" style="max-width:70em;margin:auto;margin-top:2em;margin-bottom:4em;">
+
+        <div class="col-sm-4">
+            <div style="border:.5em solid #2e748e;height:11em;width:11em;border-radius:50%;margin:auto;background:#fff;"></div>
+            <p style="padding:1em;color:#fff;text-align:center;max-width:15em;margin:auto;">UN<br>&mdash; Truyền thông &mdash;<br><br>Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</p>            
+        </div>
+
+        <div class="col-sm-4">
+            <div style="border:.5em solid #2e748e;height:11em;width:11em;border-radius:50%;margin:auto;background:#fff;"></div>
+            <p style="padding:1em;color:#fff;text-align:center;max-width:15em;margin:auto;">DEUX<br>&mdash; Quản trị nội dung &mdash;<br><br>Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</p>            
+        </div>
+
+        <div class="col-sm-4">
+            <div style="border:.5em solid #2e748e;height:11em;width:11em;border-radius:50%;margin:auto;background:#fff;"></div>
+            <p style="padding:1em;color:#fff;text-align:center;max-width:15em;margin:auto;">TROIS<br>&mdash; Thiết kế &mdash;<br><br>Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</p>            
+        </div>
+
+    </div>
+</div>
+
+<script src="http://code.jquery.com/jquery.js">
+</script>
+<script>
+// Show the off-canvas navigation
+$('#off-canvas-toggle').click(function() {
+	$('#nav-primary').toggleClass('off-canvas-show');
+});
+
+	$('#nav-primary').removeClass('off-canvas-show');
+
+// Hide the off-canvas nav when clicking a link
+$('#nav-primary').find('a').on('click', function(e) {
+	$('#nav-primary').removeClass('off-canvas-show');
+});
+
+// Hide the off-canvas nav when clicking outside
+$('#page-content').on('click', function(e) {
+	$('#nav-primary').removeClass('off-canvas-show');
+});
+</script>
+<script>
+    $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Chiến Tranh Giữa Các Vì Sao, Animorphs, Divergent,...">
+        <title>Thư viện cá nhân</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'/>
+        <link href="style.css" rel="stylesheet" type='text/css'/>
+        <link href="reset.css" rel="stylesheet" type='text/css'/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
+        <style>
+            body{
+                background-color:#eaeaea;
+                overflow-x: hidden;			
+                font-family: 'Gotham', sans-serif;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <!-- nav items -->
+        <nav class="nav-primary" id="nav-primary">
+
+            <!--ava/log in-->
+            <a href="registration_form.html">
+                <div class="menu_ava">
+                    <span class="mid-align"></span><img class="mid-align" src="images/question_mark.jpg">
+                </div>
+            </a>
+            <div class="log_in_txt">
+                <a href="registration_form.html" style="color:#fff;text-decoration:none;">đăng<br>nhập</a>
+            </div>
+
+            <!--main menu-->
+            <div class="row menu_main" style="margin:auto;">
+
+                <!--home-->
+                <div class="col-xs-6" style="margin-top:1em;">
+                    <a href="homepage.html" style="color:#fff;text-decoration:none;">
+                        <img src="images/home_menu_icon.jpg" style="width:1.8em;">
+                        <p style="font-size:.8em;margin-top:1em;">trang<br>chủ</p>
+                    </a>
+                </div>
+
+                <!--library-->
+                <div class="col-xs-6" style="margin-top:1em;">
+                    <a href="thuvien.html" style="color:#fff;text-decoration:none;">
+                        <img src="images/lib_menu_icon.jpg" style="width:1.8em;">
+                        <p style="font-size:.8em;margin-top:1em;">thư<br>viện</p>
+                    </a>
+                </div>
+
+                <!--article-->
+                <div class="col-xs-6" style="margin-top:1em;">
+                    <a href="articles.html" style="color:#fff;text-decoration:none;">
+                        <img src="images/article_menu_icon.jpg" style="width:1.8em;">
+                        <p style="font-size:.8em;margin-top:1em;">bài<br>viết</p>
+                    </a>
+                </div>
+
+                <!--about-->
+                <div class="col-xs-6" style="margin-top:1em;">
+                    <a href="about.html" style="color:#fff;text-decoration:none;">
+                        <img src="images/about_menu_icon.jpg" style="width:1.8em;">
+                        <p style="font-size:.8em;margin-top:1em;">về<br>bookism</p>
+                    </a>
+                </div>
+
+                <!--FAQ-->
+                <div class="col-xs-6" style="margin-top:1em;">
+                    <a href="faq.html" style="color:#fff;text-decoration:none;">
+                        <img src="images/faq_menu_icon.jpg" style="width:1.8em;">
+                        <p style="font-size:.8em;margin-top:1em;">faq</p>
+                    </a>
+                </div>
+
+                <!--contact-->
+                <div class="col-xs-6" style="margin-top:1em;">
+                    <a href="contact.html" style="color:#fff;text-decoration:none;">
+                        <img src="images/contact_menu_icon.jpg" style="width:1.8em;">
+                        <p style="font-size:.8em;margin-top:1em;">liên<br>hệ</p>
+                    </a>
+                </div>
+
+            </div>
+
+            <!--for logged in user-->
+            <div class="row menu_main" style="margin:auto;">
+
+                <!--setting-->
+                <div class="col-xs-6" style="margin-top:1em;">
+                    <a href="setting.html" style="color:#fff;text-decoration:none;">
+                        <img src="images/setting_menu_icon.jpg" style="width:1.8em;">
+                        <p style="font-size:.8em;margin-top:1em;">tùy<br>chỉnh</p>
+                    </a>
+                </div>
+
+                <!--logout-->
+                <div class="col-xs-6" style="margin-top:1em;">
+                    <a href="log_out.html" style="color:#fff;text-decoration:none;">
+                        <img src="images/logout_menu_icon.jpg" style="width:1.8em;">
+                        <p style="font-size:.8em;margin-top:1em;">đăng<br>xuất</p>
+                    </a>
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- header bar -->
+        <header class="mobile-helper-bar" style="width:100%;text-align:center;background:rgba(101,175,206,.25);">
+            <!-- menu -->
+            <button class="hamburger" id="off-canvas-toggle"><img src="images/menu.png"></button>
+            <form class="search">
+                <input class="searchTerm" placeholder="Tìm kiếm..."/>
+            </form>
+        </header>
+
+        <!-- main content -->
+        <div class="page-content" id="page-content">
+
+            <!--user header-->
+            <div class="cover_img_wrap">
+
+                <!--avatar-->
+                <div class="ava_border_wrap">
+                    <div class="ava_border">
+                        <img src="images/library/header/cat_detec.jpg" class="ava">
+                    </div>
+                    <p style="margin-top:.7em;font-size:2em;text-shadow:0 0 4px #000;">Trịnh Thị Bì Bì</p>
+                </div>
+
+                <!--cover img-->
+                <img src="images/library/header/cat_fanta.jpg" style="min-width:100%;min-height:100%;">
+            </div>
+
+            <!--white body-->
+            <div class="padding-2em">
+                <div class="white-back">
+                    <div class="white-back-top"></div>
+
+                    <!--sector 1-->
+                    <div style="border-top:solid 1px rgba(0,0,0,.2);border-bottom:solid 1px rgba(0,0,0,.2);position:relative;z-index:3">
+
+                        <!--books progression-->
+                        <p style="color:#000;text-transform:uppercase;font-size:1.5em;text-align:center;margin:1em 0 1em 0;">Thư viện cá nhân</p>
+
+                        <!--sort by-->
+                        <dl class="dropdown" style="margin-top:1em;">
+                            <dt><a><span>Đang đọc &#40;0&#37; &rarr; 100&#37;&#41;</span></a></dt>
+                            <dd>
+                                <ul>
+                                    <li><a class="default">Đang đọc &#40;0&#37; &rarr; 100&#37;&#41;</a></li>
+                                    <li><a>Đang đọc &#40;100&#37; &rarr; 0&#37;&#41;</a></li>
+                                    <li><a>Định đọc &#40;A &rarr; Z&#41;</a></li>
+                                    <li><a>Định đọc &#40;Z &rarr; A&#41;</a></li>
+                                    <li><a>Tất cả &#40;mới &rarr; cũ&#41;</a></li>
+                                    <li><a>Tất cả &#40;cũ &rarr; mới&#41;</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+
+                        <!--first row-->
+                        <div class="row" id="book-progress">
+
+                            <!--book 1-->
+                            <div class="col-md-3 col-sm-6" style="margin-top:1em;" id="book_new">
+                                <div style="max-width:10em;text-align:center;margin:auto;">
+
+                                    <!--title-->
+                                    <p class="book_showcase_title three_dot">
+                                        <a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a>
+                                    </p>
+
+                                    <!--cover-->
+                                    <a href="preview.html" style="color:#000;text-decoration:none;">
+                                        <img src="images/book3.jpg" class="book_showcase hover_expand">
+                                    </a>
+
+                                    <!--progress bar-->
+                                    <div class="progress_profile">
+                                        <div style="background:#1b5970;height:100%;width:20%;"></div>
+                                    </div>
+
+                                    <p>20&#37;</p>
+
+                                </div>
+                            </div>
+
+                            <!--book 2-->
+                            <div class="col-md-3 col-sm-6" style="margin-top:1em;">
+                                <div style="max-width:10em;text-align:center;margin:auto;">
+
+                                    <!--title-->
+                                    <p class="book_showcase_title three_dot">
+                                        <a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a>
+                                    </p>
+
+                                    <!--cover-->
+                                    <a href="preview.html" style="color:#000;text-decoration:none;">
+                                        <img src="images/book2.jpg" class="book_showcase hover_expand">
+                                    </a>
+
+                                    <!--progress bar-->
+                                    <div class="progress_profile">
+                                        <div style="background:#1b5970;height:100%;width:20%;"></div>
+                                    </div>
+
+                                    <p>20&#37;</p>
+
+                                </div>
+                            </div>
+
+                            <!--book 3-->
+                            <div class="col-md-3 col-sm-6" style="margin-top:1em;">
+                                <div style="max-width:10em;text-align:center;margin:auto;">
+
+                                    <!--title-->
+                                    <p class="book_showcase_title three_dot">
+                                        <a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a>
+                                    </p>
+
+                                    <!--cover-->
+                                    <a href="preview.html" style="color:#000;text-decoration:none;">
+                                        <img src="images/book1.jpg" class="book_showcase hover_expand">
+                                    </a>
+
+                                    <!--progress bar-->
+                                    <div class="progress_profile">
+                                        <div style="background:#1b5970;height:100%;width:20%;"></div>
+                                    </div>
+
+                                    <p>20&#37;</p>
+
+                                </div>
+                            </div>
+
+                            <!--book 4-->
+                            <div class="col-md-3 col-sm-6" style="margin-top:1em;">
+                                <div style="max-width:10em;text-align:center;margin:auto;">
+
+                                    <!--title-->
+                                    <p class="book_showcase_title three_dot">
+                                        <a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a>
+                                    </p>
+
+                                    <!--cover-->
+                                    <a href="preview.html" style="color:#000;text-decoration:none;">
+                                        <img src="images/book4.jpg" class="book_showcase hover_expand">
+                                    </a>
+
+                                    <!--progress bar-->
+                                    <div class="progress_profile">
+                                        <div style="background:#1b5970;height:100%;width:20%;"></div>
+                                    </div>
+
+                                    <p>20&#37;</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--see more-->
+                        <div class="dot-holder" id="seemore">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <p>xem thêm</p>
+                        </div>
+
+                    </div>
+
+                    <!--sector 2-->
+                    <div style="border-bottom:solid 1px rgba(0,0,0,.2);position:relative;z-index:3">
+
+                        <!--collection-->
+
+                        <p style="color:#000;text-transform:uppercase;font-size:1.5em;text-align:center;margin:1em 0 1em 0;">bộ sưu tập</p>
+
+                        <!--first row-->
+                        <div class="row">
+
+                            <!--new-->
+                            <div class="col-md-3 col-sm-6" style="margin-top:1em;text-align:center;">
+
+                                <!--blue box-->
+                                <div class="collect_border" style="opacity:.5;border:7px dashed #1b5970;background:none;">
+                                    <div class="cross_collect_new"></div>
+                                    <div class="cross_collect_new" style="width:5em;height:1em;"></div>
+                                </div>
+
+                                <!--title-->
+                                <p class="three_dot book_showcase_title" style="margin:auto;margin-top:1em;width:14em;">Tạo mới</p>
+                            </div>
+
+                            <!--collection 1-->
+                            <div class="col-md-3 col-sm-6" style="margin-top:1em;text-align:center;">
+
+                                <!--blue box-->
+                                <div class="collect_border">
+                                    <img src="images/book3.jpg" class="book_showcase" style="opacity:.4;">
+                                    <div class="book_showcase_title absolute_center">
+                                        <span class="mid-align"></span><p class="no_in_collection">5 truyện</p>
+                                    </div>
+                                </div>
+
+                                <!--title-->
+                                <p class="three_dot book_showcase_title" style="margin:auto;margin-top:1em;width:14em;">Truyện bựa</p>
+
+                            </div>
+
+                            <!--collection 2-->
+                            <div class="col-md-3 col-sm-6" style="margin-top:1em;text-align:center;">
+
+                                <!--blue box-->
+                                <div class="collect_border">
+                                    <div class="book_showcase_title absolute_center">
+                                        <span class="mid-align"></span><p class="no_in_collection">0 truyện</p>
+                                    </div>
+                                </div>
+
+                                <!--title-->
+                                <p class="three_dot book_showcase_title" style="margin:auto;margin-top:1em;width:14em;">steve job</p>
+
+                            </div>
+                        
+                            <!--collection 2-->
+                            <div class="col-md-3 col-sm-6" style="margin-top:1em;text-align:center;">
+
+                                <!--blue box-->
+                                <div class="collect_border">
+                                    <img src="images/book6.jpg" class="book_showcase" style="opacity:.4;">
+                                    <div class="book_showcase_title absolute_center">
+                                        <span class="mid-align"></span><p class="no_in_collection">3 truyện</p>
+                                    </div>
+                                </div>
+
+                                <!--title-->
+                                <p class="three_dot book_showcase_title" style="margin:auto;margin-top:1em;width:14em;">dek hiểu thể loại gì</p>
+
+                            </div>
+                        
+                        </div>
+
+
+                        <!--see more-->
+                        <div class="dot-holder" id="seemore2">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <p>xem thêm</p>
+                        </div>
+
+                    </div>
+
+                    <!--feature-->
+                    <div style="border-bottom:solid 1px rgba(0,0,0,.2);">
+                        <p style="color:#000;text-transform:uppercase;font-size:1.5em;margin-top:1em;text-align:center;">truyện nổi bật</p>
+
+                        <!--the book-->
+                        <div class="row" style="margin-bottom:2em;">
+
+                            <!--cover-->
+                            <div class="col-sm-4" style="margin-top:1em;">
+                                <div style="max-width:15em;text-align:center;margin:auto;">
+                                    <a href="preview.html">
+                                        <img src="images/book4.jpg" style="width:100%;height:auto;border-radius:10px;box-shadow: 2px 2px 5px rgba(0,0,0,.5);" class="hover_expand">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!--content-->
+                            <div class="col-sm-8 center-on-small" style="padding:2em;">
+                                <p class="h2prev"><a href="preview.html" style="color:#000;text-decoration:none;font-weight:900;">the chien z</a></p>
+                                <p class="h2prev" style="text-transform:none">Tác giả&#58; <a href="author_sort.html">H. G. Wells</a></p>
+                                <p><span style="color:#2e748e;font-size:1.5em">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span>&#40;89 lượt bầu&#41;</span></p>
+
+                                <p>Con bè lại trôi tiếp. Họ ngửi thấy một mùi rất kì lạ, vừa ngòn ngọt mà lại vừa phát mửa. Mùi như thể bãi nôn khô. Tiếng hú của lũ dilophosaur trở nên ồn ã hơn. Khi con bè đi ra chỗ khúc quanh cuối cùng, Grant mới bắt đầu hít thở lại được bình thường. Bọn dilophosaur chỉ cách đó có mấy phân, đang hú về phía mấy cái cây trên bờ.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!--footer-->
+            <div style="background:#2e748e;padding:2em 1em 2em 1em;box-shadow:0 -4px rgba(0,0,0,.25);z-index:4;position:relative;">
+
+                <!--quicklink menu-->
+                <div style="margin:auto;text-align:center;">
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="homepage.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">trang chủ</a>
+                    </div>
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="thuvien.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">thư viện</a>
+                    </div>
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="articles.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">bài viết</a>
+                    </div>
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="about.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">về bookism</a>
+                    </div>
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="#" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">faq</a>
+                    </div>
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="contact.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">liên hệ</a>
+                    </div>
+                </div>
+
+                <!--term-->
+                <div style="margin:auto;text-align:center;">
+                    <div style="display:inline-block;margin:0 1em 1em 1em;">
+                        <a href="#" style="color:#fff;text-decoration:none;">Điều khoản</a>
+                    </div>
+                    <div style="display:inline-block;margin:0 1em 1em 1em;">
+                        <a href="#" style="color:#fff;text-decoration:none;">Quyền riêng tư</a>
+                    </div>
+                </div>
+
+                <!--fb + mail-->
+                <div style="margin:auto;text-align:center;">
+
+                    <a href="https://www.facebook.com/BookismVietNam" target="_blank">
+                        <div class="social-home-end">
+                            <i class="fa fa-facebook" style="line-height:2em;color:#2e748e;"></i>
+                        </div>
+                    </a>
+
+                    <a href="mailto:bookism.net@gmail.com" target="_blank">
+                        <div class="social-home-end">
+                            <i class="fa fa-envelope" style="line-height:2em;color:#2e748e;"></i>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!--copyright-->
+                <p style="color:#fff;text-align:center;margin-top:1em;">&copy; Copyright 2014 Bookism. All rights reserved.</p>
+                <div style="height:1em;"></div>
+
+            </div>
+
+        </div>
+
+        <script src="http://code.jquery.com/jquery.js">
+        </script>
+
+        <!--nav menu-->
+        <script>// Show the off-canvas navigation
+            $('#off-canvas-toggle').click(function() {
+                $('#nav-primary').toggleClass('off-canvas-show');
+            });
+
+            $('#nav-primary').removeClass('off-canvas-show');
+
+            // Hide the off-canvas nav when clicking a link
+            $('#nav-primary').find('a').on('click', function(e) {
+                $('#nav-primary').removeClass('off-canvas-show');
+            });
+
+            // Hide the off-canvas nav when clicking outside
+            $('#page-content').on('click', function(e) {
+                $('#nav-primary').removeClass('off-canvas-show');
+            });
+        </script>
+
+        <!--dropdown menu-->
+        <script>
+            var dropdowns = $(".dropdown");
+
+            // Onclick on a dropdown, toggle visibility
+            dropdowns.find("dt").click(function(){
+                dropdowns.find("dd ul").hide();
+                $(this).next().children().toggle();
+            });
+
+            // Click handler for dropdown
+            dropdowns.find("dd ul li a").click(function(){
+                var leSpan = $(this).parents(".dropdown").find("dt a span");
+
+                // Remove selected class
+                $(this).parents(".dropdown").find('dd a').each(function(){
+                });
+
+                // Update selected value
+                leSpan.html($(this).html());
+
+                // Close dropdown
+                $(this).parents("ul").hide();
+            });
+
+            // Close all dropdown onclick on another element
+            $(document).bind('click', function(e){
+                if (! $(e.target).parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
+            });
+        </script>
+
+        <!--avatar fit-->
+        <script>
+            $(window).load(function () {
+                var ava = $('.ava');
+                var width = ava.width();
+                var height = ava.height();
+                if (width < height){
+                    ava.addClass('fit-width').removeClass('fit-height');
+                }
+                else{
+                    ava.addClass('fit-height').removeClass('fit-width');
+                }
+            });
+        </script>
+
+        <!--clone book progress-->
+        <script>
+            $("#seemore").click(function(){
+                var e = $("#book_new");
+                for (var i = 0; i < 4; i++) {
+                    e.clone().appendTo("#book-progress");
+                }
+            });
+        </script>
+
+    </body>
+</html>
+

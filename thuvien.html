@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Tủ sách di động của bạn. Đọc truyện online mọi lúc, mọi nơi.">
+    <title>Thư viện - bookism</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<style>
+		body{
+			background-color:#65afce;
+			overflow-x: hidden;			
+			font-family: 'Gotham', sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+<!-- nav items -->
+    <nav class="nav-primary" id="nav-primary">
+
+        <!--ava/log in-->
+        <a href="registration_form.html">
+            <div class="menu_ava">
+                <span class="mid-align"></span><img class="mid-align" src="images/question_mark.jpg">
+            </div>
+        </a>
+        <div class="log_in_txt">
+            <a href="registration_form.html" style="color:#fff;text-decoration:none;">đăng<br>nhập</a>
+        </div>
+
+        <!--main menu-->
+        <div class="row menu_main" style="margin:auto;">
+
+            <!--home-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="homepage.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/home_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">trang<br>chủ</p>
+                </a>
+            </div>
+
+            <!--library-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="thuvien.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/lib_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">thư<br>viện</p>
+                </a>
+            </div>
+
+            <!--article-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="articles.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/article_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">bài<br>viết</p>
+                </a>
+            </div>
+
+            <!--about-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="about.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/about_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">về<br>bookism</p>
+                </a>
+            </div>
+
+            <!--FAQ-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="faq.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/faq_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">faq</p>
+                </a>
+            </div>
+
+            <!--contact-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="contact.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/contact_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">liên<br>hệ</p>
+                </a>
+            </div>
+
+        </div>
+
+        <!--for logged in user-->
+        <div class="row menu_main" style="margin:auto;">
+
+            <!--setting-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="setting.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/setting_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">tùy<br>chỉnh</p>
+                </a>
+            </div>
+
+            <!--logout-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="log_out.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/logout_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">đăng<br>xuất</p>
+                </a>
+            </div>
+
+        </div>
+
+    </nav>
+
+<!-- header bar -->
+	<header class="mobile-helper-bar" style="width:100%;text-align:center;">
+		<!-- menu -->
+		<button class="hamburger" id="off-canvas-toggle"><img src="images/menu.png"></button>
+		<!-- search-->
+        <form class="search">
+            <input class="searchTerm" placeholder="Tìm kiếm..."/>
+        </form>
+    </header>
+
+    <!-- main content -->
+    <div class="page-content" id="page-content">
+
+        <!-- placeholder -->
+        <div style="width:100%;height:5em;"></div>
+
+        <!-- icon -->
+        <div style="background-color:#65b0cc;background-image:url(images/library/head_bg.jpg);background-size:auto 100%;margin-bottom:3em;">
+            <div class="top-page-image">
+                <img src="images/library/library_icon.png" alt="library" style="width:100%;margin:4em 0 8em 0;">
+            </div>
+        </div>
+
+        <!--upper slash-->
+        <div style="width:100%;">
+            <img class="slash" src="images/up_slash.png">
+        </div>
+
+        <div style="height:1em;background:#3c93b3;"></div>
+
+        <!--2nd section SCI FI-->
+        <div style="background-color:#3c93b3;background-image:url(images/library/scifi_bg.jpg);" class="lib_sect">
+            
+            <!--header-->
+            <div>
+                <h3 class="headertext" style="padding:10px;">khoa học viễn tưởng</h3>
+                <h5 class="tagline" style="margin:1em 0 3em 0;padding:0 10px 0 10px;">Khoa học là sức mạnh.</h5>
+            </div>
+            
+            <!--cat icon-->
+            <div style="margin:auto;max-width:25em;margin-top:2em;margin-bottom:1em;">
+                <img src="images/library/scifi_icon.jpg" style="width:100%;">
+            </div>
+            
+            <!--cat circle-->
+            <div class="row">
+
+                <!--Cat 1-->
+                <div class="col-sm-4">
+                    <div class="lib_cat_img_div">
+                        <a href="cat_scifi_space.html">
+                            <img src="images/library/scifi_space_bg.jpg" class="lib_cat_img">
+                            <div class="lib_cat_icon" style="background-image: url(images/library/scifi_space_icon.png);"></div>
+                        </a>
+                    </div>
+                    <p class="lib_cat_txt">
+                        <a href="cat_scifi_space.html" style="text-decoration: none;color:#fff;">lên vũ trụ</a>
+                    </p>
+                </div>
+                
+                <!--Cat 2-->
+                <div class="col-sm-4">
+                    <div class="lib_cat_img_div">
+                        <a href="cat_scifi_war.html">
+                            <img src="images/library/scifi_war_bg.jpg" class="lib_cat_img">
+                            <div class="lib_cat_icon" style="background-image: url(images/library/scifi_war_icon.png);"></div>
+                        </a>
+                    </div>
+                    <p class="lib_cat_txt">
+                        <a href="cat_scifi_war.html" style="text-decoration: none;color:#fff;">chiến tranh</a>
+                    </p>
+                </div>
+                
+                <!--Cat 3-->
+                <div class="col-sm-4">
+                    <div class="lib_cat_img_div">
+                        <a href="cat_scifi_apo.html">
+                            <img src="images/library/scifi_apo_bg.jpg" class="lib_cat_img">
+                            <div class="lib_cat_icon" style="background-image: url(images/library/scifi_apo_icon.png);"></div>
+                        </a>
+                    </div>
+                    <p class="lib_cat_txt">
+                        <a href="cat_scifi_apo.html" style="text-decoration: none;color:#fff;">ngày tận thế</a>
+                    </p>
+                </div>
+                
+                <!--CTA-->
+                <div class="col-md-12">
+                    <div class="col-md-12" style="margin:4em 0 4em 0;">
+                        <div class="CTA_button_home">
+                            <a href="cat_scifi.html" style="text-decoration:none;">
+                                <div style="width:100%;padding:1.8em;">
+                                    <span>xem tất cả.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        
+        <!--under slash-->
+        <div style="width:100%;">
+            <img class="slash" src="images/down_slash.png">
+        </div>
+
+        <div style="height:2em;"></div>
+
+        <!--3rd section FANTASY-->
+        <div style="background-image:url(images/library/fanta_bg.jpg);" class="lib_sect">
+
+            <!--header txt-->
+            <div>
+                <h3 class="headertext" style="padding:10px;">truyện kì ảo</h3>
+                <h5 class="tagline" style="margin:1em 0 3em 0;padding:0 10px 0 10px;">Khoa học là sức mạnh.</h5>
+            </div>
+
+            <!--cat icon-->
+            <div style="margin:auto;max-width:25em;margin-top:2em;margin-bottom:1em;">
+                <img src="images/library/fantasy_icon.png" style="width:100%;">
+            </div>
+
+            <!--cat circle-->
+            <div class="row">
+
+                <!--Cat 1-->
+                <div class="col-sm-4">
+                    <div class="lib_cat_img_div">
+                        <a href="cat_fanta_creature.html">
+                            <img src="images/library/fanta_creature_bg.jpg" class="lib_cat_img">
+                            <div class="lib_cat_icon" style="background-image: url(images/library/fanta_creature_icon.png);"></div>
+                        </a>
+                    </div>
+                    <p class="lib_cat_txt">
+                        <a href="cat_fanta_creature.html" style="text-decoration: none;color:#fff;">linh thú</a>
+                    </p>
+                </div>
+
+                <!--Cat 2-->
+                <div class="col-sm-4">
+                    <div class="lib_cat_img_div">
+                        <a href="cat_fanta_med.html">
+                            <img src="images/library/fanta_med_bg.jpg" class="lib_cat_img">
+                            <div class="lib_cat_icon" style="background-image: url(images/library/fanta_med_icon.png);"></div>
+                        </a>
+                    </div>
+                    <p class="lib_cat_txt">
+                        <a href="cat_fanta_med.html" style="text-decoration: none;color:#fff;">trung cổ</a>
+                    </p>
+                </div>
+
+                <!--Cat 3-->
+                <div class="col-sm-4">
+                    <div class="lib_cat_img_div">
+                        <a href="cat_fanta_magic.html">
+                            <img src="images/library/fanta_magic_bg.jpg" class="lib_cat_img">
+                            <div class="lib_cat_icon" style="background-image: url(images/library/fanta_magic_icon.png);"></div>
+                        </a>
+                    </div>
+                    <p class="lib_cat_txt">
+                        <a href="cat_fanta_magic.html" style="text-decoration: none;color:#fff;">phép thuật</a>
+                    </p>
+                </div>
+
+                <!--CTA-->
+                <div class="col-md-12">
+                    <div class="col-md-12" style="margin:4em 0 4em 0;">
+                        <div class="CTA_button_home">
+                            <a href="cat_fanta.html" style="text-decoration:none;">
+                                <div style="width:100%;padding:1.8em;">
+                                    <span>xem tất cả.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    
+        <!--upper slash-->
+        <div style="width:100%;">
+            <img class="slash" src="images/up_slash.png">
+        </div>
+
+        <div style="height:1em;background:#3c93b3;"></div>
+        
+        <!--4th section DETEC-->
+        <div style="background-color:#3c93b3;background-image:url(images/library/detec_bg.jpg);" class="lib_sect">
+
+            <!--header txt-->
+            <div>
+                <h3 class="headertext" style="padding:10px;">truyện trinh thám</h3>
+                <h5 class="tagline" style="margin:1em 0 3em 0;padding:0 10px 0 10px;">Khoa học là sức mạnh.</h5>
+            </div>
+
+            <!--cat icon-->
+            <div style="margin:auto;max-width:25em;margin-top:2em;margin-bottom:1em;">
+                <img src="images/library/detec_icon.png" style="width:100%;">
+            </div>
+
+            <!--cat circle-->
+            <div class="row">
+
+                <!--Cat 1-->
+                <div class="col-sm-4">
+                    <div class="lib_cat_img_div">
+                        <a href="cat_detec_org.html">
+                            <img src="images/library/detec_org_bg.jpg" class="lib_cat_img">
+                            <div class="lib_cat_icon" style="background-image: url(images/library/detec_org_icon.png);"></div>
+                        </a>
+                    </div>
+                    <p class="lib_cat_txt">
+                        <a href="cat_detec_org.html" style="text-decoration: none;color:#fff;">tổ chức ngầm</a>
+                    </p>
+                </div>
+
+                <!--Cat 2-->
+                <div class="col-sm-4">
+                    <div class="lib_cat_img_div">
+                        <a href="cat_detec_crime.html">
+                            <img src="images/library/detec_crime_bg.jpg" class="lib_cat_img">
+                            <div class="lib_cat_icon" style="background-image: url(images/library/detec_crime_icon.png);"></div>
+                        </a>
+                    </div>
+                    <p class="lib_cat_txt">
+                        <a href="cat_detec_org.html" style="text-decoration: none;color:#fff;">trọng án</a>
+                    </p>
+                </div>
+
+                <!--Cat 3-->
+                <div class="col-sm-4">
+                    <div class="lib_cat_img_div">
+                        <a href="cat_detec_spy.html">
+                            <img src="images/library/detec_spy_bg.jpg" class="lib_cat_img">
+                            <div class="lib_cat_icon" style="background-image: url(images/library/detec_spy_icon.png);"></div>
+                        </a>
+                    </div>
+                    <p class="lib_cat_txt">
+                        <a href="cat_detec_spy.html" style="text-decoration: none;color:#fff;">mật vụ</a>
+                    </p>
+                </div>
+
+                <!--CTA-->
+                <div class="col-md-12">
+                    <div class="col-md-12" style="margin:4em 0 4em 0;">
+                        <div class="CTA_button_home">
+                            <a href="cat_detec.html" style="text-decoration:none;">
+                                <div style="width:100%;padding:1.8em;">
+                                    <span>xem tất cả.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--under slash-->
+        <div style="width:100%;">
+            <img class="slash" src="images/down_slash.png">
+        </div>
+
+        <div style="height:2em;"></div>
+    
+        <!--section 5th FOOTER-->
+        <div style="padding:0 1em 0 1em;">
+
+            <!--quicklink menu-->
+            <div style="margin:auto;text-align:center;">
+                <div style="display:inline-block;margin:1em;">
+                    <a href="homepage.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">trang chủ</a>
+                </div>
+                <div style="display:inline-block;margin:1em;">
+                    <a href="thuvien.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">thư viện</a>
+                </div>
+                <div style="display:inline-block;margin:1em;">
+                    <a href="articles.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">bài viết</a>
+                </div>
+                <div style="display:inline-block;margin:1em;">
+                    <a href="about.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">về bookism</a>
+                </div>
+                <div style="display:inline-block;margin:1em;">
+                    <a href="#" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">faq</a>
+                </div>
+                <div style="display:inline-block;margin:1em;">
+                    <a href="contact.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">liên hệ</a>
+                </div>
+            </div>
+
+            <!--term-->
+            <div style="margin:auto;text-align:center;">
+                <div style="display:inline-block;margin:0 1em 1em 1em;">
+                    <a href="#" style="color:#fff;text-decoration:none;">Điều khoản</a>
+                </div>
+                <div style="display:inline-block;margin:0 1em 1em 1em;">
+                    <a href="#" style="color:#fff;text-decoration:none;">Quyền riêng tư</a>
+                </div>
+            </div>
+
+            <!--fb + mail-->
+            <div style="margin:auto;text-align:center;">
+
+                <a href="https://www.facebook.com/BookismVietNam" target="_blank">
+                    <div class="social-home-end">
+                        <i class="fa fa-facebook" style="line-height:2em;color:#65afce;"></i>
+                    </div>
+                </a>
+
+                <a href="mailto:bookism.net@gmail.com" target="_blank">
+                    <div class="social-home-end">
+                        <i class="fa fa-envelope" style="line-height:2em;color:#65afce;"></i>
+                    </div>
+                </a>
+
+            </div>
+
+            <!--copyright-->
+            <p style="color:#fff;text-align:center;margin-top:1em;">&copy; Copyright 2014 Bookism. All rights reserved.</p>
+            <div style="height:1em;"></div>
+
+        </div>
+    
+    </div>
+
+<script src="http://code.jquery.com/jquery.js">
+</script>
+<script>
+// Show the off-canvas navigation
+$('#off-canvas-toggle').click(function() {
+	$('#nav-primary').toggleClass('off-canvas-show');
+});
+
+	$('#nav-primary').removeClass('off-canvas-show');
+
+// Hide the off-canvas nav when clicking a link
+$('#nav-primary').find('a').on('click', function(e) {
+	$('#nav-primary').removeClass('off-canvas-show');
+});
+
+// Hide the off-canvas nav when clicking outside
+$('#page-content').on('click', function(e) {
+	$('#nav-primary').removeClass('off-canvas-show');
+});
+</script>
+<script>
+    $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Kết quả tìm kiếm">
+    <title>kết quả tìm kiếm</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'/>
+    <link href="style.css" rel="stylesheet" type='text/css'/>
+    <link href="reset.css" rel="stylesheet" type='text/css'/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'/>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"/>
+    <style>
+		body{
+			background-color: #1a5970;
+			overflow-x: hidden;			
+		}
+        a:hover, a:visited, a:link, a:active{
+            text-decoration: none;
+            color:#fff;
+        }
+	</style>
+</head>
+
+<body>
+<!-- nav items -->
+    <nav class="nav-primary" id="nav-primary">
+
+        <!--ava/log in-->
+        <a href="registration_form.html">
+            <div class="menu_ava">
+                <span class="mid-align"></span><img class="mid-align" src="images/question_mark.jpg">
+            </div>
+        </a>
+        <div class="log_in_txt">
+            <a href="registration_form.html" style="color:#fff;text-decoration:none;">đăng<br>nhập</a>
+        </div>
+
+        <!--main menu-->
+        <div class="row menu_main" style="margin:auto;">
+
+            <!--home-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="homepage.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/home_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">trang<br>chủ</p>
+                </a>
+            </div>
+
+            <!--library-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="thuvien.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/lib_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">thư<br>viện</p>
+                </a>
+            </div>
+
+            <!--article-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="articles.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/article_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">bài<br>viết</p>
+                </a>
+            </div>
+
+            <!--about-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="about.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/about_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">về<br>bookism</p>
+                </a>
+            </div>
+
+            <!--FAQ-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="faq.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/faq_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">faq</p>
+                </a>
+            </div>
+
+            <!--contact-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="contact.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/contact_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">liên<br>hệ</p>
+                </a>
+            </div>
+
+        </div>
+
+        <!--for logged in user-->
+        <div class="row menu_main" style="margin:auto;">
+
+            <!--setting-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="setting.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/setting_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">tùy<br>chỉnh</p>
+                </a>
+            </div>
+
+            <!--logout-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="log_out.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/logout_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">đăng<br>xuất</p>
+                </a>
+            </div>
+
+        </div>
+
+    </nav>
+
+<!-- header bar -->
+    <header class="mobile-helper-bar" style="width:100%;text-align:center;background:#1a5970;">
+		<!-- menu -->
+		<button class="hamburger" id="off-canvas-toggle"><img src="images/menu.png"></button>
+        <form class="search">
+            <input class="searchTerm" placeholder="Tìm kiếm..."/>
+        </form>
+    </header>
+
+<!-- main content -->
+<div class="page-content" id="page-content" style="color:#fff;font-family:'Gotham';padding:1em;">
+
+	<!-- placeholder -->
+	<div style="width:100%;height:5em;"></div>
+    
+    <!-- top text -->
+    <div class="src_res_top_txt">
+        
+        <!-- number of results -->
+        <p>
+            <span style="font-size:1.5em;text-transform:uppercase;">12 kết quả </span>cho từ khóa &ldquo;div&rdquo;.
+        </p>
+        
+        <!-- filter -->
+        <div style="margin-top:2em;font-size:.5em;">Chỉ tìm&#58;
+            <a href="#">
+                <div class="cat-go">
+                    <p style="margin:0;padding:0;">Truyện</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="cat-go">
+                    <p style="margin:0;padding:0;">Bài viết</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="cat-go">
+                    <p style="margin:0;padding:0;">Tác giả</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="cat-go">
+                    <p style="margin:0;padding:0;">Tất cả</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    <!-- results -->
+    <div>
+        
+        <!-- no 1 (articles) -->
+        <div class="src_res_dis">
+            <div class="row">
+                
+                <!-- prev img -->
+                <div class="col-sm-4">
+                    <div class="src_prev_img">
+                        <img src="images/article/article-12.jpg" style="max-width:100%">
+                    </div>
+                </div>
+                
+                <!-- content -->
+                <div class="col-sm-8">
+                    <div style="margin:2em 0 2em 0;">
+                        
+                        <!-- post title -->
+                        <p class="src_res_title">43 great examples of WordPress website with <span style="background:#fff;color:#000">div</span></p>
+
+                        <!-- post content -->
+                        <p style="font-style: italic;">...<span style="background:#fff;color:#000">div</span> Nam cursus, est sed mattis consectetur, magna felis tristique. Early Years: Nulla facilisi mauris fermentum iaculis ligula, eget fermentum neque ornare in. <span style="background:#fff;color:#000">Div</span> In hac habitasse platea dictumst. Curabitur at mi mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per…</p>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- no 2 (books) -->
+        <div class="src_res_dis">
+            <div class="row">
+                
+                <!-- prev img -->
+                <div class="col-sm-4">
+                    <div class="src_prev_img">
+                        <img src="images/book4.jpg" style="max-width:100%">
+                    </div>
+                </div>
+                
+                <!-- content -->
+                <div class="col-sm-8">
+                    <div style="margin:2em 0 2em 0;">
+                        
+                        <!-- post title -->
+                        <p class="src_res_title">Thế chiến <span style="background:#fff;color:#000">div</span>ies</p>
+                        
+                        <!-- rating -->
+                        <p>
+                            <span style="font-size:1.2em">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span>(409 lượt bầu)</span>
+                        </p>
+                        
+                        <!-- post content -->
+                        <p style="font-style: italic;">...<span style="background:#fff;color:#000">div</span>ision mauris fermentum iaculis ligula, eget fermentum neque ornare in. <span style="background:#fff;color:#000">Div</span>am cursus, est sed mattis consectetur, magna felis tristique. Early Years: Nulla facilisi In hac habitasse platea dictumst. Curabitur at mi mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per…</p>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- no 3 (author) -->
+        <div class="src_res_dis">
+            <div class="row">
+                
+                <!-- prev img -->
+                <div class="col-sm-4">
+                    <div class="src_prev_img">
+                        <img src="images/sort/author1.jpg" style="max-width:100%">
+                    </div>
+                </div>
+                
+                <!-- content -->
+                <div class="col-sm-8">
+                    <div style="margin:2em 0 2em 0;">
+                        
+                        <!-- post title -->
+                        <p class="src_res_title">Mark Twain</p>
+                        
+                        <!-- post content -->
+                        <p style="font-style: italic;">...<span style="background:#fff;color:#000">div</span>ision mauris fermentum iaculis ligula, eget fermentum neque ornare in. <span style="background:#fff;color:#000">Div</span>am cursus, est sed mattis consectetur, magna felis tristique. Early Years: Nulla facilisi In hac habitasse platea dictumst. Curabitur at mi mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per…</p>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- no 4 (articles) -->
+        <div class="src_res_dis">
+            <div class="row">
+                
+                <!-- prev img -->
+                <div class="col-sm-4">
+                    <div class="src_prev_img">
+                        <img src="images/article/article-1.jpg" style="max-width:100%">
+                    </div>
+                </div>
+                
+                <!-- content -->
+                <div class="col-sm-8">
+                    <div style="margin:2em 0 2em 0;">
+                        
+                        <!-- post title -->
+                        <p class="src_res_title">43 great examples of WordPress website with <span style="background:#fff;color:#000">div</span></p>
+
+                        <!-- post content -->
+                        <p style="font-style: italic;">...<span style="background:#fff;color:#000">div</span> Nam cursus, est sed mattis consectetur, magna felis tristique. Early Years: Nulla facilisi mauris fermentum iaculis ligula, eget fermentum neque ornare in. <span style="background:#fff;color:#000">Div</span> In hac habitasse platea dictumst. Curabitur at mi mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per…</p>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- load more -->
+    <div style="margin:auto;margin-top:3em;margin-bottom:1em;text-align:center;text-transform:uppercase;">
+        <a href="#">
+            <div class="see_more_dot"></div>
+            <div class="see_more_dot"></div>
+            <div class="see_more_dot"></div>
+            <p style="margin-top:.5em;font-size:1.5em;">thêm kết quả</p>
+        </a>
+    </div>
+    
+</div>
+
+<script src="http://code.jquery.com/jquery.js">
+</script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script>
+// Show the off-canvas navigation
+$('#off-canvas-toggle').click(function() {
+	$('#nav-primary').toggleClass('off-canvas-show');
+});
+
+	$('#nav-primary').removeClass('off-canvas-show');
+
+// Hide the off-canvas nav when clicking a link
+$('#nav-primary').find('a').on('click', function(e) {
+	$('#nav-primary').removeClass('off-canvas-show');
+});
+
+// Hide the off-canvas nav when clicking outside
+$('#page-content').on('click', function(e) {
+	$('#nav-primary').removeClass('off-canvas-show');
+});
+</script>
+
+</body>
+</html>
