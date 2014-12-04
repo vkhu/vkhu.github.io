@@ -1627,45 +1627,6 @@ table {
     -webkit-font-smoothing: subpixel-antialiased;
     font-smooth: always;
 }
-.search input[placeholder]:focus::-webkit-input-placeholder {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    -webkit-transform: translate(65%, 0);
-    -moz-transform: translate(65%, 0);
-    -ms-transform: translate(65%, 0);
-    -o-transform: translate(65%, 0);
-    transform: translate(65%, 0);
-    opacity: 0;
-}
-.search input[placeholder]:focus::-moz-placeholder {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    -webkit-transform: translate(65%, 0);
-    -moz-transform: translate(65%, 0);
-    -ms-transform: translate(65%, 0);
-    -o-transform: translate(65%, 0);
-    transform: translate(65%, 0);
-    opacity: 0;
-}
-.search input[placeholder]:focus:-ms-input-placeholder {
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    -webkit-transform: translate(65%, 0);
-    -moz-transform: translate(65%, 0);
-    -ms-transform: translate(65%, 0);
-    -o-transform: translate(65%, 0);
-    transform: translate(65%, 0);
-    opacity: 0;
-}
 
 /*contact - HAVE MEDIA: #contact*/
 #contact input[type="text"], #contact input[type="submit"] {
