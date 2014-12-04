@@ -22,6 +22,17 @@
     </head>
 
     <body>
+        <script>
+            "use strict";
+
+            var Book = ePub("epub/test/moby.epub", {
+                width: 400,
+                height: 600,
+                spreads : false
+            });
+
+
+        </script>
         <!-- nav items -->
         <nav class="nav-primary" id="nav-primary">
 
@@ -128,8 +139,22 @@
             <!-- placeholder -->
             <div class="header_ph"></div>
 
+            <div id="main">
+                <div id="prev" onclick="Book.prevPage();" class="arrow">&#40;</div>
+                <div id="wrapper">
+                    <div id="area" style="height:30em;width:100%;"></div>
+                </div>
+                <div id="next" onclick="Book.nextPage();" class="arrow">&#41;</div>
+            </div>
+
         </div>
 
+        <script>            
+
+            Book.renderTo("area");
+
+        </script>
+        <script src="js/epub.min.js"></script>
         <script src="http://code.jquery.com/jquery.js">
         </script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
