@@ -1583,11 +1583,12 @@ table {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-size: 1em;
+    font-size: 16px;
     padding: 0 1em 0 3em;
     height:3em;
     width: 100%;
     outline: none;
+    font-size: 16px;
     color: #fff;
     border:solid 3px #fff;
     border-radius:1.5em;
@@ -1615,6 +1616,7 @@ table {
     width: 3em;
     height: 3em;
     line-height: 3em;
+    font-size: 16px;
     position:absolute;
     background: transparent;
     border:0;
