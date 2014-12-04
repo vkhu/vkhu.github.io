@@ -100,7 +100,7 @@ table {
 }
 .mobile-helper-bar {
     position: fixed !important;
-    height:5em;
+    height:5.6em;
     width:100%;
     text-align:center;
     z-index: 999999;
@@ -109,6 +109,10 @@ table {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     background: rgba(101,175,206,.85);
+}
+.header_ph{
+    width:100%;
+    height:5.6em;
 }
 .mobile-helper-bar button {
 	outline:0;
