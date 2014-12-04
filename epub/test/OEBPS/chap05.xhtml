@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>4 Hack protocols</title>
+<link href="stylesheet.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div>
+<h2 id="leanpub-auto-hack-protocols"><span class="section-number">4 </span>Hack protocols</h2>
+
+<p>
+  <strong>Or how not to waste time coding a protocol from scratch ?</strong>
+</p>
+
+<p>Remember? We need protocols between you &amp; the interface, and between the interface and the system. The first link (between you and the interface) seems to be the clearest to understand because of the previous chapter.</p>
+
+<p>Indeed, you have to build an interface for your fingers if you have fingers, with blinking leds if you have eyes, etc.
+So the protocol between you and the interface SHOULD BE as intuitive as possible !
+It is the trivial side of this chapter.</p>
+
+<p>The big part is « the other protocol »: the one between the interface and the system, and I could briefly describe that by the following schematic.</p>
+
+<div class="image-with-caption center">
+  <img src="images/05.PNG" alt="" /><p class="caption"></p>
+</div>
+
+<p>It also means you’ll spend more time to design/code/build the Interface-to-System protocol than the User- to-Interface protocol.</p>
+
+<p>A lot of people, especially those learning how to make this kind of gear, wants to build their own protocol. (OH MY GOSH ! )</p>
+
+<p>It is very nice to do that. (tick tick tick tick . . .)
+But I want to give you another big rule, based on my own experience with the <em>protodeck</em> controller: There already exist A LOT of protocols you can use, and hack! To hack doesn’t mean here the same thing you hear on the radio about computer hackers who break the code to steal your paypal money!</p>
+
+<p>The method is almost the same, but the purpose is far from it ; I can define it like this : a hacker modifies things to make them fit their needs better. It’s custom design. </p>
+
+<table class="tip sidebarish">
+  <tbody>
+    <tr><td class="sidebar-icon">
+      <img class="sidebar-image" src="images/leanpub_tip.png" alt="tip" /></td>
+    <td>
+      <p>“Necessity is the mother of invention”</p>
+
+    </td>
+  </tr>
+  </tbody>
+</table><p>It would make you another Do-It-Yourself activist, but if you’re reading this, it means it’s too late : you’re already are… so another step in that direction will only make you stronger than ever!</p>
+
+<p>Opening up a device and taking a peek at what’s inside makes you stronger than IMAGINING what’s inside and trying to build a different boxfrom scratch, right?!</p>
+
+<p>Using an existing protocol means:</p>
+
+<ul><li>standard exists and are already published and stabilized</li>
+  <li>programming library probably exists for your interface and system</li>
+  <li>schematic probably exist for your hardware (if your interface project requires that)</li>
+</ul><p>
+  <strong>You’ll be 100% winner!</strong>
+</p>
+
+<p>For the Protodeck controller, I used the MIDI protocol when a lot of people advised me to use OSC. OSC is great. It goes further than MIDI. But when I built the protodeck, I couldn’t get OSC to communicate easily (meaning, reliably) with my system.</p>
+
+<p>I needed to send/receive 2 types of information: </p>
+
+<ul><li>0 &amp; 1 (kind of binary information)</li>
+  <li>from 0 to 127 (kind of analog information)</li>
+</ul><p>An already described and documented MIDI protocol was interesting because it provides exactly that.
+I encourage you just to read that. Basically, the protocol describes the hardware and the protocol under the hood. MIDI note message are coded with 3 parts (called bytes by those g33ks we are):</p>
+
+<ul><li>the channel</li>
+  <li>the pitch (the tune of the note) </li>
+  <li>the velocity</li>
+</ul><p>MIDI control change :</p>
+
+<ul><li>the channel</li>
+  <li>the control change number </li>
+  <li>the value</li>
+</ul><p>On the protodeck controller:</p>
+
+<ul><li>when I push/release a button, the protodeck sends a special MIDI message called “a note” (push = note-on, release = note-off)</li>
+  <li>when I turn a knob, the protodeck sends a special MIDI message called “a control change” (with a value from 0 to 127)</li>
+  <li>when I send a MIDI note on to the protodeck with particular velocity, leds on the protodeck get brighter with this or that color, or are switched off.</li>
+</ul><p>Using this sort of coding which are very natural (I mean, it isn’t as supernatural as it seems), I had only to use MIDI libraries/modules on each side:</p>
+
+<ul><li>on the protodeck,</li>
+  <li>on the system</li>
+</ul><p>Using libraries means: I already have the whole program to send and receive (process) MIDI messages. I only had to write sendMidiNote instead of a complex cryptic code ! While you weren’t looking, we’ve just entered a bit more in the flesh of our passion!
+<strong>:-)</strong></p>
+</div>
+</body>
+</html>

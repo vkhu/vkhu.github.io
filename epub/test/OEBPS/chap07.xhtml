@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>6 Stupid box &amp; smart computer</title>
+<link href="stylesheet.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div>
+<h2 id="leanpub-auto-stupid-box--smart-computer"><span class="section-number">6 </span>Stupid box &amp; smart computer</h2>
+
+<p>
+  <strong>Aim for a stupid box, but a good computer.
+Or how to get benefits of technology building unsmart interface ?</strong>
+</p>
+
+<p>Today, CPUs and memory are cheaper than ever. We ALL have powerful laptops or desktops (or cell phones, for that matter !)</p>
+
+<p>A lot of designers began their project with a pure interface in mind.</p>
+
+<p>And, progressively, they includes other ideas like: </p>
+
+<ul><li>a sequencer</li>
+  <li>many protocols</li>
+  <li>a server inside And much more.</li>
+</ul><p>Firstly, they probably didn’t read the chapter about minimalism in this eBook.</p>
+
+<p>Secondly, they made the big mistake to mix interface &amp; system/machine.</p>
+
+<p>Our interface can interface with everything today. Users need to quickly change, merge, update their configuration and making that on the computer side is much easier.</p>
+
+<p>So, here is my advice: Build &amp; Target stupid interface, because the computer is the brains of the operations !</p>
+
+<p>I’m sure some of you starting to hate me, thinking, “Man, I want an autonomous interface” 99% of you need an interface to use with a computer, precisely!</p>
+
+<div class="image-with-caption center">
+  <img src="images/07.PNG" alt="" /><p class="caption"></p>
+</div>
+
+<p>And what should you put inside the box ?</p>
+
+<p>The minimal firmware to handle 3 things:</p>
+
+<ul><li>your inputs (buttons, potentiometers, encoders, pressure sensors, and any other CONTROLs (in the same way I describe since the beginning)</li>
+  <li>output (LEDS, motors for faders, and any other FEEDBACK)</li>
+  <li>protocols, so there’s no misinterpretation of what the user wants.</li>
+</ul><p>No more, no less. Only the basic functions required to use the hardware.</p>
+
+<p>You need a sequencer ? Put it on the computer.</p>
+
+<p>You need a monome simulator ? Put it on the computer.</p>
+
+<p>When you push a button on the interface.</p>
+
+<p>The interface should NOT send a message like “activate this precise function inside the targeted software tool.” It should say “ button47 » or something simple like that.</p>
+
+<p>But I hear you say you need the OSC protocol ? Put it in the firmware.</p>
+
+<p>You need to handle this nice ribbon controller ? Put that in the firmware too.</p>
+
+<p>All hardware handlers MUST BE in the firmware.
+For those specialists who may read this: don’t unbounce your buttons inputs outside of the firmware! It is just another example among many others!</p>
+
+<p>And I’m going further: if you need to use your interface with other devices (I mean synthesizer, drum machines, anything other than a computer), you should really interface them through your computer!</p>
+
+<p>I can redraw here almost the flowchart as before in the previous chapter with interfaces at the left, The System in the center.</p>
+
+<p>The System is the brain, the computer.</p>
+
+<p>Do this and you rule all of your machines in one aggregating point.</p>
+
+<p>The system :</p>
+
+<ul><li>is controlled by the interface</li>
+  <li>is used as a big router which can address messages from/to anywhere</li>
+  <li>is easily backed up (you’ll have ALL your configuration in the same point)</li>
+</ul><p>I can use a nice, concrete example: max for live &amp; ableton live message routing.</p>
+
+<p>You have interfaces, external musical machines (synth &amp; more), and your system.</p>
+
+<p>If you build a software interface on the system which can:</p>
+
+<ul><li>handle your hardware interfaces</li>
+  <li>handle the other systems.</li>
+</ul><p>You have a very powerful meta-system and you’d take all the benefit of your computer in that case.</p>
+
+<p>I made an interface like that with max for live.
+It handles the protodeck, but it also handles my other interface, including the monome.</p>
+</div>
+</body>
+</html>

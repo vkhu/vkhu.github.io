@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>2 Listen to the system</title>
+<link href="stylesheet.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div>
+<h2 id="leanpub-auto-listen-to-the-system"><span class="section-number">2 </span>Listen to the system</h2>
+
+<p>
+  <strong>Don’t by-pass control &amp; feedbacks. Ever!
+Or how to avoid the big by-passed feedback mistake?
+A very common error to avoid in user interface design is to leave out the direct link between the CONTROLLER and the SYSTEM.</strong>
+</p>
+
+<h3 id="leanpub-auto-what-is-the-problem-">What is the problem ?</h3>
+
+<p>The answer comes from the interface and basically it has to come from the system.</p>
+
+<p>As an example, the user initiates the control step (step 1) by pressing a button on the interface.</p>
+
+<p>The interface then processes that command and follows its instruction to send a control action to the system.</p>
+
+<p>Here’s where the problem comes in though.</p>
+
+<p>Instead of the system issuing the answer (feedback), many interface designers have the interface issue the feedback step (step 3) just because the user pressed the button, even before knowing if the system has safely received the control action, or is even connected to the interface !</p>
+
+<div class="image-with-caption center">
+  <img src="images/02.PNG" alt="The wrong feedback mistake" /><p class="caption">The wrong feedback mistake</p>
+</div>
+
+<h3 id="leanpub-auto-heres-how-its-supposed-to-work">Here’s how it’s supposed to work</h3>
+
+<p><strong>1</strong> The <strong>control</strong> step is the user pressing the button, initiating the request.</p>
+
+<p><strong>2</strong> The <strong>action</strong> step is the interface processing and passing on the control action.</p>
+
+<p><strong>3</strong> The <strong>feedback</strong> step is illuminating the led that indicates that the instruction which the button press initiated, has been received by the system.</p>
+
+<p><strong>Control</strong> (step 1) sends the <strong>action</strong> trigger (step 2), which waits for <strong>feedback</strong> (step 3) from the system to determine whether the indicator should update status.</p>
+
+<p>Interface <strong>trigger</strong> (control) sends to » <strong>system</strong> (action) sends receipt to » <strong>Interface indicator</strong> (feedback).</p>
+
+<p>Many designers make the design decision to press a button and have it illuminate the indicator before the system receives the request and performs some action. But, lighting the indicator should be the indication that the <strong>action</strong> (step 2) request has entered the system, and not just that the button was pressed. They choose to put the cart before the horse: they often design it as the feedback to the button press, and not as a receipt that the system successfully received the request.
+A wrong interface design is one that provides the same feedback, whether it’s communicating with the system or not, and if so, then it is providing false feedback.</p>
+
+<p>I guess this might happen because designers want to test the hardware interface mechanisms so they like to check to make sure the light works more than to know the success (or failure) of the communication and action. That’s one way of carrying through with the manufacturing process, but not for quality control. They then should remember to alter the code to make sure the confirmation is coming from the system, and not the interface.
+They just don’t though. I guess they have a lot of confidence in their code, and don’t mind misleading the user.</p>
+
+<p>It was just a bit complex in the case illustrated above, but it made for a functional demonstration of a poor interface design, rather than a useful box.</p>
+
+<p>The feedback concept is important.
+<strong>Feedback</strong> is a word that can be replaced by
+answer after an action. Doing so guarantees that communication has been established, and that both sides are listening and responding. Remember those folks who only speak without listening.</p>
+
+<p>In the end, they are just listening to themselves.
+It isn’t a dialog; you cannot interact. In order to create a dialog, they have to listen.</p>
+
+<p>Here, you have to listen to the speaker, I mean, the system. The interface is only the translator, not the speaker ! Don’t shoot the messenger!</p>
+
+<p>One day, a guy contacted me in chat and we talked about his interface design. Because the feedback processing was a bit tricky (protocol conversion was awful in this case), he by-passed this part and wanted to make an led blinking immediately after he pushed a button.</p>
+
+<p>I told him: “please don’t do that!” ; his answer was: “no problem, I’m sure my action will always be ok, and I want to mute this track like that and have the correct led light up.”
+When he tested that and understood that his liveset (in Ableton Live) was totally separate from his led matrix hardware, he just spent a bit more time on the feedback process.
+Because without this part, the whole status feedback part of the interface was … useless, and you don’t want to build something which is unusable, right ?</p>
+
+<p>Well, at least that makes two of us: you and me! :-)</p>
+</div>
+</body>
+</html>

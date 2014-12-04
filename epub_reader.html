@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Vài bước nữa thôi bạn sẽ chính thức gia nhập đại gia đình bookism!">
+        <script src="../js/epub.min.js"></script>
         <title>Đăng kí thành viên</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'/>
         <link href="style.css" rel="stylesheet" type='text/css'/>
@@ -11,142 +12,75 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'/>
         <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
         <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"/>
-        <style>
-            body{
-                background-color: #65afce;
-                background-image: url(images/registration/background.jpg);
-                overflow-x:hidden;
-                font-family: 'Gotham', sans-serif;
+        <!-- EPUBJS Renderer -->
+        <script src="/js/epub.min.js"></script>
+
+        <style type="text/css">
+
+            body {
+                overflow: hidden;
+            }
+
+            #main {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            #area {
+                width: 80%;
+                height: 80%;
+                margin: 5% auto;
+                max-width: 1250px;
+            }
+
+            #area iframe {
+                border: none;
+            }
+
+            #prev {
+                left: 40px;
+            }
+
+            #next {  
+                right: 40px;
+            }
+
+            .arrow {
+                position: absolute;
+                top: 50%;
+                margin-top: -32px;
+                font-size: 64px;
+                color: #E2E2E2;
+                font-family: arial, sans-serif;
+                font-weight: bold;
+                cursor: pointer;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            .arrow:hover {
+                color: #777;
+            }
+
+            .arrow:active {
+                color: #000;
             }
         </style>
-    </head>
 
-    <body>
         <script>
             "use strict";
 
-            var Book = ePub("epub/test/moby.epub", {
-                width: 400,
-                height: 600,
-                spreads : false
-            });
-
+            var Book = ePub("/epub/test/");
 
         </script>
-        <!-- nav items -->
-        <nav class="nav-primary" id="nav-primary">
-
-            <!--ava/log in-->
-            <a href="registration_form.html">
-                <div class="menu_ava">
-                    <span class="mid-align"></span><img class="mid-align" src="images/question_mark.jpg">
-                </div>
-            </a>
-            <div class="log_in_txt">
-                <a href="registration_form.html" style="color:#fff;text-decoration:none;">đăng<br>nhập</a>
-            </div>
-
-            <!--main menu-->
-            <div class="row menu_main" style="margin:auto;">
-
-                <!--home-->
-                <div class="col-xs-6" style="margin-top:1em;">
-                    <a href="index.html" style="color:#fff;text-decoration:none;">
-                        <img src="images/home_menu_icon.jpg" style="width:1.8em;">
-                        <p style="font-size:.8em;margin-top:1em;">trang<br>chủ</p>
-                    </a>
-                </div>
-
-                <!--library-->
-                <div class="col-xs-6" style="margin-top:1em;">
-                    <a href="thuvien.html" style="color:#fff;text-decoration:none;">
-                        <img src="images/lib_menu_icon.jpg" style="width:1.8em;">
-                        <p style="font-size:.8em;margin-top:1em;">thư<br>viện</p>
-                    </a>
-                </div>
-
-                <!--article-->
-                <div class="col-xs-6" style="margin-top:1em;">
-                    <a href="articles.html" style="color:#fff;text-decoration:none;">
-                        <img src="images/article_menu_icon.jpg" style="width:1.8em;">
-                        <p style="font-size:.8em;margin-top:1em;">bài<br>viết</p>
-                    </a>
-                </div>
-
-                <!--about-->
-                <div class="col-xs-6" style="margin-top:1em;">
-                    <a href="about.html" style="color:#fff;text-decoration:none;">
-                        <img src="images/about_menu_icon.jpg" style="width:1.8em;">
-                        <p style="font-size:.8em;margin-top:1em;">về<br>bookism</p>
-                    </a>
-                </div>
-
-                <!--FAQ-->
-                <div class="col-xs-6" style="margin-top:1em;">
-                    <a href="faq.html" style="color:#fff;text-decoration:none;">
-                        <img src="images/faq_menu_icon.jpg" style="width:1.8em;">
-                        <p style="font-size:.8em;margin-top:1em;">faq</p>
-                    </a>
-                </div>
-
-                <!--contact-->
-                <div class="col-xs-6" style="margin-top:1em;">
-                    <a href="contact.html" style="color:#fff;text-decoration:none;">
-                        <img src="images/contact_menu_icon.jpg" style="width:1.8em;">
-                        <p style="font-size:.8em;margin-top:1em;">liên<br>hệ</p>
-                    </a>
-                </div>
-
-            </div>
-
-            <!--for logged in user-->
-            <div class="row menu_main" style="margin:auto;">
-
-                <!--setting-->
-                <div class="col-xs-6" style="margin-top:1em;">
-                    <a href="setting.html" style="color:#fff;text-decoration:none;">
-                        <img src="images/setting_menu_icon.jpg" style="width:1.8em;">
-                        <p style="font-size:.8em;margin-top:1em;">tùy<br>chỉnh</p>
-                    </a>
-                </div>
-
-                <!--logout-->
-                <div class="col-xs-6" style="margin-top:1em;">
-                    <a href="log_out.html" style="color:#fff;text-decoration:none;">
-                        <img src="images/logout_menu_icon.jpg" style="width:1.8em;">
-                        <p style="font-size:.8em;margin-top:1em;">đăng<br>xuất</p>
-                    </a>
-                </div>
-
-            </div>
-
-        </nav>
-
-        <!-- header bar -->
-        <header class="mobile-helper-bar" style="background:rgba(101,175,206,.25);">
-            <!-- menu -->
-            <button class="hamburger" id="off-canvas-toggle">
-                <span class="mid-align"></span><img src="images/menu.png" style="vertical-align:center;">
-            </button>
-            <form class="search">
-                <input class="searchTerm" placeholder="Tìm kiếm..."/>
-            </form>
-        </header>
-
-        <!-- main content -->
-        <div class="page-content" id="page-content">
-
-            <!-- placeholder -->
-            <div class="header_ph"></div>
-
-            <div id="main">
-                <div id="prev" onclick="Book.prevPage();" class="arrow">&#40;</div>
-                <div id="wrapper">
-                    <div id="area" style="height:30em;width:100%;"></div>
-                </div>
-                <div id="next" onclick="Book.nextPage();" class="arrow">&#41;</div>
-            </div>
-
+    </head>
+    <body>
+        <div id="main">
+            <div id="prev" onclick="Book.prevPage();" class="arrow">‹</div>
+            <div id="area"></div>
+            <div id="next" onclick="Book.nextPage();" class="arrow">›</div>
         </div>
 
         <script>            
@@ -154,28 +88,7 @@
             Book.renderTo("area");
 
         </script>
-        <script src="js/epub.min.js"></script>
         <script src="http://code.jquery.com/jquery.js">
         </script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <script>
-            // Show the off-canvas navigation
-            $('#off-canvas-toggle').click(function() {
-                $('#nav-primary').toggleClass('off-canvas-show');
-            });
-
-            $('#nav-primary').removeClass('off-canvas-show');
-
-            // Hide the off-canvas nav when clicking a link
-            $('#nav-primary').find('a').on('click', function(e) {
-                $('#nav-primary').removeClass('off-canvas-show');
-            });
-
-            // Hide the off-canvas nav when clicking outside
-            $('#page-content').on('click', function(e) {
-                $('#nav-primary').removeClass('off-canvas-show');
-            });
-        </script>
-
     </body>
 </html>

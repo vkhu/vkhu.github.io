@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<package version="2.0" xmlns="http://www.idpf.org/2007/opf"
+         unique-identifier="BookId">
+ <metadata xmlns:dc="http://purl.org/dc/elements/1.1/"
+           xmlns:opf="http://www.idpf.org/2007/opf">
+   <dc:title>The 6 rules to design the best user interfaces</dc:title>
+   <dc:creator opf:role="aut">Julien Bayle</dc:creator>
+   <dc:language>en</dc:language>
+   <dc:publisher>leanpub.com</dc:publisher>
+   <dc:identifier id="BookId">urn:uuid:leanpub.com-the-6rules-to-design-the-best-user-interfaces-20131224-151601</dc:identifier>
+   <dc:date>2013-12-24</dc:date>
+   <meta name="cover" content="cover_image" />
+ </metadata>
+ <manifest>
+  <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+  <item id="style" href="stylesheet.css" media-type="text/css" />
+  <item id="titlepage" href="title_page.xhtml" media-type="application/xhtml+xml" />
+  <item id="versopage" href="verso_page.xhtml" media-type="application/xhtml+xml" />
+  <item id="toc" href="toc.xhtml" media-type="application/xhtml+xml" />
+  <item id="cover_image" href="images/title_page.png" media-type="image/png" />
+  <item id="chapter00" href="chap00.xhtml" media-type="application/xhtml+xml" />
+  <item id="chapter01" href="chap01.xhtml" media-type="application/xhtml+xml" />
+  <item id="chapter02" href="chap02.xhtml" media-type="application/xhtml+xml" />
+  <item id="chapter03" href="chap03.xhtml" media-type="application/xhtml+xml" />
+  <item id="chapter04" href="chap04.xhtml" media-type="application/xhtml+xml" />
+  <item id="chapter05" href="chap05.xhtml" media-type="application/xhtml+xml" />
+  <item id="chapter06" href="chap06.xhtml" media-type="application/xhtml+xml" />
+  <item id="chapter07" href="chap07.xhtml" media-type="application/xhtml+xml" />
+  <item id="chapter08" href="chap08.xhtml" media-type="application/xhtml+xml" />
+  <item id="chapter09" href="chap09.xhtml" media-type="application/xhtml+xml" />
+  <item id="img000" href="images/protofuseLive.png" media-type="image/png" />
+  <item id="img001" href="images/protodeck_lecture.jpg" media-type="image/jpeg" />
+  <item id="img002" href="images/01.PNG" media-type="image/png" />
+  <item id="img003" href="images/02.PNG" media-type="image/png" />
+  <item id="img004" href="images/03.PNG" media-type="image/png" />
+  <item id="img005" href="images/04.PNG" media-type="image/png" />
+  <item id="img006" href="images/05.PNG" media-type="image/png" />
+  <item id="img007" href="images/06.PNG" media-type="image/png" />
+  <item id="img008" href="images/07.PNG" media-type="image/png" />
+  <item id="lpimg000" href="images/leanpub_information.png" media-type="image/png" />
+  <item id="lpimg001" href="images/leanpub_tip.png" media-type="image/png" />
+  <item id="lpimg002" href="images/leanpub_question.png" media-type="image/png" />
+  <item id="lpimg003" href="images/leanpub_discussion.png" media-type="image/png" />
+  <item id="lpimg004" href="images/leanpub_error.png" media-type="image/png" />
+  <item id="lpimg005" href="images/leanpub_warning.png" media-type="image/png" />
+  <item id="lpimg006" href="images/leanpub_leanpub_logo.png" media-type="image/png" />
+  <item id="lpimg007" href="images/leanpub_exercise.png" media-type="image/png" />
+  <item id="publisher-logo" href="images/leanpub-logo.png" media-type="image/png" />
+  <item id="cc-logo" href="images/cc-by-nc-sa.png" media-type="image/png" />
+ </manifest>
+ <spine toc="ncx">
+  <itemref idref="titlepage" />
+  <itemref idref="versopage" />
+  <itemref idref="toc" />
+  <itemref idref="chapter00" />
+  <itemref idref="chapter01" />
+  <itemref idref="chapter02" />
+  <itemref idref="chapter03" />
+  <itemref idref="chapter04" />
+  <itemref idref="chapter05" />
+  <itemref idref="chapter06" />
+  <itemref idref="chapter07" />
+  <itemref idref="chapter08" />
+  <itemref idref="chapter09" />
+ </spine>
+
+<guide>
+  <reference href="title_page.xhtml" type="cover" title="Cover" />
+  <reference href="toc.xhtml" type="toc" title="Table of Contents" />
+  <reference href="chap00.xhtml" type="text" title="Start" />
+</guide>
+</package>
