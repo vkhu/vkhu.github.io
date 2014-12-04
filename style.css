@@ -100,7 +100,7 @@ table {
 }
 .mobile-helper-bar {
     position: fixed !important;
-    height:5.6em;
+    padding: 1em;
     width:100%;
     text-align:center;
     z-index: 999999;
@@ -150,8 +150,6 @@ table {
 }
 .hamburger {
   color: #fff;
-  margin-top:1em;
-  margin-left:1em;
     font-size: 16px;
   width:3em;
   height:3em;
@@ -1836,8 +1834,6 @@ table {
         width: 20%;
         float:right;
         position:relative;
-        margin-right:2em;
-        margin-top:1em;
     }
     #contact {
         width: 50%;
@@ -2025,8 +2021,6 @@ table {
         width: 20%;
         float:right;
         position:relative;
-        margin-right:2em;
-        margin-top:1em;
     }
     #contact {
         width: 60%;
@@ -2213,8 +2207,6 @@ table {
         width: 40%;
         float:right;
         position:relative;
-        margin-right:2em;
-        margin-top:1em;
     }
     #contact {
         width: 70%;
@@ -2401,8 +2393,6 @@ table {
         width: 50%;
         float:right;
         position:relative;
-        margin-right:2em;
-        margin-top:1em;
     }
     #contact {
         width: 100%;
