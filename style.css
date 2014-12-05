@@ -1551,6 +1551,11 @@ table {
     max-width: 21px;
     height: auto;
 }
+.right_block{
+    margin-bottom:2em;
+    text-align:center;
+    background:#fff;
+}
 .social2 {
     height:2em;
     max-width:7em;
