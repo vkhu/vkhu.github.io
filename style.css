@@ -400,9 +400,6 @@ table {
 }
 .CTA_button_home:hover {
     background: #f4f4f4;
-    max-width: 25em;
-    border-radius:.4em;
-    margin:auto;
     box-shadow: .7em .7em rgba(0,0,0,.5);
 }
 .CTA_button_border{
@@ -412,7 +409,6 @@ table {
     max-width: 25em;
     border-radius:.4em;
     margin:auto;
-    box-shadow: .4em .4em rgba(0,0,0,.6);
     -webkit-transition: ease-out .3s;
     -moz-transition: ease-out .3s;
     -o-transition: ease-out .3s;
@@ -421,10 +417,6 @@ table {
 .CTA_button_border:hover {
     background: #fff;
     border:3px solid #1a5970;
-    max-width: 25em;
-    border-radius:.4em;
-    margin:auto;
-    box-shadow: 0 0 rgba(0,0,0,.5);
 }
 .video-container {
 	position:relative;
@@ -1057,10 +1049,6 @@ table {
     margin:0 0 2em 0;
     color:#1b5970;
 }
-#seemore, #seemore2{
-    cursor: pointer;
-    cursor: hand;
-}
 .norm_ol{
     list-style-type: decimal;
 }
@@ -1298,6 +1286,7 @@ table {
 	height:48em;
     border:10px solid #65afce;
     background:#2e748e;
+border-radius:1.2em;
 }
 .general_row{
 	height:50%;
@@ -1500,7 +1489,7 @@ table {
     margin:1em;
     font-style: italic;
 }
-.article_content_main{
+.art_cont_main{
 	text-align:justify;
 	margin:auto;
     font-size: 1.2em;
@@ -2606,6 +2595,14 @@ table {
 .article-prev {
     height:24em;
     border:10px solid #65afce;
+    border-radius:1.2em;
     background:#2e748e;
     overflow:hidden;
+}
+.lib_sect_head_txt{
+    color:#000;
+    text-transform:uppercase;
+    font-size:1.5em;
+    margin-top:1em;
+    text-align:center;
 }
