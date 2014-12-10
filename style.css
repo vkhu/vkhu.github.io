@@ -305,7 +305,7 @@ table {
 }
 .progress_profile{
     height:.4em;
-    width:8em;
+    width:5em;
     margin:auto;
     border-radius:.2em;
     margin-bottom:.5em;
@@ -1967,6 +1967,12 @@ border-radius:1.2em;
         text-align:center;
         color:#fff;
     }
+    .book_profile{
+        width:10em;
+        height:15em;
+        border-radius:10px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    }
 }
 @media (min-width: 750px) and (max-width: 1024px) {
     .ribbon{
@@ -2159,6 +2165,12 @@ border-radius:1.2em;
         text-align:center;
         color:#fff;
     }
+    .book_profile{
+        width:10em;
+        height:15em;
+        border-radius:10px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    }
 }
 @media (min-width: 500px) and (max-width: 750px) {
     .ribbon{
@@ -2350,6 +2362,12 @@ border-radius:1.2em;
         position:absolute;
         text-align:center;
         color:#fff;
+    }
+    .book_profile{
+        width:8em;
+        height:12em;
+        border-radius:10px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,.5);
     }
 }
 @media (max-width: 500px){
@@ -2544,6 +2562,12 @@ border-radius:1.2em;
         text-align:center;
         color:#fff;
     }
+    .book_profile{
+        width:6em;
+        height:9em;
+        border-radius:10px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    }
 }
 
 .home_lib_intro_head {
@@ -2605,4 +2629,12 @@ border-radius:1.2em;
     font-size:1.5em;
     margin-top:1em;
     text-align:center;
+}
+.anno_chart{
+    width:1em;
+    height:1em;
+    border-radius:3px;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:3px;
 }

@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'/>
         <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
         <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"/>
+        <script src="js/Chart.min.js"></script>
         <style>
             body{
                 background-color:#eaeaea;
@@ -150,47 +151,133 @@
                         <!--books progression-->
                         <p style="color:#000;text-transform:uppercase;font-size:1.5em;text-align:center;margin:1em 0 1em 0;">Thư viện cá nhân</p>
 
-                        <!--sort by-->
-                        <dl class="dropdown" style="margin-top:1em;">
-                            <dt><a><span>Đang đọc &#40;0&#37; &rarr; 100&#37;&#41;</span></a></dt>
-                            <dd>
-                                <ul>
-                                    <li><a class="default">Đang đọc &#40;0&#37; &rarr; 100&#37;&#41;</a></li>
-                                    <li><a>Đang đọc &#40;100&#37; &rarr; 0&#37;&#41;</a></li>
-                                    <li><a>Định đọc &#40;A &rarr; Z&#41;</a></li>
-                                    <li><a>Định đọc &#40;Z &rarr; A&#41;</a></li>
-                                    <li><a>Tất cả &#40;mới &rarr; cũ&#41;</a></li>
-                                    <li><a>Tất cả &#40;cũ &rarr; mới&#41;</a></li>
-                                </ul>
-                            </dd>
-                        </dl>
+                        <!--recent-->
+                        <div style="padding:2em 0 2em 0;border:1px solid rgba(0,0,0,0.2);max-width:80em;margin:auto;">
+                            <div class="row">
+                                
+                                <!--title + chart-->
+                                <div class="col-sm-6" style="text-align:center;">
+                                    <p style="color:#000;text-transform:uppercase;font-size:1.2em;margin:1em 0 1em 0;">đọc gần đây</p>
 
-                        <!--first row-->
-                        <div class="row" id="book-progress">
+                                    <!--chart-->
+                                    <div style="padding:0 3px 0 3px;">
+                                        
+                                        <!--visual-->
+                                        <div style="max-width:30em;margin:auto;">
+                                            <canvas id="chart-area"/>
+                                        </div>
 
-                            <!--book 1-->
-                            <div class="col-md-3 col-sm-6" style="margin-top:1em;" id="book_new">
-                                <div style="max-width:10em;text-align:center;margin:auto;">
+                                        <!--annotation-->
+                                        <!--scifi-->
+                                        <div style="margin:1em 1em 0 0;display:inline-block;">
+                                            <div class="anno_chart" style="background:#1b5970;"></div><span style="vertical-align:middle;">Khoa học viễn tưởng</span>
+                                        </div>
 
-                                    <!--title-->
-                                    <p class="book_showcase_title three_dot">
-                                        <a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a>
-                                    </p>
+                                        <!--fanta-->
+                                        <div style="margin:1em 0 0 0;display:inline-block;">
+                                            <div class="anno_chart" style="background:#3588a7;"></div><span style="vertical-align:middle;">Kì ảo</span>
+                                        </div>
 
-                                    <!--cover-->
-                                    <a href="preview.html" style="color:#000;text-decoration:none;">
-                                        <img src="images/book3.jpg" class="book_showcase hover_expand">
-                                    </a>
+                                        <!--detec-->
+                                        <div style="margin:1em 0 2em 1em;display:inline-block;">
+                                            <div class="anno_chart" style="background:#6bbedd;"></div><span style="vertical-align:middle;">Trình thám</span>
+                                        </div>
 
-                                    <!--progress bar-->
-                                    <div class="progress_profile">
-                                        <div style="background:#1b5970;height:100%;width:20%;"></div>
                                     </div>
-
-                                    <p>20&#37;</p>
-
                                 </div>
+
+                                <!--preview books-->
+                                <div class="col-sm-6">
+                                    <div class="row">
+
+                                        <!--book 1-->
+                                        <div class="col-xs-6">
+                                            <div style="text-align:center;margin:auto">
+
+                                                <!--cover-->
+                                                <a href="preview.html" style="color:#000;text-decoration:none;">
+                                                    <img src="images/book3.jpg" class="book_profile hover_expand">
+                                                </a>
+
+                                                <!--progress bar-->
+                                                <div class="progress_profile">
+                                                    <div style="background:#1b5970;height:100%;width:20%;"></div>
+                                                </div>
+
+                                                <p>20&#37;</p>
+
+                                            </div>
+
+                                        </div>
+
+                                        <!--book 2-->
+                                        <div class="col-xs-6">
+                                            <div style="text-align:center;margin:auto">
+
+                                                <!--cover-->
+                                                <a href="preview.html" style="color:#000;text-decoration:none;">
+                                                    <img src="images/book2.jpg" class="book_profile hover_expand">
+                                                </a>
+
+                                                <!--progress bar-->
+                                                <div class="progress_profile">
+                                                    <div style="background:#1b5970;height:100%;width:20%;"></div>
+                                                </div>
+
+                                                <p>20&#37;</p>
+
+                                            </div>
+
+                                        </div>
+                                    
+                                        <!--book 3-->
+                                        <div class="col-xs-6">
+                                            <div style="text-align:center;margin:auto">
+
+                                                <!--cover-->
+                                                <a href="preview.html" style="color:#000;text-decoration:none;">
+                                                    <img src="images/book8.jpg" class="book_profile hover_expand">
+                                                </a>
+
+                                                <!--progress bar-->
+                                                <div class="progress_profile">
+                                                    <div style="background:#1b5970;height:100%;width:20%;"></div>
+                                                </div>
+
+                                                <p>20&#37;</p>
+
+                                            </div>
+
+                                        </div>
+
+                                        <!--book 4-->
+                                        <div class="col-xs-6">
+                                            <div style="text-align:center;margin:auto">
+
+                                                <!--cover-->
+                                                <a href="preview.html" style="color:#000;text-decoration:none;">
+                                                    <img src="images/book4.jpg" class="book_profile hover_expand">
+                                                </a>
+
+                                                <!--progress bar-->
+                                                <div class="progress_profile">
+                                                    <div style="background:#1b5970;height:100%;width:20%;"></div>
+                                                </div>
+
+                                                <p>20&#37;</p>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                
                             </div>
+                            
+                        </div>
+                        
+                        <div class="row" id="book-progress">
 
                             <!--book 2-->
                             <div class="col-md-3 col-sm-6" style="margin-top:1em;">
@@ -561,7 +648,38 @@
                 }
             });
         </script>
-
+        
+        <!--doughnut chart-->
+        <script>
+            var doughnutData = [
+                {
+                    value: 300,
+                    color:"#1b5970",
+                    highlight: "#217290",
+                    label: "Khoa học viễn tưởng"
+                },
+                {
+                    value: 50,
+                    color: "#3588a7",
+                    highlight: "#3fa5c9",
+                    label: "Kì ảo"
+                },
+                {
+                    value: 100,
+                    color: "#6bbedd",
+                    highlight: "#76d3f5",
+                    label: "Trinh thám"
+                },
+            ];
+            window.onload = function(){
+                var ctx = document.getElementById("chart-area").getContext("2d");
+                window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {
+                animationSteps: 80,
+                responsive : true,
+                maintainAspectRatio: true
+                });
+            };
+        </script>
     </body>
 </html>
 
