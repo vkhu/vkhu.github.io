@@ -2638,3 +2638,22 @@ border-radius:1.2em;
     vertical-align:middle;
     margin-right:3px;
 }
+.allbookuser{
+    border-top:1px solid rgba(0,0,0,0.2);
+    border-bottom:1px solid rgba(0,0,0,0);
+}
+.mylib_cat{
+    padding-top:2em;
+    border:1px solid rgba(0,0,0,0.2);
+    max-width:80em;
+    margin:auto;
+    margin-bottom:3em;
+}
+.white-back-top-noheight{
+    position: absolute;
+    background: #fff;
+    width:100%;
+    top:-3em;
+    right:0;
+    z-index: 1;
+}
