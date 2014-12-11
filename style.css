@@ -2649,24 +2649,21 @@ border-radius:1.2em;
     margin:auto;
     margin-bottom:3em;
 }
-.white-back-top-noheight{
-    position: absolute;
+.white_tab{
     background: #fff;
     width:100%;
-    top:-3em;
-    right:0;
-    z-index: 1;
+    position:relative;
 }
 .active_tab_user{
-    padding:1em;
+    padding:0 1em 1.5em 1em;
     -webkit-box-shadow: inset 0 -5px #65afce;
     -moz-box-shadow: inset 0 -5px #65afce;
     box-shadow: inset 0 -5px #65afce;
     border-bottom:1px solid #65afce;
-    border-right:1px solid rgba(0,0,0,.2);
+    border-right:1px solid #b5b3b3;
 }
 .nonactive_tab_user{
-    padding:1em;
+    padding:0 1em 1.5em 1em;
     border-bottom:1px solid rgba(0,0,0,.2);
 }
 .nonactive_tab_user:hover{
