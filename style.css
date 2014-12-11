@@ -2677,3 +2677,19 @@ border-radius:1.2em;
     font-size:1.5em;
     text-align:center;
 }
+.mylib_cat_head{
+    padding:1em;
+    border:3px solid #2e748e;
+    background:#2e748e;
+    text-align:center;
+    max-width:20em;
+    margin:auto;
+    border-radius:1em;
+    margin-bottom:2em;
+    margin-top:2em;
+}
+.mylib_cat_head span{
+    color:#fff;
+    text-transform:uppercase;
+    font-size:1.5em;
+}
