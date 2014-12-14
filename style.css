@@ -2655,7 +2655,7 @@ border-radius:1.2em;
     position:relative;
 }
 .active_tab_user{
-    padding:0 1em 1.5em 1em;
+    padding:0 .5em 1.5em .5em;
     -webkit-box-shadow: inset 0 -5px #65afce;
     -moz-box-shadow: inset 0 -5px #65afce;
     box-shadow: inset 0 -5px #65afce;
@@ -2663,7 +2663,7 @@ border-radius:1.2em;
     border-right:1px solid #b5b3b3;
 }
 .nonactive_tab_user{
-    padding:0 1em 1.5em 1em;
+    padding:0 .5em 1.5em .5em;
     border-bottom:1px solid rgba(0,0,0,.2);
 }
 .nonactive_tab_user:hover{
@@ -2676,20 +2676,4 @@ border-radius:1.2em;
     text-transform:uppercase;
     font-size:1.5em;
     text-align:center;
-}
-.mylib_cat_head{
-    padding:1em;
-    border:3px solid #2e748e;
-    background:#2e748e;
-    text-align:center;
-    max-width:20em;
-    margin:auto;
-    border-radius:1em;
-    margin-bottom:2em;
-    margin-top:2em;
-}
-.mylib_cat_head span{
-    color:#fff;
-    text-transform:uppercase;
-    font-size:1.5em;
 }
