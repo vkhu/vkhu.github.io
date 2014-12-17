@@ -159,7 +159,7 @@
                     <div class="row" style="width:100%;margin:auto;position:relative;z-index:2;">
 
                         <!--left tab-->
-                        <div class="col-xs-6 active_tab_user tab_font">
+                        <div class="col-xs-6 active_tab_user tab_font" style="border-right:1px solid #b5b3b3;">
                             <i class="fa fa-bank"></i> <span>Thư viện cá nhân</span>
                         </div>
 
@@ -695,11 +695,13 @@
                     </div>
 
                     <!--recommendation-->
-                    <div>
-                        <p class="lib_sect_head_txt">có thể bạn sẽ thích</p>
+                    <p class="lib_sect_head_txt">có thể bạn sẽ thích</p>
 
+                    <!--rec main-->
+                    <div id="book-rec">
+                        
                         <!--book 1-->
-                        <div class="row" style="margin-bottom:2em;">
+                        <div class="row" id="rec_new" style="margin-bottom:2em;">
 
                             <!--cover-->
                             <div class="col-sm-4" style="margin-top:1em;">
@@ -743,10 +745,19 @@
                             </div>
 
                         </div>
-                    
+                        
+                    </div>
+
+                    <!--see more-->
+                    <div class="dot-holder cursor_hover" id="more_rec">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <p>xem thêm</p>
                     </div>
 
                 </div>
+
             </div>
 
             <!--footer-->
@@ -877,13 +888,10 @@
             });
         </script>
 
-        <!--clone book progress-->
+        <!--clone book recommendation-->
         <script>
-            $("#seemore").click(function(){
-                var e = $("#book_new");
-                for (var i = 0; i < 4; i++) {
-                    e.clone().appendTo("#book-progress");
-                }
+            $("#more_rec").click(function(){
+                $("#rec_new").clone().appendTo("#book-rec");
             });
         </script>
         

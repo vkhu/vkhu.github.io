@@ -2660,7 +2660,6 @@ border-radius:1.2em;
     -moz-box-shadow: inset 0 -5px #65afce;
     box-shadow: inset 0 -5px #65afce;
     border-bottom:1px solid #65afce;
-    border-right:1px solid #b5b3b3;
 }
 .nonactive_tab_user{
     padding:0 .5em 1.5em .5em;
@@ -2676,4 +2675,13 @@ border-radius:1.2em;
     text-transform:uppercase;
     font-size:1.4em;
     text-align:center;
+}
+.recent-act-child{
+    padding:1em;
+    border-top:1px solid rgba(0,0,0,.15);
+    border-right:1px solid rgba(0,0,0,.15);
+    border-left:3px solid #1a5970;
+    border-bottom:1px solid rgba(0,0,0,.15);
+    margin:auto;
+    margin: .5em 0 .5em 0;
 }
