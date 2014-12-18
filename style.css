@@ -2369,6 +2369,9 @@ border-radius:1.2em;
         border-radius:10px;
         box-shadow: 2px 2px 5px rgba(0,0,0,.5);
     }
+    .hide-cell{
+        display:none;
+    }
 }
 @media (max-width: 500px){
     .ribbon{
@@ -2567,6 +2570,9 @@ border-radius:1.2em;
         height:9em;
         border-radius:10px;
         box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    }
+    .hide-cell{
+        display:none;
     }
 }
 

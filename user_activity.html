@@ -163,13 +163,13 @@
                         <!--left tab-->
                         <a href="user_profile.html">
                             <div class="col-xs-6 nonactive_tab_user tab_font" style="border-right:1px solid #b5b3b3;">
-                                <i class="fa fa-bank"></i> <span>Thư viện cá nhân</span>
+                                <i class="fa fa-bank"></i> <span class="hide-cell">Thư viện cá nhân</span>
                             </div>
                         </a>
 
                         <!--right tab-->
                         <div class="col-xs-6 active_tab_user tab_font">
-                            <i class="fa fa-clock-o"></i> <span>hoạt động gần đây</span>
+                            <i class="fa fa-clock-o"></i> <span class="hide-cell">hoạt động gần đây</span>
                         </div>
 
                     </div>
@@ -181,25 +181,19 @@
                     <div class="row" style="text-align:center;max-width:60em;margin:auto;">
                         
                         <div class="col-sm-4">
-                            <div style="max-width:40em;margin:auto">
-                                <canvas id="review"/>
-                            </div>
+                            <img src="images/user/activity_review.jpg">
                             <p style="font-size:3em;text-align:center;margin:0;">104</p>
                             <p style="font-size:1.2em;margin:0;">Bài đánh giá</p>
                         </div>
                         
                         <div class="col-sm-4">
-                            <div style="max-width:40em;margin:auto">
-                                <canvas id="buck"/>
-                            </div>
+                            <img src="images/user/activity_bookbux.jpg">
                             <p style="font-size:3em;text-align:center;margin:0;">1,200</p>
                             <p style="font-size:1.2em;margin:0;">Bookbux</p>
                         </div>
                         
                         <div class="col-sm-4">
-                            <div style="max-width:40em;margin:auto">
-                                <canvas id="rec"/>
-                            </div>
+                            <img src="images/user/activity_recommend.jpg">
                             <p style="font-size:3em;text-align:center;margin:0;">42</p>
                             <p style="font-size:1.2em;margin:0;">Bài gợi ý</p>
                         </div>
@@ -337,77 +331,6 @@
             });
         </script>
 
-        <!--doughnut chart-->
-        <script>
-            var DataRev = {
-                labels : ["T2","T3","T4","T5","T6","T7","CN"],
-                datasets : [
-                    {
-                        label: "Bài review",
-                        fillColor : "rgba(60, 147, 179, 0.2)",
-                        strokeColor : "#3c93b3",
-                        pointColor : "#3c93b3",
-                        pointStrokeColor : "#fff",
-                        pointHighlightFill : "#fff",
-                        pointHighlightStroke : "#3c93b3",
-                        data : [65, 59, 80, 81, 56, 55, 40]
-                    },
-                ]
-            };
-            DataBuck = {
-                labels : ["T2","T3","T4","T5","T6","T7","CN"],
-                datasets : [
-                    {
-                        label: "Bài review",
-                        fillColor : "rgba(60, 147, 179, 0.2)",
-                        strokeColor : "#3c93b3",
-                        pointColor : "#3c93b3",
-                        pointStrokeColor : "#fff",
-                        pointHighlightFill : "#fff",
-                        pointHighlightStroke : "#3c93b3",
-                        data : [65, 59, 80, 81, 56, 55, 40]
-                    },
-                ]
-            };
-            DataRec = {
-                labels : ["T2","T3","T4","T5","T6","T7","CN"],
-                datasets : [
-                    {
-                        label: "Bài review",
-                        fillColor : "rgba(60, 147, 179, 0.2)",
-                        strokeColor : "#3c93b3",
-                        pointColor : "#3c93b3",
-                        pointStrokeColor : "#fff",
-                        pointHighlightFill : "#fff",
-                        pointHighlightStroke : "#3c93b3",
-                        data : [65, 59, 80, 81, 56, 55, 40]
-                    },
-                ]
-            };
-                
-            window.onload = function(){
-                var ctx = document.getElementById("review").getContext("2d");
-                window.myDoughnut = new Chart(ctx).Line(DataRev, {
-                animationSteps: 80,
-                responsive : true,
-                maintainAspectRatio: true
-                });
-
-                var ctx = document.getElementById("buck").getContext("2d");
-                window.myDoughnut = new Chart(ctx).Line(DataBuck, {
-                    animationSteps: 80,
-                    responsive : true,
-                    maintainAspectRatio: true
-                });
-
-                var ctx = document.getElementById("rec").getContext("2d");
-                window.myDoughnut = new Chart(ctx).Line(DataRec, {
-                    animationSteps: 80,
-                    responsive : true,
-                    maintainAspectRatio: true
-                });
-            };
-        </script>
     </body>
 </html>
 
