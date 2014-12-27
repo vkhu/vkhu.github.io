@@ -2682,12 +2682,45 @@ border-radius:1.2em;
     font-size:1.4em;
     text-align:center;
 }
-.recent-act-child{
+.recent-act{
+    border:1px solid #000;
     padding:1em;
-    border-top:1px solid rgba(0,0,0,.15);
-    border-right:1px solid rgba(0,0,0,.15);
-    border-left:3px solid #1a5970;
-    border-bottom:1px solid rgba(0,0,0,.15);
+}
+.recent-act h3{
+    margin:0;
+    color: #2e748e;
+}
+.setting_circle{
+    height:4em;
+    width:4em;
     margin:auto;
-    margin: .5em 0 .5em 0;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    -webkit-transition: ease-out .3s;
+    -moz-transition: ease-out .3s;
+    -o-transition: ease-out .3s;
+    transition: ease-out .3s;
+}
+.setting_circle:hover{
+    -moz-box-shadow:    inset 0 0 0 10px #64AECD;
+    -webkit-box-shadow: inset 0 0 0 10px #64AECD;
+    box-shadow:         inset 0 0 0 10px #64AECD;
+    background:#fff;
+    color: #64AECD;
+    -webkit-transition: ease-out .3s;
+    -moz-transition: ease-out .3s;
+    -o-transition: ease-out .3s;
+    transition: ease-out .3s;
+}
+.setting_title{
+    color:#fff;
+    text-align:center;
+    text-transform:uppercase;
+    margin:3em 0 6em 0;
+}
+.pay-content{
+    display: none;
 }
