@@ -8,7 +8,7 @@
         <link rel="icon" href="images/favicon.png">
         <link href="style.css" rel="stylesheet" type='text/css'/>
         <link href="reset.css" rel="stylesheet" type='text/css'/>
-        <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
         <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css"/>
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
@@ -111,11 +111,11 @@
             </div>
             
             <!--2nd sect - CHOOSE-->
-            <div style="background-color:#65b0cc;background-image:url(images/home/choose_bg.jpg);background-size:cover;padding:3em 1em 6em 1em;">
+            <div style="background-color:#65b0cc;background-image:url(images/home/choose_bg.jpg);background-size:cover;padding:3em 0 6em 0;">
                 <div class="row" style="max-width:60em;margin:auto;">
 
-                    <!--promotions-->
-                    <div class="col-sm-12">
+                    <!--promotions horizontal-->
+                    <div class="col-sm-12 hidden-xs">
                         <div class="choose_home">
                             <div class="carousel" style="100%">
                                 <div>
@@ -130,15 +130,57 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <!--go to library-->
-                    <div class="col-sm-6">
+
+                    <!--promotions vertical-->
+                    <div class="col-sm-12 hidden-sm hidden-md hidden-lg">
                         <div class="choose_home">
-                            <img src="images/home/choose_lib.jpg">
-                            
+                            <div class="carousel" style="100%">
+                                <div>
+                                    <img src="images/home/promotion/promo1_ver.jpg" style="width:100%" alt="click here to go to promotion 1">
+                                </div>
+                                <div>
+                                    <img src="images/home/promotion/promo2_ver.jpg" style="width:100%" alt="click here to go to promotion 2">
+                                </div>
+                                <div>
+                                    <img src="images/home/promotion/promo3_ver.jpg" style="width:100%" alt="click here to go to promotion 3">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
+
+                    <!--go to library-->
+                    <div class="col-xs-6">
+                        <div class="choose_home" style="padding:3em 1em;margin-top:3em;">
+                            <div style="max-width:12em;margin:auto;">
+                                <a href="thuvien.html">
+                                    <img src="images/home/choose_lib.jpg" style="width:100%;" alt="bam vao day de vao thu vien">
+                                </a>
+                            </div>
+                            <a href="thuvien.html" style="color:#fff;text-decoration:none">
+                                <div class="white_cta hidden-xs">
+                                    thư viện
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--go to blog-->
+                    <div class="col-xs-6">
+                        <div class="choose_home" style="padding:3em 1em;margin-top:3em;">
+                            <div style="max-width:12em;margin:auto;">
+                                <a href="articles.html">
+                                    <img src="images/home/choose_blog.jpg" style="width:100%;" alt="bam vao day de xem bai viet">
+                                </a>
+                            </div>
+                            <a href="articles.html" style="color:#fff;text-decoration:none">
+                                <div class="white_cta hidden-xs">
+                                    bài viết
+                                </div>
+                            </a>
+                        </div>
+                        <p style="text-align:center;text-transform: uppercase;margin-top:1em;">bài viết</p>
+                    </div>
+                
                 </div>
             </div>
             
