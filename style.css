@@ -2631,3 +2631,10 @@ border-radius:1.2em;
     border-radius:5px;
     width: 100%;
 }
+.white_cta{
+    padding:2em;
+    border: 3px solid #fff;
+    border-radius:5px;
+    color: #fff;
+    text-transform: uppercase;
+}
