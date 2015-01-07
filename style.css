@@ -2620,6 +2620,8 @@ border-radius:1.2em;
 .book_showcase {
     width: 10em;
     height: 15em;
+    position:relative;
+    margin:auto;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0,0,0,.5);
 }
@@ -2641,4 +2643,23 @@ border-radius:1.2em;
     max-width: 10em;
     margin:auto;
     margin-top:3em;
+}
+.sale_mark{
+    background: #d93816;
+    color:#fff;
+    padding:.5em;
+    max-width: 5em;
+    border-radius: 5px;
+    position: absolute;
+    top: -.5em;
+    right:-1em;
+    z-index: 1;
+}
+.price-white{
+    padding:.5em;
+    border: 2px solid #fff;
+    border-radius:5px;
+    color: #fff;
+    max-width: 7em;
+    margin:auto;
 }
