@@ -79,40 +79,93 @@
 
         </nav>
 
+        <!-- cart items -->
+        <nav class="cart-primary" id="cart-primary">
+
+            <!--item 1-->
+            <div class="cart_item">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div>
+                            <a href="preview.html">
+                                <img src="images/book7.jpg" style="width:100%;height:auto;box-shadow: 2px 2px 5px rgba(0,0,0,.5);">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="three_dot">
+                            <a href="preview.html" style="color:#000;font-weight:700;">Nào phải anh hùng</a>
+                        </p>
+                        <p style="opacity:.5;">120.000đ x 1</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--item 2-->
+            <div class="cart_item">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div>
+                            <a href="preview.html">
+                                <img src="images/book2.jpg" style="width:100%;height:auto;box-shadow: 2px 2px 5px rgba(0,0,0,.5);">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="three_dot">
+                            <a href="preview.html" style="color:#000;font-weight:700;">Chiến tranh giữa các vì sao</a>
+                        </p>
+                        <p style="opacity:.5;">67.000đ x 1</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--total + checkout-->
+            <div class="cart_item">
+                <p style="text-transform:uppercase;text-align:center;color:#1a5970;margin:0;">tổng cộng&#58;</p>
+                <p style="font-weight:700;font-size:1.5em;text-align:center;color:#1a5970">187.000đ</p>
+                <a href="checkout.html" style="color:#fff;text-transform:uppercase;text-decoration:none;">
+                    <div class="checkout_button">
+                        thanh toán
+                    </div>
+                </a>
+            </div>
+
+            <p style="text-align:center;margin-top:1em;">
+                <a href="cart.html">Xem giỏ hàng</a>
+            </p>
+
+        </nav>
+
         <!-- header bar -->
-        <header class="mobile-helper-bar" style="background: rgba(101,175,206,.25);">
+        <header class="mobile-helper-bar">
+
             <!-- menu -->
             <button class="hamburger" id="off-canvas-toggle"><i class="fa fa-bars"></i></button>
-            <!-- search-->
-            <form class="search">
-                <input class="searchTerm" placeholder="Tìm kiếm&hellip;"/>
-            </form>
+
+            <!--cart-->
+            <div class="hotdog cursor_hover off-cart-toggle hidden-xs" style="float:right;">
+                <i class="fa fa-shopping-cart"></i> <span style="color:#d93816;font-weight:700;">&#40;2&#41;</span> Giỏ hàng
+            </div>
+
+            <!--cart mobile-->
+            <div class="hotdog cursor_hover off-cart-toggle visible-xs" style="float:right;">
+                <i class="fa fa-shopping-cart"></i> <span style="color:#d93816;font-weight:700;">&#40;2&#41;</span>
+            </div>
+
         </header>
 
         <!-- main content -->
         <div class="page-content" id="page-content">
 
-            <div style="background-image:url(images/home/intro_bg.jpg);background-size:cover;padding:10em 1em;">
+            <div style="background-image:url(images/library/intro_bg.jpg);background-size:cover;background-attachment:fixed;padding:10em 1em;height:100em;">
                 
-                <!--feature-->
-                <div class="row" style="color:#fff;">
-
-                    <!--cover-->
-                    <div class="col-sm-4" style="margin-top:1em;text-align:center;margin:auto;">
-                        <a href="preview.html">
-                            <img src="images/book4.jpg" class="book_showcase hover_expand" style="width:14em;height:21em;">
-                        </a>
-                    </div>
-
-                    <!--content-->
-                    <div class="col-sm-8 center-on-small" style="padding:2em;">
-                        <p class="h2prev"><a href="preview.html" style="font-weight:900;color:#fff">the chien z</a></p>
-                        <p class="h2prev" style="text-transform:none;color:#fff;">Tác giả&#58; <a style="color:#fff;" href="author_sort.html">H. G. Wells</a></p>
-                        <p><span style="font-size:1.5em">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span>&#40;89 lượt bầu&#41;</span></p>
-
-                        <p>Con bè lại trôi tiếp. Họ ngửi thấy một mùi rất kì lạ, vừa ngòn ngọt mà lại vừa phát mửa. Mùi như thể bãi nôn khô. Tiếng hú của lũ dilophosaur trở nên ồn ã hơn. Khi con bè đi ra chỗ khúc quanh cuối cùng, Grant mới bắt đầu hít thở lại được bình thường. Bọn dilophosaur chỉ cách đó có mấy phân, đang hú về phía mấy cái cây trên bờ.</p>
-                    </div>
-
+                <!--search bar-->
+                <div style="margin:auto;margin-bottom:3em;max-width:40em;line-height:1;">
+                    <form action="#" method="post" style="position:relative;" id="searchBar">
+                        <input type="search" placeholder="Tìm  truyện&hellip;" />
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
                 </div>
             </div>
 
@@ -335,7 +388,7 @@
 
             </div>
 
-            <!--section 5th FOOTER-->
+            <!--footer-->
             <div style="background:#2e748e;padding:2em 1em 2em 1em;box-shadow:0 -4px rgba(0,0,0,.25);z-index:4;position:relative;">
 
                 <!--quicklink menu-->
@@ -399,24 +452,46 @@
         <script src="https://code.jquery.com/jquery-2.1.3.min.js">
         </script>
         <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
         <script>
             // Show the off-canvas navigation
-            $('#off-canvas-toggle').click(function() {
-                $('#nav-primary').toggleClass('off-canvas-show');
-            });
+            $(document).ready(function() {
+                $('#off-canvas-toggle').click(function() {
+                    $('#nav-primary').toggleClass('off-canvas-show');
+                });
 
-            $('#nav-primary').removeClass('off-canvas-show');
-
-            // Hide the off-canvas nav when clicking a link
-            $('#nav-primary').find('a').on('click', function(e) {
                 $('#nav-primary').removeClass('off-canvas-show');
+
+                // Hide the off-canvas nav when clicking a link
+                $('#nav-primary').find('a').on('click', function(e) {
+                    $('#nav-primary').removeClass('off-canvas-show');
+                });
+
+                // Hide the off-canvas nav when clicking outside
+                $('#page-content').on('click', function(e) {
+                    $('#nav-primary').removeClass('off-canvas-show');
+                });
             });
 
-            // Hide the off-canvas nav when clicking outside
-            $('#page-content').on('click', function(e) {
-                $('#nav-primary').removeClass('off-canvas-show');
+            // Show the cart
+            $(document).ready(function() {
+                $('.off-cart-toggle').click(function() {
+                    $('#cart-primary').toggleClass('off-cart-show');
+                });
+
+                $('#cart-primary').removeClass('off-cart-show');
+
+                // Hide the off-canvas nav when clicking a link
+                $('#cart-primary').find('a').on('click', function(e) {
+                    $('#cart-primary').removeClass('off-cart-show');
+                });
+
+                // Hide the off-canvas nav when clicking outside
+                $('#page-content').on('click', function(e) {
+                    $('#cart-primary').removeClass('off-cart-show');
+                });
             });
-        
+
             // smooth scroll
             $(function() {
                 $('a[href*=#]:not([href=#])').click(function() {
@@ -432,17 +507,60 @@
                     }
                 });
             });
-            
+
             // scroll bar
             (function($){
                 $(window).load(function(){
-                    $(".nav-primary").mCustomScrollbar({
+                    $(".nav-primary, .cart-primary").mCustomScrollbar({
                         theme:"minimal"
                     });
                 });
             })(jQuery);
+
+            //carousel
+            $(document).ready(function(){
+                $('.carousel').slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    adaptiveHeight: true,
+                    autoplay: true,
+                    autoplaySpeed: 2500,
+                });
+                $('.book-carousel, .book-carousel-new, .book-carousel-top').slick({
+                    dots: false,
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2500,
+                    arrow: true,
+                    responsive: [
+                        {
+                            breakpoint: 750,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1,
+                                arrow: true,
+                                dots: false,
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                arrow: true,
+                                dots: false,
+                            }
+                        }
+                    ]
+                });
+            });
         </script>
-        
+
     </body>
 </html>
 

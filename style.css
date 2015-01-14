@@ -303,7 +303,7 @@ table {
     margin:auto;
     text-align:center;
     border-radius:50%;
-    color:#3c93b3;
+    color:#2e748e;
     display:inline-block;
     font-size:1.5em;
     margin:0 .2em 0 .2em;
@@ -2652,6 +2652,7 @@ border-radius:1.2em;
     color:#fff;
     font-size: 16px;
     margin:auto;
+    outline: none;
 }
 #searchBar ::-webkit-input-placeholder{
     color:#fff;
@@ -2681,7 +2682,7 @@ border-radius:1.2em;
     -o-transition: ease-out .3s;
     transition: ease-out .3s;
 }
-#searchBar :focus:-moz-placeholder{
+#searchBar [placeholder]:focus:-moz-placeholder{
     opacity:0;
     -webkit-transition: ease-out .3s;
     -moz-transition: ease-out .3s;
@@ -2698,7 +2699,7 @@ border-radius:1.2em;
 
 #searchBar input[type=search] {
     width: 100%;
-    padding:1em 4em 1em 1em;
+    padding:1em 3.5em 1em 1em;
     border-radius:52em;;
     position: relative;
     top: 0;
