@@ -357,7 +357,7 @@
                     <div class="col-sm-12" style="margin-top:3em;color:#fff;">
                         <div class="choose_home">
                             <h3 style="text-transform:uppercase;margin:1em 0 0 0;color:#fff;line-height:1.6em;letter-spacing:4px;font-weight:700;" class="resize_txt_top">truyện mới nhập</h3>
-                            <div class="book-carousel-new">
+                            <div class="book-carousel">
 
                                 <!--book 1-->
                                 <div>
@@ -473,7 +473,7 @@
                     <div class="col-sm-12" style="margin-top:3em;color:#fff;">
                         <div class="choose_home">
                             <h3 style="text-transform:uppercase;margin:1em 0 0 0;color:#fff;line-height:1.6em;letter-spacing:4px;font-weight:700;" class="resize_txt_top">trong top 5</h3>
-                            <div class="book-carousel-top">
+                            <div class="book-carousel">
 
                                 <!--book 1-->
                                 <div>
@@ -762,11 +762,10 @@
                     infinite: true,
                     speed: 500,
                     slidesToShow: 1,
-                    adaptiveHeight: true,
                     autoplay: true,
                     autoplaySpeed: 2500,
                 });
-                $('.book-carousel, .book-carousel-new, .book-carousel-top').slick({
+                $('.book-carousel').slick({
                     dots: false,
                     infinite: true,
                     speed: 500,
@@ -776,6 +775,15 @@
                     autoplaySpeed: 2500,
                     arrow: true,
                     responsive: [
+                        {
+                            breakpoint: 1000,
+                            settings: {
+                                slidesToShow: 3,
+                                slidesToScroll: 1,
+                                arrow: true,
+                                dots: false,
+                            }
+                        },
                         {
                             breakpoint: 750,
                             settings: {
