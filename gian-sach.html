@@ -8,9 +8,10 @@
         <link rel="icon" href="images/favicon.png">
         <link href="style.css" rel="stylesheet" type='text/css'/>
         <link href="reset.css" rel="stylesheet" type='text/css'/>
-        <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
         <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
         <style>
             body{
                 background-color:#65afce;
@@ -158,15 +159,55 @@
         <!-- main content -->
         <div class="page-content" id="page-content">
 
-            <div style="background-image:url(images/library/intro_bg.jpg);background-size:cover;background-attachment:fixed;padding:10em 1em;height:100em;">
+            <div style="background-image:url(images/library/intro_bg.jpg);background-size:cover;padding:10em 1em 8em 1em;">
                 
+                <!-- icon -->
+                <div class="top-page-image" style="margin:0 auto">
+                    <img src="images/library/lib_icon.png" style="width:100%;" alt="home logo">
+                </div>
+
                 <!--search bar-->
-                <div style="margin:auto;margin-bottom:3em;max-width:40em;line-height:1;">
+                <div style="margin:auto;margin-bottom:2em;max-width:40em;line-height:1;">
                     <form action="#" method="post" style="position:relative;" id="searchBar">
                         <input type="search" placeholder="Tìm  truyện&hellip;" />
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
+
+                <!--feature-->
+                <div style="padding:0 2em;">
+                    <div class="row">
+
+                        <div class="col-sm-4">
+                            <a href="preview.html" style="color:#fff;text-align:center;text-transform:uppercase;font-weight:900;font-size:1.5em;">
+                                <div style="max-width:19em;margin:auto;">
+                                    <img src="images/library/feature/feature1.jpg" style="width:100%;height:auto;border-radius:10px;margin-bottom:1em;" class="book_showcase hover_expand" alt="feature book 1">
+                                </div>
+                                <p>công lí bổ trợ</p>
+                            </a>
+                        </div>
+                        
+                        <div class="col-sm-4">
+                            <a href="preview.html" style="color:#fff;text-align:center;text-transform:uppercase;font-weight:900;font-size:1.5em;">
+                                <div style="max-width:19em;margin:auto;">
+                                    <img src="images/library/feature/feature2.jpg" style="width:100%;height:auto;border-radius:10px;margin-bottom:1em;" class="book_showcase hover_expand" alt="feature book 2">
+                                </div>
+                                <p>sao bắc đẩu</p>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <a href="preview.html" style="color:#fff;text-align:center;text-transform:uppercase;font-weight:900;font-size:1.5em;">
+                                <div style="max-width:19em;margin:auto;">
+                                    <img src="images/library/feature/feature3.jpg" style="width:100%;height:auto;border-radius:10px;margin-bottom:1em;" class="book_showcase hover_expand" alt="feature book 3">
+                                </div>
+                                <p>trò chơi tận diệt</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
 
             <!--2nd section SCI FI-->
@@ -519,14 +560,33 @@
 
             //carousel
             $(document).ready(function(){
-                $('.carousel').slick({
+                $('.feature').slick({
                     dots: true,
                     infinite: true,
                     speed: 500,
-                    slidesToShow: 1,
-                    adaptiveHeight: true,
+                    slidesToShow: 3,
                     autoplay: true,
                     autoplaySpeed: 2500,
+                    responsive: [
+                        {
+                            breakpoint: 1050,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1,
+                                arrow: true,
+                                dots: false,
+                            }
+                        },
+                        {
+                            breakpoint: 600,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                arrow: true,
+                                dots: false,
+                            }
+                        }
+                    ]
                 });
                 $('.book-carousel, .book-carousel-new, .book-carousel-top').slick({
                     dots: false,
