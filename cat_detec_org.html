@@ -1,125 +1,159 @@
 <!DOCTYPE html>
 <html>
-<head>    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Chiến Tranh Giữa Các Vì Sao, Animorphs, Divergent,...">
-    <title>tổ chức ngầm</title>
-    <link rel="icon" href="images/favicon.png">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'/>
-    <link href="style.css" rel="stylesheet" type='text/css'/>
-    <link href="reset.css" rel="stylesheet" type='text/css'/>
-    <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'/>
-    <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"/>
-    <style>
-		body{
-            background-color:#eaeaea;
-        	overflow-x: hidden;			
-			font-family: 'Gotham', sans-serif;
-		}
-        
-	</style>
-</head>
+    <head>    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Gian sách cho fan truyện Sci fi, Fantasy, Trinh thám.">
+        <title>Bookism - Bước vào trang truyện. Mở ra thế giới.</title>
+        <link rel="icon" href="images/favicon.png">
+        <link href="style.css" rel="stylesheet" type='text/css'/>
+        <link href="reset.css" rel="stylesheet" type='text/css'/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
+        <style>
+            body{
+                background-color:#eaeaea;
+                overflow-x: hidden;			
+                font-family: 'Gotham', sans-serif;
+            }
+        </style>
+    </head>
 
-<body>
-<!-- nav items -->
-    <nav class="nav-primary" id="nav-primary">
+    <body>
+        <!-- nav items -->
+        <nav class="nav-primary" id="nav-primary">
 
-        <!--ava/log in-->
-        <a href="login.html">
-            <div class="menu_ava">
-                <span class="mid-align"></span><img class="mid-align" src="images/question_mark.jpg">
-            </div>
-        </a>
-        <div class="log_in_txt">
-            <a href="registration_form.html" style="color:#fff;text-decoration:none;">đăng<br>nhập</a>
-        </div>
+            <!--main menu-->
+            <div class="row menu_main" style="margin:auto;">
 
-        <!--main menu-->
-        <div class="row menu_main" style="margin:auto;">
-
-            <!--home-->
-            <div class="col-xs-6" style="margin-top:1em;">
+                <!--home-->
                 <a href="index.html" style="color:#fff;text-decoration:none;">
-                    <img src="images/home_menu_icon.jpg" style="width:1.8em;">
-                    <p style="font-size:.8em;margin-top:1em;">trang<br>chủ</p>
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/home_menu_icon.png" style="width:1.8em;" alt="menu home">
+                        <p style="font-size:.8em;margin-top:1em;">trang<br>chủ</p>
+                    </div>
                 </a>
-            </div>
 
-            <!--library-->
-            <div class="col-xs-6" style="margin-top:1em;">
+                <!--library-->
                 <a href="gian-sach.html" style="color:#fff;text-decoration:none;">
-                    <img src="images/lib_menu_icon.jpg" style="width:1.8em;">
-                    <p style="font-size:.8em;margin-top:1em;">thư<br>viện</p>
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/lib_menu_icon.png" style="width:1.8em;" alt="menu library">
+                        <p style="font-size:.8em;margin-top:1em;">gian<br>sách</p>
+                    </div>
                 </a>
-            </div>
 
-            <!--article-->
-            <div class="col-xs-6" style="margin-top:1em;">
+                <!--article-->
                 <a href="articles.html" style="color:#fff;text-decoration:none;">
-                    <img src="images/article_menu_icon.jpg" style="width:1.8em;">
-                    <p style="font-size:.8em;margin-top:1em;">bài<br>viết</p>
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/article_menu_icon.png" style="width:1.8em;" alt="menu blog">
+                        <p style="font-size:.8em;margin-top:1em;">bài<br>viết</p>
+                    </div>
                 </a>
-            </div>
 
-            <!--about-->
-            <div class="col-xs-6" style="margin-top:1em;">
+                <!--about-->
                 <a href="about.html" style="color:#fff;text-decoration:none;">
-                    <img src="images/about_menu_icon.jpg" style="width:1.8em;">
-                    <p style="font-size:.8em;margin-top:1em;">về<br>bookism</p>
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/about_menu_icon.png" style="width:1.8em;" alt="menu about">
+                        <p style="font-size:.8em;margin-top:1em;">về<br>bookism</p>
+                    </div>
                 </a>
-            </div>
 
-            <!--FAQ-->
-            <div class="col-xs-6" style="margin-top:1em;">
+                <!--FAQ-->
                 <a href="faq.html" style="color:#fff;text-decoration:none;">
-                    <img src="images/faq_menu_icon.jpg" style="width:1.8em;">
-                    <p style="font-size:.8em;margin-top:1em;">faq</p>
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/faq_menu_icon.png" style="width:1.8em;" alt="menu faq">
+                        <p style="font-size:.8em;margin-top:1em;">faq</p>
+                    </div>
                 </a>
-            </div>
 
-            <!--contact-->
-            <div class="col-xs-6" style="margin-top:1em;">
+                <!--contact-->
                 <a href="contact.html" style="color:#fff;text-decoration:none;">
-                    <img src="images/contact_menu_icon.jpg" style="width:1.8em;">
-                    <p style="font-size:.8em;margin-top:1em;">liên<br>hệ</p>
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/contact_menu_icon.png" style="width:1.8em;" alt="menu contact">
+                        <p style="font-size:.8em;margin-top:1em;">liên<br>hệ</p>
+                    </div>
+                </a>
+
+            </div>
+
+        </nav>
+
+        <!-- cart items -->
+        <nav class="cart-primary" id="cart-primary">
+
+            <!--item 1-->
+            <div class="cart_item">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div>
+                            <a href="preview.html">
+                                <img src="images/book7.jpg" style="width:100%;height:auto;box-shadow: 2px 2px 5px rgba(0,0,0,.5);">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="three_dot">
+                            <a href="preview.html" style="color:#000;font-weight:700;">Nào phải anh hùng</a>
+                        </p>
+                        <p style="opacity:.5;">120.000đ x 1</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--item 2-->
+            <div class="cart_item">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div>
+                            <a href="preview.html">
+                                <img src="images/book2.jpg" style="width:100%;height:auto;box-shadow: 2px 2px 5px rgba(0,0,0,.5);">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="three_dot">
+                            <a href="preview.html" style="color:#000;font-weight:700;">Chiến tranh giữa các vì sao</a>
+                        </p>
+                        <p style="opacity:.5;">67.000đ x 1</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--total + checkout-->
+            <div class="cart_item">
+                <p style="text-transform:uppercase;text-align:center;color:#1a5970;margin:0;">tổng cộng&#58;</p>
+                <p style="font-weight:700;font-size:1.5em;text-align:center;color:#1a5970">187.000đ</p>
+                <a href="checkout.html" style="color:#fff;text-transform:uppercase;text-decoration:none;">
+                    <div class="checkout_button">
+                        đặt mua
+                    </div>
                 </a>
             </div>
 
-        </div>
+            <p style="text-align:center;margin-top:1em;">
+                <a href="cart.html">Xem giỏ hàng</a>
+            </p>
 
-        <!--for logged in user-->
-        <div class="row menu_main" style="margin:auto;">
+        </nav>
 
-            <!--setting-->
-            <div class="col-xs-6" style="margin-top:1em;">
-                <a href="setting.html" style="color:#fff;text-decoration:none;">
-                    <img src="images/setting_menu_icon.jpg" style="width:1.8em;">
-                    <p style="font-size:.8em;margin-top:1em;">tùy<br>chỉnh</p>
-                </a>
+        <!-- header bar -->
+        <header class="mobile-helper-bar">
+
+            <!-- menu -->
+            <button class="hamburger" id="off-canvas-toggle"><i class="fa fa-bars"></i></button>
+
+            <!--cart-->
+            <div class="hotdog cursor_hover off-cart-toggle hidden-xs" style="float:right;">
+                <i class="fa fa-shopping-cart"></i> <span style="color:#d93816;font-weight:700;">&#40;2&#41;</span> Giỏ hàng
             </div>
 
-            <!--logout-->
-            <div class="col-xs-6" style="margin-top:1em;">
-                <a href="log_out.html" style="color:#fff;text-decoration:none;">
-                    <img src="images/logout_menu_icon.jpg" style="width:1.8em;">
-                    <p style="font-size:.8em;margin-top:1em;">đăng<br>xuất</p>
-                </a>
+            <!--cart mobile-->
+            <div class="hotdog cursor_hover off-cart-toggle visible-xs" style="float:right;">
+                <i class="fa fa-shopping-cart"></i> <span style="color:#d93816;font-weight:700;">&#40;2&#41;</span>
             </div>
 
-        </div>
-
-    </nav>
-
-<!-- header bar -->
-    <header class="mobile-helper-bar" style="background:rgba(101,175,206,.25);">
-		<!-- menu -->
-		<button class="hamburger" id="off-canvas-toggle"><i class="fa fa-bars"></i></button>
-        <form class="search">
-            <input class="searchTerm" placeholder="Tìm kiếm&hellip;"/>
-        </form>
-    </header>
+        </header>
 
     <!-- main content -->
     <div class="page-content" id="page-content">
@@ -127,6 +161,14 @@
         <div style="background-image:url(images/library/header/cat_detec_org.jpg);" class="cat_header_txt">
             <h1 class="h1-cat">tổ chức ngầm</h1>
         
+            <!--search bar-->
+            <div style="margin:2em auto 1em auto;max-width:40em;line-height:1;">
+                <form action="#" method="post" style="position:relative;" id="searchBar">
+                    <input type="search" placeholder="Tìm  truyện&hellip;" />
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
             <!--back to cat-->
             <a class="a_black_white" href="cat_detec.html">
                 <div class="sub_cat_lib">truyện trinh thám</div>
@@ -146,19 +188,34 @@
                     <!--the book-->
                     <div class="row" style="margin-bottom:2em;">
 
-                        <!--cover-->
+                        <!--left-->
                         <div class="col-sm-4" style="margin-top:1em;text-align:center;margin:auto;">
-                            <a href="preview.html">
-                                <img src="images/book4.jpg" class="book_showcase hover_expand" style="width:14em;height:21em;">
+
+                            <!--cover-->
+                            <a href="preview.html" style="color:#fff;text-decoration:none;">
+                                <div class="book_showcase hover_expand" style="width:14em;height:21em;margin-bottom:.2em;">
+                                    <div class="sale_mark">
+                                        -40&#37;
+                                    </div>
+                                    <img src="images/book2.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover">
+                                </div>
                             </a>
+
+                            <!--price-->
+                            <span style="text-decoration:line-through;">140.000đ</span>
+                            <a href="preview.html" style="text-decoration:none;">
+                                <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                    <span>84.000đ</span>
+                                </div> 
+                            </a>
+
                         </div>
 
-                        <!--content-->
+                        <!--right-->
                         <div class="col-sm-8 center-on-small" style="padding:2em;">
-                            <p class="h2prev"><a href="preview.html" style="color:#000;text-decoration:none;font-weight:900;">the chien z</a></p>
+                            <p class="h2prev"><a href="preview.html" style="color:#000;text-decoration:none;font-weight:900;">chiến tranh giữa các vì sao</a></p>
                             <p class="h2prev" style="text-transform:none">Tác giả&#58; <a href="author_sort.html">H. G. Wells</a></p>
                             <p><span style="color:#2e748e;font-size:1.5em">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span>&#40;89 lượt bầu&#41;</span></p>
-
                             <p>Con bè lại trôi tiếp. Họ ngửi thấy một mùi rất kì lạ, vừa ngòn ngọt mà lại vừa phát mửa. Mùi như thể bãi nôn khô. Tiếng hú của lũ dilophosaur trở nên ồn ã hơn. Khi con bè đi ra chỗ khúc quanh cuối cùng, Grant mới bắt đầu hít thở lại được bình thường. Bọn dilophosaur chỉ cách đó có mấy phân, đang hú về phía mấy cái cây trên bờ.</p>
                         </div>
 
@@ -181,140 +238,379 @@
                                     <li><a>Tên truyện &#40;Z &rarr; A&#41;</a></li>
                                     <li><a>Đánh giá &#40;0 &#9734; &rarr; 5 &#9733;&#41;</a></li>
                                     <li><a>Đánh giá &#40;5 &#9733; &rarr; 0 &#9734;&#41;</a></li>
-                                    <li><a>Mới &rarr; cũ</a></li>
-                                    <li><a>Cũ &rarr; mới</a></li>
+                                    <li><a>Giá cả &#40;thấp &rarr; cao&#41;</a></li>
+                                    <li><a>Giá cả &#40;cao &rarr; thấp&#41;</a></li>
                                 </ul>
                             </dd>
                         </dl>
                     </div>
 
-                    <!--1st row-->
-                    <div class="col-md-12">
-                        <div class="row">
+                    <!--books-->
+                    <div class="row" style="margin-bottom:2em;">
 
-                            <!--book 1-->
-                            <div class="col-md-3 col-sm-6" style="text-align:center;margin:auto;margin-top:2em;">
-                                <a href="preview.html" style="color:#000;text-decoration:none;">
-                                    <img src="images/book1.jpg" class="book_showcase hover_expand">
-                                </a>
-                                <p style="margin:auto;max-width:10em;text-transform:uppercase;margin-top:1em;"><a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a></p>
-                                <p style="color:#2e748e;margin-bottom:1em;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                        <!--row 1-->
+                        <div class="col-xs-12">
+                            <div class="row">
+
+                                <!--row 1 1st-->
+                                <div class="col-md-6">
+                                    <div class="row">
+
+                                        <!--book 1-->
+                                        <div class="col-sm-6" style="text-align:center;margin-top:2em;">
+                                            <div style="margin:auto;margin-top:2em;position:relative;">
+
+                                                <!--cover-->
+                                                <a href="preview.html" style="color:#fff;text-decoration:none;">
+                                                    <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                        <div class="sale_mark">
+                                                            -25&#37;
+                                                        </div>
+                                                        <img src="images/book1.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover">
+                                                    </div>
+                                                </a>
+
+                                                <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#000;text-decoration:none;">Công viên kỉ jura</a></p>
+                                                <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+
+                                                <!--price-->
+                                                <span style="text-decoration:line-through;">100.000đ</span>
+                                                <a href="preview.html" style="text-decoration:none;">
+                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                        <span>78.000đ</span>
+                                                    </div> 
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <!--book 2-->
+                                        <div class="col-sm-6" style="text-align:center;margin-top:2em;">
+                                            <div style="margin:auto;margin-top:2em;position:relative;">
+
+                                                <!--cover-->
+                                                <a href="preview.html" style="color:#fff;text-decoration:none;">
+                                                    <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                        <div class="sale_mark">
+                                                            -40&#37;
+                                                        </div>
+                                                        <img src="images/book2.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover">
+                                                    </div>
+                                                </a>
+
+                                                <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#000;text-decoration:none;">chiến tranh giữa các vì sao</a></p>
+                                                <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+
+                                                <!--price-->
+                                                <span style="text-decoration:line-through;">140.000đ</span>
+                                                <a href="preview.html" style="text-decoration:none;">
+                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                        <span>84.000đ</span>
+                                                    </div> 
+                                                </a>
+
+                                            </div>
+                                        </div>                                
+
+                                    </div>
+                                </div>
+
+                                <!--row 1 2nd-->
+                                <div class="col-md-6">
+                                    <div class="row">
+
+                                        <!--book 3-->
+                                        <div class="col-sm-6" style="text-align:center;margin-top:2em;">
+                                            <div style="margin:auto;margin-top:2em;position:relative;">
+
+                                                <!--cover-->
+                                                <a href="preview.html" style="color:#fff;text-decoration:none;">
+                                                    <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                        <img src="images/book3.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover">
+                                                    </div>
+                                                </a>
+
+                                                <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#000;text-decoration:none;">không trận</a></p>
+                                                <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+
+                                                <!--price-->
+                                                <a href="preview.html" style="text-decoration:none;">
+                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                        <span>45.000đ</span>
+                                                    </div> 
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <!--book 4-->
+                                        <div class="col-sm-6" style="text-align:center;margin-top:2em;">
+                                            <div style="margin:auto;margin-top:2em;position:relative;">
+
+                                                <!--cover-->
+                                                <a href="preview.html" style="color:#fff;text-decoration:none;">
+                                                    <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                        <img src="images/book4.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover">
+                                                    </div>
+                                                </a>
+
+                                                <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#000;text-decoration:none;">thế chiến z</a></p>
+                                                <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+
+                                                <!--price-->
+                                                <a href="preview.html" style="text-decoration:none;">
+                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                        <span>69.000đ</span>
+                                                    </div> 
+                                                </a>
+
+                                            </div>
+                                        </div>                                
+                                    </div>
+                                </div>
+
                             </div>
-
-                            <!--book 2-->
-                            <div class="col-md-3 col-sm-6" style="text-align:center;margin:auto;margin-top:2em;">
-                                <a href="preview.html" style="color:#000;text-decoration:none;">
-                                    <img src="images/book2.jpg" class="book_showcase hover_expand">
-                                </a>
-                                <p style="margin:auto;max-width:10em;text-transform:uppercase;margin-top:1em;"><a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a></p>
-                                <p style="color:#2e748e;margin-bottom:1em;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                            </div>
-
-                            <!--book 3-->
-                            <div class="col-md-3 col-sm-6" style="text-align:center;margin:auto;margin-top:2em;">
-                                <a href="preview.html" style="color:#000;text-decoration:none;">
-                                    <img src="images/book3.jpg" class="book_showcase hover_expand">
-                                </a>
-                                <p style="margin:auto;max-width:10em;text-transform:uppercase;margin-top:1em;"><a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a></p>
-                                <p style="color:#2e748e;margin-bottom:1em;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                            </div>
-
-                            <!--book 4-->
-                            <div class="col-md-3 col-sm-6" style="text-align:center;margin:auto;margin-top:2em;">
-                                <a href="preview.html" style="color:#000;text-decoration:none;">
-                                    <img src="images/book4.jpg" class="book_showcase hover_expand">
-                                </a>
-                                <p style="margin:auto;max-width:10em;text-transform:uppercase;margin-top:1em;"><a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a></p>
-                                <p style="color:#2e748e;margin-bottom:1em;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                            </div>
-
                         </div>
-                    </div>
 
-                    <!--2nd row-->
-                    <div class="col-md-12">
-                        <div class="row">
+                        <!--row 2-->
+                        <div class="col-xs-12">
+                            <div class="row">
 
-                            <!--book 1-->
-                            <div class="col-md-3 col-sm-6" style="text-align:center;margin:auto;margin-top:2em;">
-                                <a href="preview.html" style="color:#000;text-decoration:none;">
-                                    <img src="images/book5.jpg" class="book_showcase hover_expand">
-                                </a>
-                                <p style="margin:auto;max-width:10em;text-transform:uppercase;margin-top:1em;"><a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a></p>
-                                <p style="color:#2e748e;margin-bottom:1em;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                                <!--row 2 1st-->
+                                <div class="col-md-6">
+                                    <div class="row">
+
+                                        <!--book 5-->
+                                        <div class="col-sm-6" style="text-align:center;margin-top:2em;">
+                                            <div style="margin:auto;margin-top:2em;position:relative;">
+
+                                                <!--cover-->
+                                                <a href="preview.html" style="color:#fff;text-decoration:none;">
+                                                    <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                        <img src="images/book5.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover">
+                                                    </div>
+                                                </a>
+
+                                                <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#000;text-decoration:none;">rèn giũa dưới lửa</a></p>
+                                                <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+
+                                                <!--price-->
+                                                <a href="preview.html" style="text-decoration:none;">
+                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                        <span>83.000đ</span>
+                                                    </div> 
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <!--book 6-->
+                                        <div class="col-sm-6" style="text-align:center;margin-top:2em;">
+                                            <div style="margin:auto;margin-top:2em;position:relative;">
+
+                                                <!--cover-->
+                                                <a href="preview.html" style="color:#fff;text-decoration:none;">
+                                                    <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                        <img src="images/book6.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover">
+                                                    </div>
+                                                </a>
+
+                                                <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#000;text-decoration:none;">nữ chúa tearling</a></p>
+                                                <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+
+                                                <!--price-->
+                                                <a href="preview.html" style="text-decoration:none;">
+                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                        <span>84.000đ</span>
+                                                    </div> 
+                                                </a>
+
+                                            </div>
+                                        </div>                                
+                                    </div>
+                                </div>
+
+                                <!--row 1 2nd-->
+                                <div class="col-md-6">
+                                    <div class="row">
+
+                                        <!--book 7-->
+                                        <div class="col-sm-6" style="text-align:center;margin-top:2em;">
+                                            <div style="margin:auto;margin-top:2em;position:relative;">
+
+                                                <!--cover-->
+                                                <a href="preview.html" style="color:#fff;text-decoration:none;">
+                                                    <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                        <div class="sale_mark">
+                                                            -10&#37;
+                                                        </div>
+                                                        <img src="images/book7.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover">
+                                                    </div>
+                                                </a>
+
+                                                <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#000;text-decoration:none;">nào phải anh hùng</a></p>
+                                                <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+
+                                                <!--price-->
+                                                <span style="text-decoration:line-through;">42.000đ</span>
+                                                <a href="preview.html" style="text-decoration:none;">
+                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                        <span>37.800đ</span>
+                                                    </div> 
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <!--book 8-->
+                                        <div class="col-sm-6" style="text-align:center;margin-top:2em;">
+                                            <div style="margin:auto;margin-top:2em;position:relative;">
+
+                                                <!--cover-->
+                                                <a href="preview.html" style="color:#fff;text-decoration:none;">
+                                                    <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                        <img src="images/book8.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover">
+                                                    </div>
+                                                </a>
+
+                                                <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#000;text-decoration:none;">con gái gã bắt đạn</a></p>
+                                                <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+
+                                                <!--price-->
+                                                <a href="preview.html" style="text-decoration:none;">
+                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                        <span>74.000đ</span>
+                                                    </div> 
+                                                </a>
+
+                                            </div>
+                                        </div>                                
+                                    </div>
+                                </div>
+
                             </div>
-
-                            <!--book 2-->
-                            <div class="col-md-3 col-sm-6" style="text-align:center;margin:auto;margin-top:2em;">
-                                <a href="preview.html" style="color:#000;text-decoration:none;">
-                                    <img src="images/book6.jpg" class="book_showcase hover_expand">
-                                </a>
-                                <p style="margin:auto;max-width:10em;text-transform:uppercase;margin-top:1em;"><a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a></p>
-                                <p style="color:#2e748e;margin-bottom:1em;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                            </div>
-
-                            <!--book 3-->
-                            <div class="col-md-3 col-sm-6" style="text-align:center;margin:auto;margin-top:2em;">
-                                <a href="preview.html" style="color:#000;text-decoration:none;">
-                                    <img src="images/book7.jpg" class="book_showcase hover_expand">
-                                </a>
-                                <p style="margin:auto;max-width:10em;text-transform:uppercase;margin-top:1em;"><a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a></p>
-                                <p style="color:#2e748e;margin-bottom:1em;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                            </div>
-
-                            <!--book 4-->
-                            <div class="col-md-3 col-sm-6" style="text-align:center;margin:auto;margin-top:2em;">
-                                <a href="preview.html" style="color:#000;text-decoration:none;">
-                                    <img src="images/book8.jpg" class="book_showcase hover_expand">
-                                </a>
-                                <p style="margin:auto;max-width:10em;text-transform:uppercase;margin-top:1em;"><a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a></p>
-                                <p style="color:#2e748e;margin-bottom:1em;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                            </div>
-
                         </div>
-                    </div>
 
-                    <!--3rd row-->
-                    <div class="col-md-12">
-                        <div class="row">
+                        <!--row 3-->
+                        <div class="col-xs-12">
+                            <div class="row">
 
-                            <!--book 1-->
-                            <div class="col-md-3 col-sm-6" style="text-align:center;margin:auto;margin-top:2em;">
-                                <a href="preview.html" style="color:#000;text-decoration:none;">
-                                    <img src="images/book9.jpg" class="book_showcase hover_expand">
-                                </a>
-                                <p style="margin:auto;max-width:10em;text-transform:uppercase;margin-top:1em;"><a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a></p>
-                                <p style="color:#2e748e;margin-bottom:1em;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                                <!--row 3 1st-->
+                                <div class="col-md-6">
+                                    <div class="row">
+
+                                        <!--book 9-->
+                                        <div class="col-sm-6" style="text-align:center;margin-top:2em;">
+                                            <div style="margin:auto;margin-top:2em;position:relative;">
+
+                                                <!--cover-->
+                                                <a href="preview.html" style="color:#fff;text-decoration:none;">
+                                                    <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                        <div class="sale_mark">
+                                                            -20&#37;
+                                                        </div>
+                                                        <img src="images/book9.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover">
+                                                    </div>
+                                                </a>
+
+                                                <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#000;text-decoration:none;">sự thật và nỗi sợ</a></p>
+                                                <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+
+                                                <!--price-->
+                                                <span style="text-decoration:line-through;">119.000đ</span>
+                                                <a href="preview.html" style="text-decoration:none;">
+                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                        <span>95.200đ</span>
+                                                    </div> 
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <!--book 10-->
+                                        <div class="col-sm-6" style="text-align:center;margin-top:2em;">
+                                            <div style="margin:auto;margin-top:2em;position:relative;">
+
+                                                <!--cover-->
+                                                <a href="preview.html" style="color:#fff;text-decoration:none;">
+                                                    <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                        <img src="images/book10.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover">
+                                                    </div>
+                                                </a>
+
+                                                <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#000;text-decoration:none;">1984</a></p>
+                                                <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+
+                                                <!--price-->
+                                                <a href="preview.html" style="text-decoration:none;">
+                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                        <span>121.000đ</span>
+                                                    </div> 
+                                                </a>
+
+                                            </div>
+                                        </div>                                
+                                    </div>
+                                </div>
+
+                                <!--row 3 2nd-->
+                                <div class="col-md-6">
+                                    <div class="row">
+
+                                        <!--book 11-->
+                                        <div class="col-sm-6" style="text-align:center;margin-top:2em;">
+                                            <div style="margin:auto;margin-top:2em;position:relative;">
+
+                                                <!--cover-->
+                                                <a href="preview.html" style="color:#fff;text-decoration:none;">
+                                                    <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                        <img src="images/book11.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover">
+                                                    </div>
+                                                </a>
+
+                                                <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#000;text-decoration:none;">liệu người máy có mơ về cừu điện</a></p>
+                                                <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+
+                                                <!--price-->
+                                                <a href="preview.html" style="text-decoration:none;">
+                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                        <span>148.000đ</span>
+                                                    </div> 
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <!--book 12-->
+                                        <div class="col-sm-6" style="text-align:center;margin-top:2em;">
+                                            <div style="margin:auto;margin-top:2em;position:relative;">
+
+                                                <!--cover-->
+                                                <a href="preview.html" style="color:#fff;text-decoration:none;">
+                                                    <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                        <img src="images/book12.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover 4">
+                                                    </div>
+                                                </a>
+
+                                                <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#000;text-decoration:none;">451 độ f</a></p>
+                                                <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
+
+                                                <!--price-->
+                                                <a href="preview.html" style="text-decoration:none;">
+                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                        <span>34.000đ</span>
+                                                    </div> 
+                                                </a>
+
+                                            </div>
+                                        </div>                                
+
+                                    </div>
+                                </div>
+
                             </div>
-
-                            <!--book 2-->
-                            <div class="col-md-3 col-sm-6" style="text-align:center;margin:auto;margin-top:2em;">
-                                <a href="preview.html" style="color:#000;text-decoration:none;">
-                                    <img src="images/book4.jpg" class="book_showcase hover_expand">
-                                </a>
-                                <p style="margin:auto;max-width:10em;text-transform:uppercase;margin-top:1em;"><a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a></p>
-                                <p style="color:#2e748e;margin-bottom:1em;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                            </div>
-
-                            <!--book 3-->
-                            <div class="col-md-3 col-sm-6" style="text-align:center;margin:auto;margin-top:2em;">
-                                <a href="preview.html" style="color:#000;text-decoration:none;">
-                                    <img src="images/book8.jpg" class="book_showcase hover_expand">
-                                </a>
-                                <p style="margin:auto;max-width:10em;text-transform:uppercase;margin-top:1em;"><a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a></p>
-                                <p style="color:#2e748e;margin-bottom:1em;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                            </div>
-
-                            <!--book 4-->
-                            <div class="col-md-3 col-sm-6" style="text-align:center;margin:auto;margin-top:2em;">
-                                <a href="preview.html" style="color:#000;text-decoration:none;">
-                                    <img src="images/book1.jpg" class="book_showcase hover_expand">
-                                </a>
-                                <p style="margin:auto;max-width:10em;text-transform:uppercase;margin-top:1em;"><a href="preview.html" style="color:#000;text-decoration:none;">Khoa học viễn tưởng</a></p>
-                                <p style="color:#2e748e;margin-bottom:1em;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                            </div>
-
                         </div>
+
                     </div>
 
                 </div>
@@ -334,8 +630,8 @@
         </div>
 
         <!--footer-->
-        <div style="background:#2e748e;padding:2em 1em 2em 1em;box-shadow:0 -4px rgba(0,0,0,.25);z-index:4;position:relative;">
-            
+        <div class="footer_main">
+
             <!--quicklink menu-->
             <div style="margin:auto;text-align:center;">
                 <div style="display:inline-block;margin:1em;">
@@ -351,7 +647,7 @@
                     <a href="about.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">về bookism</a>
                 </div>
                 <div style="display:inline-block;margin:1em;">
-                    <a href="#" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">faq</a>
+                    <a href="faq.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">faq</a>
                 </div>
                 <div style="display:inline-block;margin:1em;">
                     <a href="contact.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">liên hệ</a>
@@ -390,57 +686,79 @@
             <div style="height:1em;"></div>
 
         </div>
-                
-    </div>
 
-<script src="http://code.jquery.com/jquery.js">
-</script>
-    <script>// Show the off-canvas navigation
-        $('#off-canvas-toggle').click(function() {
-            $('#nav-primary').toggleClass('off-canvas-show');
-        });
+        </div>
 
-        $('#nav-primary').removeClass('off-canvas-show');
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js">
+        </script>
+        <script>            
+            // Show the off-canvas navigation
+            $(document).ready(function() {
+                $('#off-canvas-toggle').click(function() {
+                    $('#nav-primary').toggleClass('off-canvas-show');
+                });
 
-        // Hide the off-canvas nav when clicking a link
-        $('#nav-primary').find('a').on('click', function(e) {
-            $('#nav-primary').removeClass('off-canvas-show');
-        });
+                $('#nav-primary').removeClass('off-canvas-show');
 
-        // Hide the off-canvas nav when clicking outside
-        $('#page-content').on('click', function(e) {
-            $('#nav-primary').removeClass('off-canvas-show');
-        });
-    </script>
-    <script>var dropdowns = $(".dropdown");
+                // Hide the off-canvas nav when clicking a link
+                $('#nav-primary').find('a').on('click', function(e) {
+                    $('#nav-primary').removeClass('off-canvas-show');
+                });
 
-        // Onclick on a dropdown, toggle visibility
-        dropdowns.find("dt").click(function(){
-            dropdowns.find("dd ul").hide();
-            $(this).next().children().toggle();
-        });
-
-        // Clic handler for dropdown
-        dropdowns.find("dd ul li a").click(function(){
-            var leSpan = $(this).parents(".dropdown").find("dt a span");
-
-            // Remove selected class
-            $(this).parents(".dropdown").find('dd a').each(function(){
+                // Hide the off-canvas nav when clicking outside
+                $('#page-content').on('click', function(e) {
+                    $('#nav-primary').removeClass('off-canvas-show');
+                });
             });
 
-            // Update selected value
-            leSpan.html($(this).html());
+            // Show the cart
+            $(document).ready(function() {
+                $('.off-cart-toggle').click(function() {
+                    $('#cart-primary').toggleClass('off-cart-show');
+                });
 
-            // Close dropdown
-            $(this).parents("ul").hide();
-        });
+                $('#cart-primary').removeClass('off-cart-show');
 
-        // Close all dropdown onclick on another element
-        $(document).bind('click', function(e){
-            if (! $(e.target).parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
-        });
-    </script>
+                // Hide the off-canvas nav when clicking a link
+                $('#cart-primary').find('a').on('click', function(e) {
+                    $('#cart-primary').removeClass('off-cart-show');
+                });
 
-</body>
+                // Hide the off-canvas nav when clicking outside
+                $('#page-content').on('click', function(e) {
+                    $('#cart-primary').removeClass('off-cart-show');
+                });
+            });
+        </script>
+        <script>
+            var dropdowns = $(".dropdown");
+
+            // Onclick on a dropdown, toggle visibility
+            dropdowns.find("dt").click(function(){
+                dropdowns.find("dd ul").hide();
+                $(this).next().children().toggle();
+            });
+
+            // Clic handler for dropdown
+            dropdowns.find("dd ul li a").click(function(){
+                var leSpan = $(this).parents(".dropdown").find("dt a span");
+
+                // Remove selected class
+                $(this).parents(".dropdown").find('dd a').each(function(){
+                });
+
+                // Update selected value
+                leSpan.html($(this).html());
+
+                // Close dropdown
+                $(this).parents("ul").hide();
+            });
+
+            // Close all dropdown onclick on another element
+            $(document).bind('click', function(e){
+                if (! $(e.target).parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
+            });
+        </script>
+
+    </body>
 </html>
-
