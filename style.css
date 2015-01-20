@@ -280,6 +280,22 @@ table {
     background: #f4f4f4;
     box-shadow: .7em .7em rgba(0,0,0,.5);
 }
+.CTA_button_red {
+    background: #d93816;
+    text-align: center;
+    max-width: 18em;
+    border-radius:.4em;
+    margin:auto;
+    box-shadow: .4em .4em rgba(0,0,0,.6);
+    -webkit-transition: ease-out .3s;
+    -moz-transition: ease-out .3s;
+    -o-transition: ease-out .3s;
+    transition: ease-out .3s;
+}
+.CTA_button_red:hover {
+    background: #f4f4f4;
+    box-shadow: .7em .7em rgba(0,0,0,.5);
+}
 .CTA_button_border{
     background: #1a5970;
     border:3px solid #1a5970;
@@ -1639,14 +1655,14 @@ table {
         box-shadow: 1em 1em rgba(41,113,139,.5);
         overflow:hidden;
     }
-    .CTA_button_home span{
+    .CTA_button_home span, .CTA_button_red span, .CTA_button_red span{
         color: #fff;
         text-transform: uppercase;
         font-family: 'Gotham';
         font-size: 1.5em;
         letter-spacing: 2px
     }
-    .CTA_button_home:hover span {
+    .CTA_button_home:hover span, .CTA_button_red:hover span, .CTA_button_red:hover span {
         color: #1a5970;
     }
     .CTA_button_border span{
@@ -1852,14 +1868,14 @@ table {
         box-shadow: 1em 1em rgba(41,113,139,.5);
         overflow:hidden;
     }
-    .CTA_button_home span{
+    .CTA_button_home span, .CTA_button_red span{
         color: #fff;
         text-transform: uppercase;
         font-family: 'Gotham';
         font-size: 1.5em;
         letter-spacing: 2px
     }
-    .CTA_button_home:hover span {
+    .CTA_button_home:hover span, .CTA_button_red:hover span {
         color: #1a5970;
     }
     .CTA_button_border span{
@@ -2065,14 +2081,14 @@ table {
         box-shadow: .75em .75em rgba(41,113,139,.5);
         overflow:hidden;
     }
-    .CTA_button_home span{
+    .CTA_button_home span, .CTA_button_red span{
         color: #fff;
         text-transform: uppercase;
         font-family: 'Gotham';
         font-size: 1.2em;
         letter-spacing: 2px
     }
-    .CTA_button_home:hover span {
+    .CTA_button_home:hover span, .CTA_button_red:hover span {
         color: #1a5970;
     }
     .CTA_button_border span{
@@ -2280,14 +2296,14 @@ table {
         box-shadow: .5em .5em rgba(41,113,139,.5);
         overflow:hidden;
     }
-    .CTA_button_home span{
+    .CTA_button_home span, .CTA_button_red span{
         color: #fff;
         text-transform: uppercase;
         font-family: 'Gotham';
         font-size: 1em;
         letter-spacing: 2px
     }
-    .CTA_button_home:hover span {
+    .CTA_button_home:hover span, .CTA_button_red:hover span {
         color: #1a5970;
     }
     .CTA_button_border span{
