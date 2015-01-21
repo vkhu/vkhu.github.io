@@ -917,7 +917,6 @@ table {
     text-transform: uppercase;
 }
 .rating_prev{
-    color:#000;
     text-shadow:none;
     letter-spacing: 4px;
     font-family: 'novcextlig';
@@ -1704,13 +1703,13 @@ table {
     }
     .h1-cat{
         color:#fff;
-        font-size: 4em;
+        font-size: 3em;
         text-align: center;
         text-transform: uppercase;
         margin:0;
     }
     .cat_header_txt{
-        padding: 18em 0 18em 0;
+        padding: 18em 1em 18em 1em;
         background-size:cover;
         text-align:center;
         color:#fff;
@@ -1917,12 +1916,12 @@ table {
     }
     .h1-cat{
         color:#fff;
-        font-size: 4em;
+        font-size: 3em;
         text-align: center;
         text-transform: uppercase;
     }
     .cat_header_txt{
-        padding: 15em 0 15em 0;
+        padding: 16em 1em 16em 1em;
         background-size:cover;
         text-align:center;
         color:#fff;
@@ -2130,12 +2129,12 @@ table {
     }
     .h1-cat{
         color:#fff;
-        font-size: 3.5em;
+        font-size: 2.5em;
         text-align: center;
         text-transform: uppercase;
     }
     .cat_header_txt{
-        padding: 15em 0 15em 0;
+        padding: 15em 1em 15em 1em;
         background-size:cover;
         text-align:center;
         color:#fff;
@@ -2345,13 +2344,13 @@ table {
     }
     .h1-cat{
         color:#fff;
-        font-size: 2.5em;
+        font-size: 2em;
         text-align: center;
         text-transform: uppercase;
         text-shadow: 0 0 10px #000;
     }
     .cat_header_txt{
-        padding: 7em 0 7em 0;
+        padding: 12em 1em 12em 1em;
         background-size:cover;
         text-align:center;
         color:#fff;
