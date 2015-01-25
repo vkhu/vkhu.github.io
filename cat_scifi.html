@@ -144,19 +144,21 @@
             <button class="hamburger" id="off-canvas-toggle"><i class="fa fa-bars"></i></button>
 
             <!--cart-->
-            <div class="hotdog cursor_hover off-cart-toggle hidden-xs" style="float:right;">
-                <i class="fa fa-shopping-cart"></i> <span style="color:#d93816;font-weight:700;">&#40;2&#41;</span> Giỏ hàng
-            </div>
-
-            <!--cart mobile-->
-            <div class="hotdog cursor_hover off-cart-toggle visible-xs" style="float:right;">
-                <i class="fa fa-shopping-cart"></i> <span style="color:#d93816;font-weight:700;">&#40;2&#41;</span>
+            <div class="hotdog cursor_hover off-cart-toggle" style="float:right;">
+                <i class="fa fa-shopping-cart"></i> <span style="color:#d93816;font-weight:700;">&#40;2&#41;</span><span class="hidden-xs"> Giỏ hàng</span>
             </div>
 
         </header>
 
     <!-- main content -->
     <div class="page-content" id="page-content">
+
+        <!--confirmation-->
+        <div style="position:fixed;width:100%;height:100%;z-index:100;pointer-events:none;">
+            <div class="success" style="opacity:0;position:absolute;margin:auto;top:0;bottom:0;left:0;right:0;">
+                <span class="mid-align"></span><i class="fa fa-check"></i> Đã thêm
+            </div>
+        </div>
 
         <div style="background-image:url(images/library/header/cat_scifi.jpg);" class="cat_header_txt">
             <h1 class="h1-cat">Khoa học viễn tưởng</h1>
@@ -207,12 +209,17 @@
                             </a>
 
                             <!--price-->
-                            <span style="text-decoration:line-through;">140.000đ</span>
-                            <a href="preview.html" style="text-decoration:none;">
-                                <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
-                                    <span>84.000đ</span>
-                                </div> 
-                            </a>
+                            <span style="text-decoration:line-through;color:#ed431f;font-weight:900;">140.000đ</span>
+                            <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                <span>84.000đ</span>
+                            </div> 
+
+                            <!--small cta-->
+                            <div class="CTA_button_small cursor_hover">
+                                <div style="width:100%;padding:.6em;">
+                                    <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                </div>
+                            </div>
 
                         </div>
 
@@ -279,12 +286,17 @@
                                                 <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
 
                                                 <!--price-->
-                                                <span style="text-decoration:line-through;">100.000đ</span>
-                                                <a href="preview.html" style="text-decoration:none;">
-                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
-                                                        <span>78.000đ</span>
-                                                    </div> 
-                                                </a>
+                                                <span style="text-decoration:line-through;color:#ed431f;font-weight:900;">100.000đ</span>
+                                                <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                    <span>78.000đ</span>
+                                                </div> 
+
+                                                <!--small cta-->
+                                                <div class="CTA_button_small cursor_hover">
+                                                    <div style="width:100%;padding:.6em;">
+                                                        <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>
@@ -307,12 +319,17 @@
                                                 <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
 
                                                 <!--price-->
-                                                <span style="text-decoration:line-through;">140.000đ</span>
-                                                <a href="preview.html" style="text-decoration:none;">
-                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
-                                                        <span>84.000đ</span>
-                                                    </div> 
-                                                </a>
+                                                <span style="text-decoration:line-through;color:#ed431f;font-weight:900;">100.000đ</span>
+                                                <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                    <span>78.000đ</span>
+                                                </div> 
+
+                                                <!--small cta-->
+                                                <div class="CTA_button_small cursor_hover">
+                                                    <div style="width:100%;padding:.6em;">
+                                                        <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>                                
@@ -339,11 +356,16 @@
                                                 <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
 
                                                 <!--price-->
-                                                <a href="preview.html" style="text-decoration:none;">
-                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
-                                                        <span>45.000đ</span>
-                                                    </div> 
-                                                </a>
+                                                <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                    <span>78.000đ</span>
+                                                </div> 
+
+                                                <!--small cta-->
+                                                <div class="CTA_button_small cursor_hover">
+                                                    <div style="width:100%;padding:.6em;">
+                                                        <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>
@@ -363,11 +385,16 @@
                                                 <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
 
                                                 <!--price-->
-                                                <a href="preview.html" style="text-decoration:none;">
-                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
-                                                        <span>69.000đ</span>
-                                                    </div> 
-                                                </a>
+                                                <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                    <span>78.000đ</span>
+                                                </div> 
+
+                                                <!--small cta-->
+                                                <div class="CTA_button_small cursor_hover">
+                                                    <div style="width:100%;padding:.6em;">
+                                                        <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>                                
@@ -400,11 +427,16 @@
                                                 <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
 
                                                 <!--price-->
-                                                <a href="preview.html" style="text-decoration:none;">
-                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
-                                                        <span>83.000đ</span>
-                                                    </div> 
-                                                </a>
+                                                <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                    <span>78.000đ</span>
+                                                </div> 
+
+                                                <!--small cta-->
+                                                <div class="CTA_button_small cursor_hover">
+                                                    <div style="width:100%;padding:.6em;">
+                                                        <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>
@@ -424,11 +456,16 @@
                                                 <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
 
                                                 <!--price-->
-                                                <a href="preview.html" style="text-decoration:none;">
-                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
-                                                        <span>84.000đ</span>
-                                                    </div> 
-                                                </a>
+                                                <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                    <span>78.000đ</span>
+                                                </div> 
+
+                                                <!--small cta-->
+                                                <div class="CTA_button_small cursor_hover">
+                                                    <div style="width:100%;padding:.6em;">
+                                                        <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>                                
@@ -457,12 +494,17 @@
                                                 <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
 
                                                 <!--price-->
-                                                <span style="text-decoration:line-through;">42.000đ</span>
-                                                <a href="preview.html" style="text-decoration:none;">
-                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
-                                                        <span>37.800đ</span>
-                                                    </div> 
-                                                </a>
+                                                <span style="text-decoration:line-through;color:#ed431f;font-weight:900;">100.000đ</span>
+                                                <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                    <span>78.000đ</span>
+                                                </div> 
+
+                                                <!--small cta-->
+                                                <div class="CTA_button_small cursor_hover">
+                                                    <div style="width:100%;padding:.6em;">
+                                                        <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>
@@ -482,11 +524,16 @@
                                                 <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
 
                                                 <!--price-->
-                                                <a href="preview.html" style="text-decoration:none;">
-                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
-                                                        <span>74.000đ</span>
-                                                    </div> 
-                                                </a>
+                                                <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                    <span>78.000đ</span>
+                                                </div> 
+
+                                                <!--small cta-->
+                                                <div class="CTA_button_small cursor_hover">
+                                                    <div style="width:100%;padding:.6em;">
+                                                        <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>                                
@@ -522,12 +569,17 @@
                                                 <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
 
                                                 <!--price-->
-                                                <span style="text-decoration:line-through;">119.000đ</span>
-                                                <a href="preview.html" style="text-decoration:none;">
-                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
-                                                        <span>95.200đ</span>
-                                                    </div> 
-                                                </a>
+                                                <span style="text-decoration:line-through;color:#ed431f;font-weight:900;">100.000đ</span>
+                                                <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                    <span>78.000đ</span>
+                                                </div> 
+
+                                                <!--small cta-->
+                                                <div class="CTA_button_small cursor_hover">
+                                                    <div style="width:100%;padding:.6em;">
+                                                        <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>
@@ -547,11 +599,16 @@
                                                 <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
 
                                                 <!--price-->
-                                                <a href="preview.html" style="text-decoration:none;">
-                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
-                                                        <span>121.000đ</span>
-                                                    </div> 
-                                                </a>
+                                                <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                    <span>78.000đ</span>
+                                                </div> 
+
+                                                <!--small cta-->
+                                                <div class="CTA_button_small cursor_hover">
+                                                    <div style="width:100%;padding:.6em;">
+                                                        <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>                                
@@ -577,11 +634,16 @@
                                                 <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
 
                                                 <!--price-->
-                                                <a href="preview.html" style="text-decoration:none;">
-                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
-                                                        <span>148.000đ</span>
-                                                    </div> 
-                                                </a>
+                                                <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                    <span>78.000đ</span>
+                                                </div> 
+
+                                                <!--small cta-->
+                                                <div class="CTA_button_small cursor_hover">
+                                                    <div style="width:100%;padding:.6em;">
+                                                        <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>
@@ -601,11 +663,16 @@
                                                 <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span><br>
 
                                                 <!--price-->
-                                                <a href="preview.html" style="text-decoration:none;">
-                                                    <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
-                                                        <span>34.000đ</span>
-                                                    </div> 
-                                                </a>
+                                                <div class="price-white" style="border: 2px solid #2e748e;color:#2e748e;">
+                                                    <span>78.000đ</span>
+                                                </div> 
+
+                                                <!--small cta-->
+                                                <div class="CTA_button_small cursor_hover">
+                                                    <div style="width:100%;padding:.6em;">
+                                                        <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                                    </div>
+                                                </div>
 
                                             </div>
                                         </div>                                
@@ -662,10 +729,10 @@
             <!--term-->
             <div style="margin:auto;text-align:center;">
                 <div style="display:inline-block;margin:0 1em 1em 1em;">
-                    <a href="#" style="color:#fff;text-decoration:none;">Điều khoản</a>
+                    <a href="term.html" style="color:#fff;text-decoration:none;">Điều khoản</a>
                 </div>
                 <div style="display:inline-block;margin:0 1em 1em 1em;">
-                    <a href="#" style="color:#fff;text-decoration:none;">Quyền riêng tư</a>
+                    <a href="privacy.html" style="color:#fff;text-decoration:none;">Quyền riêng tư</a>
                 </div>
             </div>
 
@@ -674,20 +741,21 @@
 
                 <a href="https://www.facebook.com/BookismVietNam" target="_blank">
                     <div class="social-home-end">
-                        <i class="fa fa-facebook" style="line-height:2em;color:#2e748e;"></i>
+                        <i class="fa fa-facebook" style="line-height:2em;"></i>
                     </div>
                 </a>
 
                 <a href="mailto:bookism.net@gmail.com" target="_blank">
                     <div class="social-home-end">
-                        <i class="fa fa-envelope" style="line-height:2em;color:#2e748e;"></i>
+                        <i class="fa fa-envelope" style="line-height:2em;"></i>
                     </div>
                 </a>
 
             </div>
 
             <!--copyright-->
-            <p style="color:#fff;text-align:center;margin-top:1em;">&copy; Copyright 2014 Bookism. All rights reserved.</p>
+            <p style="color:#fff;text-align:center;line-height:1.5em;margin-top:1em;"><i class="fa fa-phone"></i> 0904 968 269<br><i class="fa fa-map-marker"></i> 211 nhà B, tập thể Bộ Y Tế, Lò Đúc</p>
+            <p style="color:#fff;text-align:center;margin-top:1em;line-height:1.5em;">&copy; Copyright 2014 by Bookism.</p>
             <div style="height:1em;"></div>
 
         </div>
@@ -714,10 +782,8 @@
                 $('#page-content').on('click', function(e) {
                     $('#nav-primary').removeClass('off-canvas-show');
                 });
-            });
 
-            // Show the cart
-            $(document).ready(function() {
+                // Show the cart
                 $('.off-cart-toggle').click(function() {
                     $('#cart-primary').toggleClass('off-cart-show');
                 });
@@ -733,6 +799,14 @@
                 $('#page-content').on('click', function(e) {
                     $('#cart-primary').removeClass('off-cart-show');
                 });
+
+                //show confirmation
+                $('.CTA_button_small').click(function() {
+                    $('.success').animate({
+                        opacity: 1,}, 100 ).delay(1000).animate({
+                        opacity: 0,}, 700 );
+                });
+
             });
         </script>
         <script>

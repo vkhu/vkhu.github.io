@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+    <head>    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Gian sách cho fan truyện Sci fi, Fantasy, Trinh thám.">
+        <title>Bookism - Bước vào trang truyện. Mở ra thế giới.</title>
+        <link rel="icon" href="images/favicon.png">
+        <link href="style.css" rel="stylesheet" type='text/css'/>
+        <link href="reset.css" rel="stylesheet" type='text/css'/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
+        <style>
+            body{
+                background-color:#2e748e;
+                overflow-x: hidden;			
+                font-family: 'Gotham', sans-serif;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- nav items -->
+        <nav class="nav-primary" id="nav-primary">
+
+            <!--main menu-->
+            <div class="row menu_main" style="margin:auto;">
+
+                <!--home-->
+                <a href="index.html" style="color:#fff;text-decoration:none;">
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/home_menu_icon.png" style="width:1.8em;" alt="menu home">
+                        <p style="font-size:.8em;margin-top:1em;">trang<br>chủ</p>
+                    </div>
+                </a>
+
+                <!--library-->
+                <a href="gian-sach.html" style="color:#fff;text-decoration:none;">
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/lib_menu_icon.png" style="width:1.8em;" alt="menu library">
+                        <p style="font-size:.8em;margin-top:1em;">gian<br>sách</p>
+                    </div>
+                </a>
+
+                <!--article-->
+                <a href="articles.html" style="color:#fff;text-decoration:none;">
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/article_menu_icon.png" style="width:1.8em;" alt="menu blog">
+                        <p style="font-size:.8em;margin-top:1em;">bài<br>viết</p>
+                    </div>
+                </a>
+
+                <!--about-->
+                <a href="about.html" style="color:#fff;text-decoration:none;">
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/about_menu_icon.png" style="width:1.8em;" alt="menu about">
+                        <p style="font-size:.8em;margin-top:1em;">về<br>bookism</p>
+                    </div>
+                </a>
+
+                <!--FAQ-->
+                <a href="faq.html" style="color:#fff;text-decoration:none;">
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/faq_menu_icon.png" style="width:1.8em;" alt="menu faq">
+                        <p style="font-size:.8em;margin-top:1em;">faq</p>
+                    </div>
+                </a>
+
+                <!--contact-->
+                <a href="contact.html" style="color:#fff;text-decoration:none;">
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/contact_menu_icon.png" style="width:1.8em;" alt="menu contact">
+                        <p style="font-size:.8em;margin-top:1em;">liên<br>hệ</p>
+                    </div>
+                </a>
+
+            </div>
+
+        </nav>
+
+        <!-- cart items -->
+        <nav class="cart-primary" id="cart-primary">
+            
+            <!--item 1-->
+            <div class="cart_item">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div>
+                            <a href="preview.html">
+                                <img src="images/book7.jpg" style="width:100%;height:auto;box-shadow: 2px 2px 5px rgba(0,0,0,.5);">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="three_dot">
+                            <a href="preview.html" style="color:#000;font-weight:700;">Nào phải anh hùng</a>
+                        </p>
+                        <p style="opacity:.5;">120.000đ x 1</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--item 2-->
+            <div class="cart_item">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div>
+                            <a href="preview.html">
+                                <img src="images/book2.jpg" style="width:100%;height:auto;box-shadow: 2px 2px 5px rgba(0,0,0,.5);">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="three_dot">
+                            <a href="preview.html" style="color:#000;font-weight:700;">Chiến tranh giữa các vì sao</a>
+                        </p>
+                        <p style="opacity:.5;">67.000đ x 1</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--total + checkout-->
+            <div class="cart_item">
+                <p style="text-transform:uppercase;text-align:center;color:#1a5970;margin:0;">tổng cộng&#58;</p>
+                <p style="font-weight:700;font-size:1.5em;text-align:center;color:#1a5970">187.000đ</p>
+                <a href="checkout.html" style="color:#fff;text-transform:uppercase;text-decoration:none;">
+                    <div class="checkout_button">
+                        đặt mua
+                    </div>
+                </a>
+            </div>
+            
+            <p style="text-align:center;margin-top:1em;">
+                <a href="cart.html">Xem giỏ hàng</a>
+            </p>
+            
+        </nav>
+        
+        <!-- header bar -->
+        <header class="mobile-helper-bar">
+            
+            <!-- menu -->
+            <button class="hamburger" id="off-canvas-toggle"><i class="fa fa-bars"></i></button>
+            
+            <!--cart-->
+            <div class="hotdog cursor_hover off-cart-toggle" style="float:right;">
+                <i class="fa fa-shopping-cart"></i> <span style="color:#d93816;font-weight:700;">&#40;2&#41;</span><span class="hidden-xs"> Giỏ hàng</span>
+            </div>
+
+        </header>
+
+        <!-- main content -->
+        <div class="page-content" id="page-content" style="background-color:#eaeaea;">
+            
+            <div class="header_ph"></div>
+
+            <div style="padding:2em;">
+                <div style="width:100%;height:20em;border:1em dashed #2e748e;border-radius:1em;opacity:.5;text-align:center;text-transform:uppercase;padding:1em 0;position:relative;">
+                    <span class="mid-align"></span><div style="display:inline-block;">
+                    <span style="font-weight:900;color:#2e748e;line-height:1em;" class="h1-cat">trống trải quá hà &#58;&#92;</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!--intro 1st sect-->
+            <div style="padding:2em 0;">
+                <div class="row padding-2em">
+                    
+                    <div class="col-md-3 col-sm-6" style="margin:2em 0;">
+                        <div style="border-radius:10px;background:#fff;max-width:20em;margin:auto;text-align:center;overflow:hidden;position:relative;">
+                            <div class="cursor_hover close_button">x</div>
+                            <div style="padding:1em;border-bottom:solid 1px rgba(0,0,0,.1);">
+                                <img src="images/book7.jpg" class="book_showcase">
+                            </div>
+                            <div style="padding:1em;">
+                                <p>
+                                    <a href="preview.html" style="color:#000;font-weight:700;font-size:1.5em">Nào phải anh hùng</a>
+                                </p>
+                                <p style="text-align:left;max-height:5em;" class="headrest">Look at your bike. Now back to this bike . Now back to your bike. Now back to this bike. Sadly, your bike just isn't as sexy</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="clearfix visible-sm-block"></div>
+                    
+                </div>
+            </div>
+
+            <!--footer-->
+            <div class="footer_main">
+
+                <!--quicklink menu-->
+                <div style="margin:auto;text-align:center;">
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="index.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">trang chủ</a>
+                    </div>
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="gian-sach.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">gian sách</a>
+                    </div>
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="articles.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">bài viết</a>
+                    </div>
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="about.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">về bookism</a>
+                    </div>
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="faq.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">faq</a>
+                    </div>
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="contact.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">liên hệ</a>
+                    </div>
+                </div>
+
+                <!--term-->
+                <div style="margin:auto;text-align:center;">
+                    <div style="display:inline-block;margin:0 1em 1em 1em;">
+                        <a href="term.html" style="color:#fff;text-decoration:none;">Điều khoản</a>
+                    </div>
+                    <div style="display:inline-block;margin:0 1em 1em 1em;">
+                        <a href="privacy.html" style="color:#fff;text-decoration:none;">Quyền riêng tư</a>
+                    </div>
+                </div>
+
+                <!--fb + mail-->
+                <div style="margin:auto;text-align:center;">
+
+                    <a href="https://www.facebook.com/BookismVietNam" target="_blank">
+                        <div class="social-home-end">
+                            <i class="fa fa-facebook" style="line-height:2em;"></i>
+                        </div>
+                    </a>
+
+                    <a href="mailto:bookism.net@gmail.com" target="_blank">
+                        <div class="social-home-end">
+                            <i class="fa fa-envelope" style="line-height:2em;"></i>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!--copyright-->
+                <p style="color:#fff;text-align:center;line-height:1.5em;margin-top:1em;"><i class="fa fa-phone"></i> 0904 968 269<br><i class="fa fa-map-marker"></i> 211 nhà B, tập thể Bộ Y Tế, Lò Đúc</p>
+                <p style="color:#fff;text-align:center;margin-top:1em;line-height:1.5em;">&copy; Copyright 2014 by Bookism.</p>
+                <div style="height:1em;"></div>
+
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js">
+        </script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script src="js/jquery.dotdotdot.min.js"></script>
+        <script>
+            // Show the off-canvas navigation
+            $(document).ready(function() {
+                $('#off-canvas-toggle').click(function() {
+                    $('#nav-primary').toggleClass('off-canvas-show');
+                });
+
+                $('#nav-primary').removeClass('off-canvas-show');
+
+                // Hide the off-canvas nav when clicking a link
+                $('#nav-primary').find('a').on('click', function(e) {
+                    $('#nav-primary').removeClass('off-canvas-show');
+                });
+
+                // Hide the off-canvas nav when clicking outside
+                $('#page-content').on('click', function(e) {
+                    $('#nav-primary').removeClass('off-canvas-show');
+                });
+                
+                // Show the cart
+                $('.off-cart-toggle').click(function() {
+                    $('#cart-primary').toggleClass('off-cart-show');
+                });
+
+                $('#cart-primary').removeClass('off-cart-show');
+
+                // Hide the off-canvas nav when clicking a link
+                $('#cart-primary').find('a').on('click', function(e) {
+                    $('#cart-primary').removeClass('off-cart-show');
+                });
+
+                // Hide the off-canvas nav when clicking outside
+                $('#page-content').on('click', function(e) {
+                    $('#cart-primary').removeClass('off-cart-show');
+                });
+                
+                //remove product
+                $('.close_button').click(function(){
+                    $(this).closest('.col-md-3.col-sm-6').remove();
+                });
+                
+                //three dot
+                $(".headrest").dotdotdot({
+                    ellipsis: '... ',
+                    wrap: 'word',
+                    watch: "window",
+                });
+            });
+        </script>
+
+    </body>
+</html>
+

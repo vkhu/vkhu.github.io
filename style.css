@@ -83,6 +83,7 @@ table {
     transition: 0.3s;
     box-sizing: border-box;
     overflow-x:hidden;
+    position:relative;
 }
 .off-canvas-show ~ .page-content {
     overflow-x: hidden;
@@ -693,7 +694,7 @@ table {
     width:100%;
     top:-3em;
     right:0;
-    z-index: 1;
+    z-index: 2;
 }
 .hover_expand{
     -webkit-transform: scale(.9,.9);
@@ -943,17 +944,8 @@ table {
     z-index:1;
     padding: 6em 2em 2em 2em;
 }
-.ava_review {
-    max-width: 5em;
-    margin:auto;
-    background-image: url(images/ava_default.png);
-    background-size: 100% 100%;
-}
-.ava_review:after {
-    padding-top: 100%;
-    display: block;
-    content: '';
-}
+
+
 #new_review input[type="text"], #new_review input[type="submit"] {
     font-family: Gotham;
     width: 100%;
@@ -969,7 +961,7 @@ table {
     margin: 0 0 2em 0;
     border: solid 2px #2e748e;
 }
-#new_review input[type="text"]:focus {
+#new_review input[type="text"]:focus, #new_review textarea:focus {
     outline: none;
 }
 #new_review input[type="submit"] {
@@ -2347,7 +2339,6 @@ table {
         font-size: 2em;
         text-align: center;
         text-transform: uppercase;
-        text-shadow: 0 0 10px #000;
     }
     .cat_header_txt{
         padding: 12em 1em 12em 1em;
@@ -2621,6 +2612,14 @@ table {
     max-width: 7em;
     margin:auto;
 }
+.price-blue{
+    padding:.5em;
+    border: 2px solid #1a5970;
+    border-radius:5px;
+    color: #1a5970;
+    max-width: 7em;
+    margin:auto;
+}
 #searchBar input {
     display: block;
     border: 3px solid #fff;
@@ -2695,4 +2694,35 @@ table {
     font-size: 16px;
     padding: 0;
     cursor: pointer;
+}
+.success{
+    color:#fff;
+    margin: 2em auto;
+    text-align:center;
+    font-size:2em;
+    text-transform: uppercase;
+    padding:1em;
+    height:6em;
+    background:#27ae60;
+}
+.CTA_button_small {
+    background:#65b0cd;
+    text-align:center;
+    color:#fff;
+    font-size:1.2em;
+    max-width:4em;
+    margin:.8em auto 1em auto;
+    border-radius:10px;
+    box-shadow: .1em .1em rgba(0,0,0,.6);
+}
+.close_button{
+    position:absolute;
+    font-weight:900;
+    width:22px;
+    height:22px;
+    right:5px;
+    top:5px;
+    border-radius:50%;
+    color:#fff;
+    background:#d93816;
 }
