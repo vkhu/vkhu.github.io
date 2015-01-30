@@ -2798,7 +2798,6 @@ table {
 }
 .checkout-item:last-child {
     border-bottom:3px double rgba(0,0,0,.7);
-    
 }
 
 .checkout-item-div {
@@ -2808,12 +2807,4 @@ table {
 .brightness {
     filter: brightness(0.5);
     -webkit-filter: brightness(0.5);
-}
-.portrait {
-    width: 100%;
-    height:auto;
-}
-.landscape {
-    height: 100%;
-    width: auto;
 }
