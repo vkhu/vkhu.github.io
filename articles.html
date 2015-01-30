@@ -3,18 +3,17 @@
     <head>    
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Kho truyện online miễn phí, đa dạng, dễ dàng tiếp cận ngay cả trên điện thoại, tablet,... đọc mọi lúc, mọi nơi!">
-        <title>Bài viết</title>
+        <meta name="description" content="Gian sách cho fan truyện Sci fi, Fantasy, Trinh thám.">
+        <title>Bookism - Bước vào trang truyện. Mở ra thế giới.</title>
         <link rel="icon" href="images/favicon.png">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'/>
         <link href="style.css" rel="stylesheet" type='text/css'/>
         <link href="reset.css" rel="stylesheet" type='text/css'/>
-        <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
-        <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
         <style>
             body{
-                background:#65afce;
+                background-color:#65afce;
                 overflow-x: hidden;			
                 font-family: 'Gotham', sans-serif;
             }
@@ -25,202 +24,328 @@
         <!-- nav items -->
         <nav class="nav-primary" id="nav-primary">
 
-            <!--ava/log in-->
-            <a href="login.html">
-                <div class="menu_ava">
-                    <span class="mid-align"></span><img class="mid-align" src="images/question_mark.jpg">
-                </div>
-            </a>
-            <div class="log_in_txt">
-                <a href="registration_form.html" style="color:#fff;text-decoration:none;">đăng<br>nhập</a>
-            </div>
-
             <!--main menu-->
             <div class="row menu_main" style="margin:auto;">
 
                 <!--home-->
-                <div class="col-xs-6" style="margin-top:1em;">
-                    <a href="index.html" style="color:#fff;text-decoration:none;">
-                        <img src="images/home_menu_icon.jpg" style="width:1.8em;">
+                <a href="index.html" style="color:#fff;text-decoration:none;">
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/home_menu_icon.png" style="width:1.8em;" alt="menu home">
                         <p style="font-size:.8em;margin-top:1em;">trang<br>chủ</p>
-                    </a>
-                </div>
+                    </div>
+                </a>
 
                 <!--library-->
-                <div class="col-xs-6" style="margin-top:1em;">
-                    <a href="gian-sach.html" style="color:#fff;text-decoration:none;">
-                        <img src="images/lib_menu_icon.jpg" style="width:1.8em;">
-                        <p style="font-size:.8em;margin-top:1em;">thư<br>viện</p>
-                    </a>
-                </div>
+                <a href="gian-sach.html" style="color:#fff;text-decoration:none;">
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/lib_menu_icon.png" style="width:1.8em;" alt="menu library">
+                        <p style="font-size:.8em;margin-top:1em;">gian<br>sách</p>
+                    </div>
+                </a>
 
                 <!--article-->
-                <div class="col-xs-6" style="margin-top:1em;">
-                    <a href="articles.html" style="color:#fff;text-decoration:none;">
-                        <img src="images/article_menu_icon.jpg" style="width:1.8em;">
+                <a href="articles.html" style="color:#fff;text-decoration:none;">
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/article_menu_icon.png" style="width:1.8em;" alt="menu blog">
                         <p style="font-size:.8em;margin-top:1em;">bài<br>viết</p>
-                    </a>
-                </div>
+                    </div>
+                </a>
 
                 <!--about-->
-                <div class="col-xs-6" style="margin-top:1em;">
-                    <a href="about.html" style="color:#fff;text-decoration:none;">
-                        <img src="images/about_menu_icon.jpg" style="width:1.8em;">
+                <a href="about.html" style="color:#fff;text-decoration:none;">
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/about_menu_icon.png" style="width:1.8em;" alt="menu about">
                         <p style="font-size:.8em;margin-top:1em;">về<br>bookism</p>
-                    </a>
-                </div>
+                    </div>
+                </a>
 
                 <!--FAQ-->
-                <div class="col-xs-6" style="margin-top:1em;">
-                    <a href="faq.html" style="color:#fff;text-decoration:none;">
-                        <img src="images/faq_menu_icon.jpg" style="width:1.8em;">
+                <a href="faq.html" style="color:#fff;text-decoration:none;">
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/faq_menu_icon.png" style="width:1.8em;" alt="menu faq">
                         <p style="font-size:.8em;margin-top:1em;">faq</p>
-                    </a>
-                </div>
+                    </div>
+                </a>
 
                 <!--contact-->
-                <div class="col-xs-6" style="margin-top:1em;">
-                    <a href="contact.html" style="color:#fff;text-decoration:none;">
-                        <img src="images/contact_menu_icon.jpg" style="width:1.8em;">
+                <a href="contact.html" style="color:#fff;text-decoration:none;">
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/contact_menu_icon.png" style="width:1.8em;" alt="menu contact">
                         <p style="font-size:.8em;margin-top:1em;">liên<br>hệ</p>
-                    </a>
-                </div>
-
-            </div>
-
-            <!--for logged in user-->
-            <div class="row menu_main" style="margin:auto;">
-
-                <!--setting-->
-                <div class="col-xs-6" style="margin-top:1em;">
-                    <a href="setting.html" style="color:#fff;text-decoration:none;">
-                        <img src="images/setting_menu_icon.jpg" style="width:1.8em;">
-                        <p style="font-size:.8em;margin-top:1em;">tùy<br>chỉnh</p>
-                    </a>
-                </div>
-
-                <!--logout-->
-                <div class="col-xs-6" style="margin-top:1em;">
-                    <a href="log_out.html" style="color:#fff;text-decoration:none;">
-                        <img src="images/logout_menu_icon.jpg" style="width:1.8em;">
-                        <p style="font-size:.8em;margin-top:1em;">đăng<br>xuất</p>
-                    </a>
-                </div>
+                    </div>
+                </a>
 
             </div>
 
         </nav>
 
+        <!-- cart items -->
+        <nav class="cart-primary" id="cart-primary">
+
+            <!--item 1-->
+            <div class="cart_item">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div>
+                            <a href="preview.html">
+                                <img src="images/book7.jpg" style="width:100%;height:auto;box-shadow: 2px 2px 5px rgba(0,0,0,.5);">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="three_dot">
+                            <a href="preview.html" style="color:#000;font-weight:700;">Nào phải anh hùng</a>
+                        </p>
+                        <p style="opacity:.5;">120.000đ x 1</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--item 2-->
+            <div class="cart_item">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div>
+                            <a href="preview.html">
+                                <img src="images/book2.jpg" style="width:100%;height:auto;box-shadow: 2px 2px 5px rgba(0,0,0,.5);">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="three_dot">
+                            <a href="preview.html" style="color:#000;font-weight:700;">Chiến tranh giữa các vì sao</a>
+                        </p>
+                        <p style="opacity:.5;">67.000đ x 1</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--total + checkout-->
+            <div class="cart_item">
+                <p style="text-transform:uppercase;text-align:center;color:#1a5970;margin:0;">tổng cộng&#58;</p>
+                <p style="font-weight:700;font-size:1.5em;text-align:center;color:#1a5970">187.000đ</p>
+                <a href="checkout.html" style="color:#fff;text-transform:uppercase;text-decoration:none;">
+                    <div class="checkout_button">
+                        đặt mua
+                    </div>
+                </a>
+            </div>
+
+            <p style="text-align:center;margin-top:1em;">
+                <a href="cart.html">Xem giỏ hàng</a>
+            </p>
+
+        </nav>
+
         <!-- header bar -->
         <header class="mobile-helper-bar">
+
             <!-- menu -->
             <button class="hamburger" id="off-canvas-toggle"><i class="fa fa-bars"></i></button>
-            <form class="search">
-                <input class="searchTerm" placeholder="Tìm kiếm&hellip;"/>
-            </form>
+
+            <!--cart-->
+            <div class="hotdog cursor_hover off-cart-toggle" style="float:right;">
+                <i class="fa fa-shopping-cart"></i> <span style="color:#d93816;font-weight:700;">&#40;2&#41;</span><span class="hidden-xs"> Giỏ hàng</span>
+            </div>
+
         </header>
 
         <!-- main content -->
         <div class="page-content" id="page-content">
 
-            <!-- placeholder -->
-            <div class="header_ph"></div>
+            <!--1st sect INTRO-->
+            <div style="background-image:url(images/article/intro_bg.jpg);background-size:cover;padding:14em 1em 12em 1em;border-bottom:1px solid rgba(41,113,139,.5);">
+                
+                <!-- icon -->
+                <div class="top-page-image" style="margin:0 auto">
+                    <img src="images/article/article_icon.png" style="width:100%;" alt="home logo">
+                </div>
 
-            <div class="row" style="padding:0 20px 0 20px;">
+                <!--search bar-->
+                <div style="margin:auto;margin-bottom:2em;max-width:40em;line-height:1;">
+                    <form action="#" method="post" style="position:relative;" id="searchBar">
+                        <input type="search" placeholder="Tìm bài viết&hellip;" />
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
 
-                <!--icon-->
-                <div class="col-sm-6 article-icon">
-                    <span class="mid-align"></span><div style="display: inline-block;vertical-align:middle;margin:auto;">
-                    <div style="text-align:center;max-width:14em;margin:auto;margin-bottom:3em;">
-                        <img id="img-res" src="images/article/article_icon.jpg" alt="bookism icon" style="width:100%;">
+            </div>
+
+            <!--2nd section ARTICLES-->
+            <div style="background-color:#3c93b3;background-image:url(images/library/scifi_bg.jpg);padding:0 1em 3em 0;border-bottom:1px solid rgba(41,113,139,.5);border-top:1px solid rgba(255,255,255,.3);" class="lib_sect">
+                <div class="row padding-2em" style="max-width:100em;margin:auto;">
+                    
+                    <!--Article 1-->
+                    <div class="col-md-6" style="margin-top:3em;color:#fff;">
+                        <div style="border: 4px solid #1a5970;border-radius:5px;">
+                            <div class="choose_home padding-2em lib_cat_img" style="position:relative;border:5px solid #3c93b3;border-radius:0px;">
+                                
+                                <!--image-->
+                                <div class="prev-img-article" style="">
+                                    <img src="images/article/article-1.jpg" style="margin:auto;">
+                                </div>
+                                
+                                <!--info-->
+                                <div style="padding:2em 1em;z-index:2;position:relative;">
+                                    <h3 style="text-transform:uppercase;margin-bottom:1em;color:#fff;letter-spacing:4px;line-height:1.6em;" class="resize_txt_top">lên vũ trụ</h3>
+                                    <p style="height:6em;" class="article-headrest">Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...</p>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- slogan & tag line -->	
-                    <div style="text-align:center">
-                        <div style="width:80%;margin:auto;">
-                            <h2 class="tagline-big">&quot;Mọi ô cửa, mọi ngã tư đều ẩn chứa một câu chuyện.&quot;</h2>
-                        </div>
-                        <div style="width:65%;margin:auto;margin-top:1.7em;">
-                            <h1 class="tagline">tin tức &#8226; bài viết<br>đánh giá &#8226; chuyện đời</h1>
+                    <!--Article 2-->
+                    <div class="col-md-6" style="margin-top:3em;color:#fff;">
+                        <div style="border: 4px solid #1a5970;border-radius:5px;">
+                            <div class="choose_home padding-2em lib_cat_img" style="position:relative;border:5px solid #3c93b3;border-radius:0px;">
+
+                                <!--image-->
+                                <div class="prev-img-article" style="">
+                                    <img src="images/article/article-2.jpg" style="margin:auto;">
+                                </div>
+
+                                <!--info-->
+                                <div style="padding:2em 1em;z-index:2;position:relative;">
+                                    <h3 style="text-transform:uppercase;margin-bottom:1em;color:#fff;letter-spacing:4px;line-height:1.6em;" class="resize_txt_top">lên vũ trụ lên vũ trụ lên vũ trụ</h3>
+                                    <p style="height:6em;" class="article-headrest">Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...</p>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
+                    
+                    <div class="clearfix visible-md-block"></div>
+                
+                    <!--Article 3-->
+                    <div class="col-md-6" style="margin-top:3em;color:#fff;">
+                        <div style="border: 4px solid #1a5970;border-radius:5px;">
+                            <div class="choose_home padding-2em lib_cat_img" style="position:relative;border:5px solid #3c93b3;border-radius:0px;">
+
+                                <!--image-->
+                                <div class="prev-img-article" style="">
+                                    <img src="images/article/article-3.jpg" style="margin:auto;">
+                                </div>
+
+                                <!--info-->
+                                <div style="padding:2em 1em;z-index:2;position:relative;">
+                                    <h3 style="text-transform:uppercase;margin-bottom:1em;color:#fff;letter-spacing:4px;line-height:1.6em;" class="resize_txt_top">lên vũ trụ</h3>
+                                    <p style="height:6em;" class="article-headrest">Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...</p>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!--1st article-->
-                <div class="col-sm-6 article-prev">
-                    <a href="articles_content.html">
-                        <img id="img-res" src="images/article/article-1.jpg" class="bg-cover-img">
-                        <div class="title_bar">
-                            <p>Lược Sử Văn Hóa Đọc</p>
-                        </div>
-                    </a>
-                </div>
+                    <!--Article 4-->
+                    <div class="col-md-6" style="margin-top:3em;color:#fff;">
+                        <div style="border: 4px solid #1a5970;border-radius:5px;">
+                            <div class="choose_home padding-2em lib_cat_img" style="position:relative;border:5px solid #3c93b3;border-radius:0px;">
 
-                <!--2nd article-->
-                <div class="col-sm-6 article-prev">
-                    <a href="articles_content.html">
-                        <img id="img-res" src="images/article/article-2.jpg" class="bg-cover-img">
-                        <div class="title_bar">
-                            <p>Lược Sử Văn Hóa Đọc</p>
-                        </div>
-                    </a>
-                </div>
+                                <!--image-->
+                                <div class="prev-img-article" style="">
+                                    <img src="images/article/article-4.jpg" style="margin:auto;">
+                                </div>
 
-                <!--3rd article-->
-                <div class="col-sm-6 article-prev">
-                    <a href="articles_content.html">
-                        <img id="img-res" src="images/article/article-3.jpg" class="bg-cover-img">
-                        <div class="title_bar">
-                            <p>Lược Sử Văn Hóa Đọc</p>
-                        </div>
-                    </a>
-                </div>
+                                <!--info-->
+                                <div style="padding:2em 1em;z-index:2;position:relative;">
+                                    <h3 style="text-transform:uppercase;margin-bottom:1em;color:#fff;letter-spacing:4px;line-height:1.6em;" class="resize_txt_top">vũ trụ</h3>
+                                    <p style="height:6em;" class="article-headrest">Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...</p>
+                                </div>
 
-                <!--4th article-->
-                <div class="col-sm-6 article-prev">
-                    <a href="articles_content.html">
-                        <img id="img-res" src="images/article/article-4.jpg" class="bg-cover-img">
-                        <div class="title_bar">
-                            <p>Lược Sử Văn Hóa Đọc</p>
+                            </div>
                         </div>
-                    </a>
-                </div>
+                    </div>
 
-                <!--5th article-->
-                <div class="col-sm-6 article-prev">
-                    <a href="articles_content.html">
-                        <img id="img-res" src="images/article/article-5.jpg" class="bg-cover-img">
-                        <div class="title_bar">
-                            <p>Lược Sử Văn Hóa Đọc</p>
-                        </div>
-                    </a>
-                </div>
+                    <div class="clearfix visible-md-block"></div>
 
-                <!--6th article-->
-                <div class="col-sm-6 article-prev">
-                    <a href="articles_content.html">
-                        <img id="img-res" src="images/article/article-6.jpg" class="bg-cover-img">
-                        <div class="title_bar">
-                            <p>Lược Sử Văn Hóa Đọc</p>
+                    <!--Article 5-->
+                    <div class="col-md-6" style="margin-top:3em;color:#fff;">
+                        <div style="border: 4px solid #1a5970;border-radius:5px;">
+                            <div class="choose_home padding-2em lib_cat_img" style="position:relative;border:5px solid #3c93b3;border-radius:0px;">
+
+                                <!--image-->
+                                <div class="prev-img-article" style="">
+                                    <img src="images/article/article-5.jpg" style="margin:auto;">
+                                </div>
+
+                                <!--info-->
+                                <div style="padding:2em 1em;z-index:2;position:relative;">
+                                    <h3 style="text-transform:uppercase;margin-bottom:1em;color:#fff;letter-spacing:4px;line-height:1.6em;" class="resize_txt_top">lên vũ trụ</h3>
+                                    <p style="height:6em;" class="article-headrest">Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...</p>
+                                </div>
+
+                            </div>
                         </div>
-                    </a>
+                    </div>
+
+                    <!--Article 6-->
+                    <div class="col-md-6" style="margin-top:3em;color:#fff;">
+                        <div style="border: 4px solid #1a5970;border-radius:5px;">
+                            <div class="choose_home padding-2em lib_cat_img" style="position:relative;border:5px solid #3c93b3;border-radius:0px;">
+
+                                <!--image-->
+                                <div class="prev-img-article" style="">
+                                    <img src="images/article/article-6.jpg" style="margin:auto;">
+                                </div>
+
+                                <!--info-->
+                                <div style="padding:2em 1em;z-index:2;position:relative;">
+                                    <h3 style="text-transform:uppercase;margin-bottom:1em;color:#fff;letter-spacing:4px;line-height:1.6em;" class="resize_txt_top">vũ trụ</h3>
+                                    <p style="height:6em;" class="article-headrest">Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix visible-md-block"></div>
+
+                    <!--Article 7-->
+                    <div class="col-md-6" style="margin-top:3em;color:#fff;">
+                        <div style="border: 4px solid #1a5970;border-radius:5px;">
+                            <div class="choose_home padding-2em lib_cat_img" style="position:relative;border:5px solid #3c93b3;border-radius:0px;">
+
+                                <!--image-->
+                                <div class="prev-img-article" style="">
+                                    <img src="images/article/article-7.jpg" style="margin:auto;">
+                                </div>
+
+                                <!--info-->
+                                <div style="padding:2em 1em;z-index:2;position:relative;">
+                                    <h3 style="text-transform:uppercase;margin-bottom:1em;color:#fff;letter-spacing:4px;line-height:1.6em;" class="resize_txt_top">lên vũ trụ</h3>
+                                    <p style="height:6em;" class="article-headrest">Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Article 8-->
+                    <div class="col-md-6" style="margin-top:3em;color:#fff;">
+                        <div style="border: 4px solid #1a5970;border-radius:5px;">
+                            <div class="choose_home padding-2em lib_cat_img" style="position:relative;border:5px solid #3c93b3;border-radius:0px;">
+
+                                <!--image-->
+                                <div class="prev-img-article" style="">
+                                    <img src="images/article/article-8.jpg" style="margin:auto;">
+                                </div>
+
+                                <!--info-->
+                                <div style="padding:2em 1em;z-index:2;position:relative;">
+                                    <h3 style="text-transform:uppercase;margin-bottom:1em;color:#fff;letter-spacing:4px;line-height:1.6em;" class="resize_txt_top">vũ trụ</h3>
+                                    <p style="height:6em;" class="article-headrest">Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix visible-md-block"></div>
+
                 </div>
             </div>
-            
-            <div class="page-divide"></div>
 
-            <!--pages-->
-            <div class="paging" style="width:100%;">
-                <ul>
-                    <li style="border:2px solid #fff;color:#fff;">1</li>
-                    <li style="border:2px solid #fff;color:#fff;">2</li>
-                    <li style="border:2px solid #fff;color:#fff;">...</li>
-                    <li style="border:2px solid #fff;color:#fff;">5</li>
-                    <li style="border:2px solid #fff;color:#fff;">6</li>
-                </ul>
-            </div>
-            
             <!--footer-->
             <div class="footer_main">
 
@@ -249,10 +374,10 @@
                 <!--term-->
                 <div style="margin:auto;text-align:center;">
                     <div style="display:inline-block;margin:0 1em 1em 1em;">
-                        <a href="terms.html" style="color:#fff;text-decoration:none;">Điều khoản</a>
+                        <a href="term.html" style="color:#fff;text-decoration:none;">Điều khoản</a>
                     </div>
                     <div style="display:inline-block;margin:0 1em 1em 1em;">
-                        <a href="#" style="color:#fff;text-decoration:none;">Quyền riêng tư</a>
+                        <a href="privacy.html" style="color:#fff;text-decoration:none;">Quyền riêng tư</a>
                     </div>
                 </div>
 
@@ -261,46 +386,92 @@
 
                     <a href="https://www.facebook.com/BookismVietNam" target="_blank">
                         <div class="social-home-end">
-                            <i class="fa fa-facebook" style="line-height:2em;color:#2e748e;"></i>
+                            <i class="fa fa-facebook" style="line-height:2em;"></i>
                         </div>
                     </a>
 
                     <a href="mailto:bookism.net@gmail.com" target="_blank">
                         <div class="social-home-end">
-                            <i class="fa fa-envelope" style="line-height:2em;color:#2e748e;"></i>
+                            <i class="fa fa-envelope" style="line-height:2em;"></i>
                         </div>
                     </a>
 
                 </div>
 
                 <!--copyright-->
-                <p style="color:#fff;text-align:center;margin-top:1em;">&copy; Copyright 2014 Bookism. All rights reserved.</p>
+                <p style="color:#fff;text-align:center;line-height:1.5em;margin-top:1em;"><i class="fa fa-phone"></i> 0904 968 269<br><i class="fa fa-map-marker"></i> 211 nhà B, tập thể Bộ Y Tế, Lò Đúc</p>
+                <p style="color:#fff;text-align:center;margin-top:1em;line-height:1.5em;">&copy; Copyright 2014 by Bookism.</p>
                 <div style="height:1em;"></div>
 
             </div>
 
         </div>
 
-        <script src="http://code.jquery.com/jquery.js">
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js">
         </script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script src="js/jquery.dotdotdot.min.js"></script>
         <script>
             // Show the off-canvas navigation
-            $('#off-canvas-toggle').click(function() {
-                $('#nav-primary').toggleClass('off-canvas-show');
-            });
+            $(document).ready(function() {
+                $('#off-canvas-toggle').click(function() {
+                    $('#nav-primary').toggleClass('off-canvas-show');
+                });
 
-            $('#nav-primary').removeClass('off-canvas-show');
-
-            // Hide the off-canvas nav when clicking a link
-            $('#nav-primary').find('a').on('click', function(e) {
                 $('#nav-primary').removeClass('off-canvas-show');
-            });
 
-            // Hide the off-canvas nav when clicking outside
-            $('#page-content').on('click', function(e) {
-                $('#nav-primary').removeClass('off-canvas-show');
-            });
+                // Hide the off-canvas nav when clicking a link
+                $('#nav-primary').find('a').on('click', function(e) {
+                    $('#nav-primary').removeClass('off-canvas-show');
+                });
 
+                // Hide the off-canvas nav when clicking outside
+                $('#page-content').on('click', function(e) {
+                    $('#nav-primary').removeClass('off-canvas-show');
+                });
+
+                // Show the cart
+                $('.off-cart-toggle').click(function() {
+                    $('#cart-primary').toggleClass('off-cart-show');
+                });
+
+                $('#cart-primary').removeClass('off-cart-show');
+
+                // Hide the off-canvas nav when clicking a link
+                $('#cart-primary').find('a').on('click', function(e) {
+                    $('#cart-primary').removeClass('off-cart-show');
+                });
+
+                // Hide the off-canvas nav when clicking outside
+                $('#page-content').on('click', function(e) {
+                    $('#cart-primary').removeClass('off-cart-show');
+                });
+                
+                //resize prev img
+                $('.prev-img-article').each(function(){
+                    var refH = $(this).height();
+                    var refW = $(this).width();
+                    var refRatio = refW/refH;
+
+                    var imgH = $(this).children("img").height();
+                    var imgW = $(this).children("img").width();
+
+                    if ( (imgW/imgH) < refRatio ) { 
+                        $(this).addClass("portrait");
+                    } else {
+                        $(this).addClass("landscape");
+                    }
+                });
+            
+                //three dot
+                $(".article-headrest").dotdotdot({
+                    ellipsis: '... ',
+                    wrap: 'word',
+                    watch: "window",
+                });
+            });
         </script>
+
     </body>
 </html>
+

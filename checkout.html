@@ -81,7 +81,7 @@
 
         <!-- cart items -->
         <nav class="cart-primary" id="cart-primary">
-            
+
             <!--item 1-->
             <div class="cart_item">
                 <div class="row">
@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!--item 2-->
             <div class="cart_item">
                 <div class="row">
@@ -119,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!--total + checkout-->
             <div class="cart_item">
                 <p style="text-transform:uppercase;text-align:center;color:#1a5970;margin:0;">tổng cộng&#58;</p>
@@ -130,19 +130,19 @@
                     </div>
                 </a>
             </div>
-            
+
             <p style="text-align:center;margin-top:1em;">
                 <a href="cart.html">Xem giỏ hàng</a>
             </p>
-            
+
         </nav>
-        
+
         <!-- header bar -->
         <header class="mobile-helper-bar">
-            
+
             <!-- menu -->
             <button class="hamburger" id="off-canvas-toggle"><i class="fa fa-bars"></i></button>
-            
+
             <!--cart-->
             <div class="hotdog cursor_hover off-cart-toggle" style="float:right;">
                 <i class="fa fa-shopping-cart"></i> <span style="color:#d93816;font-weight:700;">&#40;2&#41;</span><span class="hidden-xs"> Giỏ hàng</span>
@@ -154,111 +154,174 @@
         <div class="page-content" id="page-content" style="background-color:#eaeaea;">
             
             <div class="header_ph"></div>
-
-            <!--empty cart-->
-            <div style="padding:0 2em;">
-                <div class="empty">
-                    <span class="mid-align"></span><div style="display:inline-block;vertical-align:middle;">
-                        <span style="font-weight:900;color:#2e748e;" class="h1-cat">trống trải quá hà &#58;&#92;</span>
+            
+            <div style="text-align:left;max-width:90em;margin:auto;">
+                <div class="row padding-2em">
+                    
+                    <!--ordered items-->
+                    <div class="col-sm-4 col-sm-push-8" style="margin-top:3em;">
+                        <div class="to-checkout" style="text-align:left;padding:2em;">
+                            <p style="font-size:2em;text-transform:uppercase;margin-bottom:1em;opacity:.7;">danh mục đặt mua</p>
+                            
+                            <!--individual items-->
+                            <div class="checkout-item-div">
+                                <div class="checkout-item">
+                                    <p>
+                                        Tên truyện&#58; Nào phải anh hùng
+                                        <br>
+                                        Đơn giá&#58; 120.000đ
+                                        <br>
+                                        Số lượng&#58; 2
+                                    </p>
+                                    <p>Tổng tiền&#58; 240.000đ</p>
+                                </div>
+                                <div class="checkout-item">
+                                    <p>
+                                        Tên truyện&#58; Nào phải anh hùng
+                                        <br>
+                                        Đơn giá&#58; 120.000đ
+                                        <br>
+                                        Số lượng&#58; 2
+                                    </p>
+                                    <p>Tổng tiền&#58; 240.000đ</p>
+                                </div>
+                                <div class="checkout-item">
+                                <p>
+                                    Tên truyện&#58; Nào phải anh hùng
+                                    <br>
+                                    Đơn giá&#58; 120.000đ
+                                    <br>
+                                    Số lượng&#58; 2
+                                </p>
+                                <p>Tổng tiền&#58; 240.000đ</p>
+                                </div>
+                            
+                            </div>
+                            
+                            <!--subtotal-->
+                            <p style="margin-top:1em;text-align:right;">Tổng cộng &#40;chưa tính mã giảm giá&#41;&#58;</p>
+                            <p style="font-size:1.2em;text-align:right;">480.000đ</p>
+                            
+                        </div>
                     </div>
+                    
+                    <!--info-->
+                    <div class="col-sm-8 col-sm-pull-4" style="margin-top:3em;">
+                        <div class="to-checkout" style="text-align:left;padding:2em;">
+                            <p style="font-size:2em;text-transform:uppercase;margin-bottom:1em;">thông tin giao sách</p>
+
+                            <!--personal info-->
+                            <div class="row" style="opacity:.8;margin-bottom:2em;">
+                                <form>
+                                    <div class="col-md-6" style="margin:.5em 0;">
+                                        <p>Tên người nhận&#58;</p><input class="checkout-input" required placeholder="VD: Lí Tiểu Long">
+                                    </div>
+                                    <div class="col-md-6" style="margin:.5em 0;">
+                                        <p>Số điện thoại</p>
+                                        <input class="checkout-input" required type="numeric" placeholder="VD: 0905 555 555">
+                                    </div>
+                                    <div class="col-sm-12" style="margin:.5em 0;">
+                                        <p>Địa chỉ email&#58;</p>
+                                        <input class="checkout-input" required type="email" name="email" placeholder="VD: i.love.bookism@bundau.mamtom">
+                                        <input type="checkbox" name="optin" value="in" checked> Mình muốn được nhận những thông tin hữu ích từ Bookism.
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!--address-->
+                            <div class="row" style="opacity:.8;">
+                                <form>
+                                    <div class="col-md-6" style="margin:.5em 0;">
+                                        <p>Tỉnh&#47;Thành phố&#58;</p>
+                                        <select class="checkout-input" required>
+                                            <option value="An Giang">An Giang</option>
+                                            <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+                                            <option value="Bạc Liêu">Bạc Liêu</option>
+                                            <option value="Bắc Kạn">Bắc Kạn</option>
+                                            <option value="Bắc Giang">Bắc Giang</option>
+                                            <option value="Bắc Ninh">Bắc Ninh</option>
+                                            <option value="Bến Tre">Bến Tre</option>
+                                            <option value="Bình Dương">Bình Dương</option>
+                                            <option value="Bình Định">Bình Định</option>
+                                            <option value="Bình Phước">Bình Phước</option>
+                                            <option value="Bình Thuận">Bình Thuận</option>
+                                            <option value="Cà Mau">Cà Mau</option>
+                                            <option value="Cao Bằng">Cao Bằng</option>
+                                            <option value="Cần Thơ">Cần Thơ</option>
+                                            <option value="Đà Nẵng">Đà Nẵng</option>
+                                            <option value="Đắk Lắk">Đắk Lắk</option>
+                                            <option value="Đắk Nông">Đắk Nông</option>
+                                            <option value="Đồng Nai">Đồng Nai</option>
+                                            <option value="Đồng Tháp">Đồng Tháp</option>
+                                            <option value="Điện Biên">Điện Biên</option>
+                                            <option value="Gia Lai">Gia Lai</option>
+                                            <option value="Hà Giang">Hà Giang</option>
+                                            <option value="Hà Nam">Hà Nam</option>
+                                            <option value="Hà Nội" selected>Hà Nội</option>
+                                            <option value="Hà Tĩnh">Hà Tĩnh</option>
+                                            <option value="Hải Dương">Hải Dương</option>
+                                            <option value="Hải Phòng">Hải Phòng</option>
+                                            <option value="Hòa Bình">Hòa Bình</option>
+                                            <option value="Hậu Giang">Hậu Giang</option>
+                                            <option value="Hưng Yên">Hưng Yên</option>
+                                            <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                            <option value="Khánh Hòa">Khánh Hòa</option>
+                                            <option value="Kiên Giang">Kiên Giang</option>
+                                            <option value="Kon Tum">Kon Tum</option>
+                                            <option value="Lai Châu">Lai Châu</option>
+                                            <option value="Lào Cai">Lào Cai</option>
+                                            <option value="Lạng Sơn">Lạng Sơn</option>
+                                            <option value="Lâm Đồng">Lâm Đồng</option>
+                                            <option value="Long An">Long An</option>
+                                            <option value="Nam Định">Nam Định</option>
+                                            <option value="Nghệ An">Nghệ An</option>
+                                            <option value="Ninh Bình">Ninh Bình</option>
+                                            <option value="Ninh Thuận">Ninh Thuận</option>
+                                            <option value="Phú Thọ">Phú Thọ</option>
+                                            <option value="Phú Yên">Phú Yên</option>
+                                            <option value="Quảng Bình">Quảng Bình</option>
+                                            <option value="Quảng Nam">Quảng Nam</option>
+                                            <option value="Quảng Ngãi">Quảng Ngãi</option>
+                                            <option value="Quảng Ninh">Quảng Ninh</option>
+                                            <option value="Quảng Trị">Quảng Trị</option>
+                                            <option value="Sóc Trăng">Sóc Trăng</option>
+                                            <option value="Sơn La">Sơn La</option>
+                                            <option value="Tây Ninh">Tây Ninh</option>
+                                            <option value="Thái Bình">Thái Bình</option>
+                                            <option value="Thái Nguyên">Thái Nguyên</option>
+                                            <option value="Thanh Hóa">Thanh Hóa</option>
+                                            <option value="Thừa Thiên - Huế">Thừa Thiên - Huế</option>
+                                            <option value="Tiền Giang">Tiền Giang</option>
+                                            <option value="Trà Vinh">Trà Vinh</option>
+                                            <option value="Tuyên Quang">Tuyên Quang</option>
+                                            <option value="Vĩnh Long">Vĩnh Long</option>
+                                            <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+                                            <option value="Yên Bái">Yên Bái</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6" style="margin:.5em 0;">
+                                        <p>Quận&#47;huyện&#58;</p>
+                                        <input class="checkout-input" required placeholder="VD: Đống Đa">
+                                    </div>
+                                    <div class="col-sm-12" style="margin:.5em 0;">
+                                        <p>Địa chỉ nhà&#58;</p><input class="checkout-input" required type="email" name="email" placeholder="Số nhà, tên đường, tên tòa nhà (nếu có), phường xã">
+                                    </div>
+                                </form>
+                            </div>
+
+                            <p style="font-size:2em;text-transform:uppercase;margin:1em 0 0 0;">hình thức thanh toán&#58; COD &#40;Cash On Delivery&#41;</p>
+                            <p>Bookism sẽ giao sách đến tận nhà giúp bạn, và bạn sẽ thanh toán bằng tiền mặt cho người giao sách.</p>
+
+                            <a href="checkout-confirm.html" style="text-decoration:none;">
+                                <div class="checkout-button" style="margin-top:2em;">Gửi đơn đặt sách</div>
+                            </a>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
             
-            <!--cart content-->
-                <div class="row padding-2em">
-                    
-                    <!--book 1-->
-                    <div class="col-md-3 col-sm-6" style="margin:2em 0;padding:0 2em;">
-                        <div class="product-tab">
-                            
-                            <!--remove-->
-                            <div class="cursor_hover close_button">x</div>
-                            <!--cover photo-->
-                            <div style="padding:1em;border-bottom:solid 1px rgba(0,0,0,.1);">
-                                <a href="preview.html">
-                                    <img src="images/book7.jpg" class="book_showcase">
-                                </a>
-                                <div style="margin-top:1em;">120.000đ</div>
-                            </div>
-                            
-                            <!--title and headrest-->
-                            <div style="padding:1em;">
-                                <p>
-                                    <a href="preview.html" style="color:#2e748e;font-weight:700;font-size:1.5em">Nào phải anh hùng</a>
-                                </p>
-                                <p style="text-align:left;max-height:5em;" class="headrest">Look at your bike. Now back to this bike . Now back to your bike. Now back to this bike. Sadly, your bike just isn't as sexy</p>
-                            </div>
-                            
-                            <!--quantity-->
-                            <div style="margin-bottom:2em;">
-                                <div class="change_qty minus cursor_hover">&#45;</div>
-                                <input type="numeric" style="height:22px;width:40px;margin:0 .5em;text-align:center;" value="1">
-                                <div class="change_qty plus cursor_hover">&#43;</div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    
-                    <!--book 2-->
-                    <div class="col-md-3 col-sm-6" style="margin:2em 0;padding:0 2em;">
-                        <div class="product-tab">
-
-                            <!--remove-->
-                            <div class="cursor_hover close_button">x</div>
-                            <!--cover photo-->
-                            <div style="padding:1em;border-bottom:solid 1px rgba(0,0,0,.1);">
-                                <a href="preview.html">
-                                    <img src="images/book2.jpg" class="book_showcase">
-                                </a>
-                                <div style="margin-top:1em;">120.000đ</div>
-                            </div>
-
-                            <!--title and headrest-->
-                            <div style="padding:1em;">
-                                <p>
-                                    <a href="preview.html" style="color:#2e748e;font-weight:700;font-size:1.5em;">Chiến tranh giữa các vì sao</a>
-                                </p>
-                                <p style="text-align:left;max-height:5em;" class="headrest">Look at your bike. Now back to this bike . Now back to your bike. Now back to this bike. Sadly, your bike just isn't as sexy</p>
-                            </div>
-
-                            <!--quantity-->
-                            <div style="margin-bottom:2em;">
-                                <div class="change_qty minus cursor_hover">&#45;</div>
-                                <input type="numeric" style="height:22px;width:40px;margin:0 .5em;text-align:center;" value="1">
-                                <div class="change_qty plus cursor_hover">&#43;</div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="clearfix visible-sm-block"></div>
-                    
-                    <div class="col-sm-12 checkout-div" style="padding:0 2em;">
-                        <div class="to-checkout">
-                            
-                            <!--subtotal-->
-                            <p style="font-size:2em;font-weight:700;text-transform:uppercase;margin-bottom:.5em;">
-                                tổng cộng&#58; <span style="text-transform:lowercase;">240.000đ</span>
-                            </p>
-                            <div style="max-width:40em;margin:auto;">
-                                <p>
-                                    Nhập mã giảm giá &#40;nếu có&#41;
-                                </p>
-                                <input style="width:100%;border-radius:5px;outline:0;padding:1em;text-transform:uppercase;margin-bottom:2em;border:1px solid rgba(0,0,0,.2);" placeholder="VD: XYS3OLK4JNF7UHF0">
-                            </div>
-
-                            <!--checkout button-->
-                            <a href="checkout.html" style="text-decoration:none;">
-                                <div class="checkout-button">
-                                    <span>thanh toán</span>
-                                </div>
-                            </a>
-                            
-                        </div>
-                    </div>
-                    
-                </div>
-
             <div class="divide"></div>
             
             <!--footer-->
@@ -344,7 +407,7 @@
                 $('#page-content').on('click', function(e) {
                     $('#nav-primary').removeClass('off-canvas-show');
                 });
-                
+
                 // Show the cart
                 $('.off-cart-toggle').click(function() {
                     $('#cart-primary').toggleClass('off-cart-show');
@@ -360,59 +423,6 @@
                 // Hide the off-canvas nav when clicking outside
                 $('#page-content').on('click', function(e) {
                     $('#cart-primary').removeClass('off-cart-show');
-                });
-                
-                //remove product
-                $('.close_button').click(function(){
-                    $(this).closest('.col-md-3.col-sm-6').remove();
-                    if($(".col-md-3.col-sm-6").length == 0){
-                        $(".empty").css("display", "block");
-                        $(".divide, .checkout-div").css("display", "none");
-                    }
-                    else{
-                        $(".empty").css("display", "none");
-                        $(".divide, .checkout-div").css("display", "block");
-                    }
-                });
-
-                //change quatity
-                $(".plus").click(function(e) {
-                    e.preventDefault();
-                    var $this = $(this);
-                    var $input = $this.siblings('input');
-                    var value = parseInt($input.val());
-
-                    if (value < 30) {
-                        value = value + 1;
-                    } 
-                    else {
-                        value =30;
-                    }
-
-                    $input.val(value);
-                });
-
-                $(".minus").click(function(e) {
-                    e.preventDefault();
-                    var $this = $(this);
-                    var $input = $this.siblings('input');
-                    var value = parseInt($input.val());
-
-                    if (value > 1) {
-                        value = value - 1;
-                    } 
-                    else {
-                        value =1;
-                    }
-
-                    $input.val(value);
-                });
-                
-                //three dot
-                $(".headrest").dotdotdot({
-                    ellipsis: '... ',
-                    wrap: 'word',
-                    watch: "window",
                 });
             });
         </script>
