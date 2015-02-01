@@ -637,23 +637,6 @@ table {
 }
 
 
-/*for cat_scifi*/
-.scifi-ribbon-out-up-right{
-    position:absolute;
-    background-color:#2e748e;
-    width:1.6em;
-    height:100%;
-    right:-1.6em;
-}
-.scifi-ribbon-out-down-right{
-    border-left:solid 1.6em #145066;
-    border-bottom:solid 1.6em rgba(0,0,0,0);
-    border-top:solid 0px rgba(0,0,0,0);
-    top:100%;
-    width:0;
-    height:0;
-    position:absolute;
-}
 .paging ul{
     list-style:none;
     position:relative;
@@ -670,6 +653,24 @@ table {
     line-height:3em;
     margin:0 .5em 2em .5em;
     color:#1b5970;
+    display:inline-block;
+}
+.paging-white ul{
+    list-style:none;
+    position:relative;
+    text-align: center;
+}
+.paging-white ul li{
+    text-align: center;
+    height:3em;
+    width:3em;
+    font-size:1em;
+    border-radius:50%;
+    text-transform:uppercase;
+    line-height:3em;
+    margin:1em .5em 0 .5em;
+    color:#1b5970;
+    background: #fff;
     display:inline-block;
 }
 .cat-img{
@@ -1235,23 +1236,21 @@ table {
     padding: 15px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    border: none;
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
 #subscribe input[type="text"] {
-    background: #2c2c2c;
-    color:#fff;
     margin: 0 0 10px;
+    border: 1px solid rgba(0,0,0,.5);
 }
 #subscribe input[type="text"]:focus {
     outline: none;
-    border:1px solid #74c5e3;
 }
 #subscribe input[type="submit"] {
     background: #2e748e;
     color: white;
     cursor: pointer;
+    border:0;
 }
 #subscribe input[type="submit"]:hover {
     background: #65afce;
@@ -1265,11 +1264,6 @@ table {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    -webkit-transform: translate(95%, 0);
-    -moz-transform: translate(95%, 0);
-    -ms-transform: translate(95%, 0);
-    -o-transform: translate(95%, 0);
-    transform: translate(95%, 0);
     opacity: 0;
 }
 #subscribe input[placeholder]:focus::-moz-placeholder {
@@ -1278,11 +1272,6 @@ table {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    -webkit-transform: translate(95%, 0);
-    -moz-transform: translate(95%, 0);
-    -ms-transform: translate(95%, 0);
-    -o-transform: translate(95%, 0);
-    transform: translate(95%, 0);
     opacity: 0;
 }
 #subscribe input[placeholder]:focus:-ms-input-placeholder {
@@ -1291,29 +1280,21 @@ table {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    -webkit-transform: translate(95%, 0);
-    -moz-transform: translate(95%, 0);
-    -ms-transform: translate(95%, 0);
-    -o-transform: translate(95%, 0);
-    transform: translate(95%, 0);
     opacity: 0;
 }
 .subcribe_CTA {
-    font-size: 2em;
     color: #000;
     text-transform: uppercase;
     font-weight: 900; 
 }
 .subcribe_des {
-    font-size: 1.4em;
     border:0;
     outline:0;
     margin:1em;
     font-style: italic;
 }
-.art_cont_main{
-    text-align:justify;
-    margin:auto;
+.subscribe{
+    margin:2em auto;
     font-size: 1.2em;
     padding:1em 1em 1em 1em;
     border:1px solid rgba(0, 0, 0, 0.1);

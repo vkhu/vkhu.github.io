@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Kho sách di động của bookism.">
+    <title>lược sử văn hóa đọc</title>
+    <link rel="icon" href="images/favicon.png">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'/>
+    <link href="style.css" rel="stylesheet" type='text/css'/>
+    <link href="reset.css" rel="stylesheet" type='text/css'/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'/>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"/>
+    <style>
+		body{
+			overflow-x: hidden;			
+			font-family: 'Gotham', sans-serif;
+            background: #d8d8d8;
+		}
+	</style>
+</head>
+
+<body>
+<!-- nav items -->
+    <nav class="nav-primary" id="nav-primary">
+
+        <!--ava/log in-->
+        <a href="login.html">
+            <div class="menu_ava">
+                <span class="mid-align"></span><img class="mid-align" src="images/question_mark.jpg">
+            </div>
+        </a>
+        <div class="log_in_txt">
+            <a href="registration_form.html" style="color:#fff;text-decoration:none;">đăng<br>nhập</a>
+        </div>
+
+        <!--main menu-->
+        <div class="row menu_main" style="margin:auto;">
+
+            <!--home-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="index.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/home_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">trang<br>chủ</p>
+                </a>
+            </div>
+
+            <!--library-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="gian-sach.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/lib_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">thư<br>viện</p>
+                </a>
+            </div>
+
+            <!--article-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="articles.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/article_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">bài<br>viết</p>
+                </a>
+            </div>
+
+            <!--about-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="about.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/about_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">về<br>bookism</p>
+                </a>
+            </div>
+
+            <!--FAQ-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="faq.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/faq_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">faq</p>
+                </a>
+            </div>
+
+            <!--contact-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="contact.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/contact_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">liên<br>hệ</p>
+                </a>
+            </div>
+
+        </div>
+
+        <!--for logged in user-->
+        <div class="row menu_main" style="margin:auto;">
+
+            <!--setting-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="setting.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/setting_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">tùy<br>chỉnh</p>
+                </a>
+            </div>
+
+            <!--logout-->
+            <div class="col-xs-6" style="margin-top:1em;">
+                <a href="log_out.html" style="color:#fff;text-decoration:none;">
+                    <img src="images/logout_menu_icon.jpg" style="width:1.8em;">
+                    <p style="font-size:.8em;margin-top:1em;">đăng<br>xuất</p>
+                </a>
+            </div>
+
+        </div>
+
+    </nav>
+
+<!-- header bar -->
+	<header class="mobile-helper-bar" style="width:100%;box-shadow: 0 2px 0 rgba(0,0,0,.2);">
+		<!-- menu -->
+		<button class="hamburger" id="off-canvas-toggle"><i class="fa fa-bars"></i></button>
+        <form class="search">
+            <input class="searchTerm" placeholder="Tìm kiếm&hellip;"/>
+        </form>
+    </header>
+
+<!-- main content -->
+<div class="page-content" id="page-content">
+
+	<!-- placeholder -->
+	<div class="header_ph"></div>
+    
+    <!-- content -->
+    <div style="padding:1em 1em 0 1em">
+        <div class="row">
+
+            <!-- left hand -->
+            <div class="col-sm-8">
+                
+                <!--article content-->
+                <div class="art_cont_main" style="background:#fff;">
+
+                    <!-- header image -->
+                    <div class="article-head-img">
+                        <img id="headimg" src="images/article/article-1.jpg" class="bg-cover-img">
+                    </div>
+
+                    <!-- small icon -->
+                    <div class="article-content-icon-border">
+                        <div class="article-content-icon">
+                            <span class="mid-align"></span><img src="images/article/article_content_icon.png" class="article-content-image">
+                        </div>
+                    </div>
+
+                    <!-- header -->
+                    <div style="margin:auto;width:100%;text-align:center;">
+                        <h1 class="article-content-title">Lược Sử Văn Hóa Đọc</h1>
+                    </div>
+
+                    <!-- paragraphs -->
+                    <p>TAMPA Fla. (Reuters) - The library opening with the first day of classes on Monday at Florida's newest college features a sunlit arched roof and cozy reading chairs - but not a single book.</p>
+                    <p>A fully digital library is among the futuristic features of Florida Polytechnic University's striking dome-shaped building, designed by Spanish architect Santiago Calatrava.
+                        <img src="images/article/article-2.jpg" class="in_post_image">
+                    </p>
+                    <p>"It's a boldly relevant decision to go forward without books," said Kathryn Miller, the university's director of libraries.</p>
+                    <p>The inaugural class of 550 students, offered scholarships covering tuition to attend a public university so new it's not yet accredited, can access more than 135,000 ebooks on their choice of reader, tablet or laptop.</p>
+                    <p>A bookless library is a rarity among U.S. colleges but reflects the high-tech ambitions of the university in Lakeland, Florida. Rising along a drab stretch of highway between Tampa and Orlando, Florida Polytechnic envisions building a technology corridor in the image of Silicon Valley.</p>
+                    <p>"It's a boldly relevant decision to go forward without books," said Kathryn Miller, the university's director of libraries.
+                        <img src="images/article/article-5.jpg" class="in_post_image">
+                    </p>
+                    <p>The inaugural class of 550 students, offered scholarships covering tuition to attend a public university so new it's not yet accredited, can access more than 135,000 ebooks on their choice of reader, tablet or laptop.</p>
+                    <p>A bookless library is a rarity among U.S. colleges but reflects the high-tech ambitions of the university in Lakeland, Florida. Rising along a drab stretch of highway between Tampa and Orlando, Florida Polytechnic envisions building a technology corridor in the image of Silicon Valley.</p>
+                    <p>"It's a boldly relevant decision to go forward without books," said Kathryn Miller, the university's director of libraries.</p>
+                    <p>The inaugural class of 550 students, offered scholarships covering tuition to attend a public university so new it's not yet accredited, can access more than 135,000 ebooks on their choice of reader, tablet or laptop.
+                        <img src="images/article/article-3.jpg" class="in_post_image">
+                    </p>
+                    <p>A bookless library is a rarity among U.S. colleges but reflects the high-tech ambitions of the university in Lakeland, Florida. Rising along a drab stretch of highway between Tampa and Orlando, Florida Polytechnic envisions building a technology corridor in the image of Silicon Valley.
+                        <img src="images/article/article-4.jpg" class="in_post_image">
+                    </p>
+                    <p>"It's a boldly relevant decision to go forward without books," said Kathryn Miller, the university's director of libraries.</p>
+                    <p>The inaugural class of 550 students, offered scholarships covering tuition to attend a public university so new it's not yet accredited, can access more than 135,000 ebooks on their choice of reader, tablet or laptop.</p>
+                    <p>A bookless library is a rarity among U.S. colleges but reflects the high-tech ambitions of the university in Lakeland, Florida. Rising along a drab stretch of highway between Tampa and Orlando, Florida Polytechnic envisions building a technology corridor in the image of Silicon Valley.</p>
+                    
+                    <!-- share this post -->
+                    <div style="height:1px;width:90%;background:rgba(0,0,0,.2);margin:auto;margin-top:2em;"></div>
+                    
+                    <h3 style="font-size:1em;text-transform:uppercase;font-weight:900;text-align:center">Đừng quên chia sẻ bài viết chất lừ này cùng bạn bè nhé!</h3>
+                    <div class="row" style="text-align:center;color:#fff;font-size:1.5em;line-height:2em;">
+                        
+                        <!--facebook-->
+                        <div class="col-md-3 col-xs-6">
+                            <div id="fbShare" class="social2" style="background:#2b4173;">
+                                <span class="socicon">b</span>
+                            </div>
+                        </div>
+                        
+                        <!--twitter-->
+                        <div class="col-md-3 col-xs-6">
+                            <div id="twitterShare" class="social2" style="background:#0db2f2;">
+                                <span class="socicon">a</span>
+                            </div>
+                        </div>
+                        
+                        <!--pinterest-->
+                        <div class="col-md-3 col-xs-6">
+                            <div id="pinShare" class="social2" style="background:#e72629;">
+                                <span class="socicon">d</span>
+                            </div>
+                        </div>
+                        
+                        <!--google-->
+                        <div class="col-md-3 col-xs-6">
+                            <div id="gplusShare" class="social2" style="background:#c63e24;">
+                                <span class="socicon">c</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+    
+                <!-- subscribe -->
+                <div class="art_cont_main" style="margin-top:2em;margin-bottom:2em;background:#fff;">
+                    <div style="text-align:center;">
+                        <p class="subcribe_CTA">Subscribe ngay!</p>
+                        <h2 class="subcribe_des">Bookism là một đại gia đình với 1,000+ thành viên! Tham gia với bọn mình nhé? Đăng kí bên dưới để nhận những tin hot nhất từ Bookism:</h2>
+                    </div>
+            
+                    <form id="subscribe">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <input type="text" placeholder="Họ tên">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" placeholder="E-mail">
+                            </div>
+                            <div class="col-sm-12">
+                                <input type="submit" value="Subscribe">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- right hand -->
+            <div class="col-sm-4">
+                
+                <!--quote-->
+                <div class="art_cont_main right_block">
+                    <p style="text-transform:uppercase;font-weight:900;">trích dẫn trong ngày</p>
+                    
+                    <!--first quote-->
+                    <div class="row" style="margin:1em 0 1em 0;">
+                        
+                        <!--quote mark-->
+                        <div class="col-xs-2" style="text-align: right;">
+                            <img class="quote_mark" src="images/article/quote_mark.png">
+                        </div>
+                        
+                        <!--quote-->
+                        <div class="col-xs-10">
+                            <p class="quote_article">Be a man!... What good is religion if it collapses under calamity? Think of what earthquakes and floods, wars and volcanoes, have done before to men! Did you think that God had exempted us? He is not an insurance agent.</p>
+                            
+                            <!--author-->
+                            <p style="text-align:right;font-style:italic;font-size:.7em;margin-top:2em">&mdash; H.G. Wells, <a href="#">Chiến Trận Giữa Hai Thế Giới</a></p>
+                        </div>
+
+                    </div>
+
+                    <div class="quote_article_bar"></div>
+
+                    <!--2nd quote-->
+                    <div class="row" style="margin:1em 0 1em 0;">
+
+                        <!--quote mark-->
+                        <div class="col-xs-2" style="text-align: right;">
+                            <img class="quote_mark" src="images/article/quote_mark.png">
+                        </div>
+                        
+                        <!--quote-->
+                        <div class="col-xs-10">
+                            <p class="quote_article">I am. I think. I will.</p>
+                            
+                            <!--author-->
+                            <p style="text-align:right;font-style:italic;font-size:.7em;margin-top:2em">&mdash; Ayn Rand, <a href="#">Anthem</a></p>
+                        </div>
+
+                    </div>
+                    
+                    <div class="quote_article_bar"></div>
+                    
+                    <!--3rd quote-->
+                    <div class="row" style="margin:1em 0 1em 0;">
+                        
+                        <!--quote mark-->
+                        <div class="col-xs-2" style="text-align: right;">
+                            <img class="quote_mark" src="images/article/quote_mark.png">
+                        </div>
+                        
+                        <!--quote-->
+                        <div class="col-xs-10">
+                            <p class="quote_article">There is no greater bore than perfection.</p>
+                            
+                            <!--author-->
+                            <p style="text-align:right;font-style:italic;font-size:.7em;margin-top:2em">&mdash; Richard Connell, <a href="#">The Most Dangerous Game</a></p>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <!--new book-->
+                <div class="art_cont_main right_block">
+                    <p style="text-transform:uppercase;font-weight:900;">truyện mới</p>
+                    
+                    <div style="margin-top:1em;text-align:center;margin:auto;">
+                        <a href="preview.html">
+                            <img src="images/book4.jpg" class="book_showcase hover_expand" style="width:14em;height:21em;">
+                        </a>
+                    </div>
+
+					
+                    <div style="margin:auto;margin-top:2.5em;margin-bottom:2.5em;text-align:center;max-width:15em;">
+                        <div class="CTA_button_border">
+                            <a href="registration_form.html" style="text-decoration:none;">
+                                <div style="width:100%;padding:1.8em;">
+                                    <span>đọc ngay&#33;</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!--related articles-->
+                <div class="art_cont_main right_block">
+                    <p style="text-transform:uppercase;font-weight:900;">các bài liên quan</p>
+                    <ul class="related-article">
+                        <li>
+                            <a href="#">The inaugural class of 550 students.</a>
+                        </li>
+                        <li>
+                            <a href="#">It's a boldly relevant decision to go forward without books.</a>
+                        </li>
+                        <li>
+                            <a href="#">It's a boldly relevant decision to go forward without books.</a>
+                        </li>
+                        <li>
+                            <a href="#">A fully digital library is among the futuristic features of Florida Polytechnic University.</a>
+                        </li>
+                        <li>
+                            <a href="#">Rising along a drab stretch of highway between Tampa and Orlando.</a>
+                        </li>
+                        <li>
+                            <a href="#">The image of Silicon Valley.</a>
+                        </li>
+                        <li>
+                            <a href="#">Florida Polytechnic envisions building a technology corridor.</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!--footer-->
+    <div class="footer_main">
+
+        <!--quicklink menu-->
+        <div style="margin:auto;text-align:center;">
+            <div style="display:inline-block;margin:1em;">
+                <a href="index.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">trang chủ</a>
+            </div>
+            <div style="display:inline-block;margin:1em;">
+                <a href="gian-sach.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">gian sách</a>
+            </div>
+            <div style="display:inline-block;margin:1em;">
+                <a href="articles.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">bài viết</a>
+            </div>
+            <div style="display:inline-block;margin:1em;">
+                <a href="about.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">về bookism</a>
+            </div>
+            <div style="display:inline-block;margin:1em;">
+                <a href="faq.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">faq</a>
+            </div>
+            <div style="display:inline-block;margin:1em;">
+                <a href="contact.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">liên hệ</a>
+            </div>
+        </div>
+
+        <!--term-->
+        <div style="margin:auto;text-align:center;">
+            <div style="display:inline-block;margin:0 1em 1em 1em;">
+                <a href="terms.html" style="color:#fff;text-decoration:none;">Điều khoản</a>
+            </div>
+            <div style="display:inline-block;margin:0 1em 1em 1em;">
+                <a href="#" style="color:#fff;text-decoration:none;">Quyền riêng tư</a>
+            </div>
+        </div>
+
+        <!--fb + mail-->
+        <div style="margin:auto;text-align:center;">
+
+            <a href="https://www.facebook.com/BookismVietNam" target="_blank">
+                <div class="social-home-end">
+                    <i class="fa fa-facebook" style="line-height:2em;color:#2e748e;"></i>
+                </div>
+            </a>
+
+            <a href="mailto:bookism.net@gmail.com" target="_blank">
+                <div class="social-home-end">
+                    <i class="fa fa-envelope" style="line-height:2em;color:#2e748e;"></i>
+                </div>
+            </a>
+
+        </div>
+
+        <!--copyright-->
+        <p style="color:#fff;text-align:center;margin-top:1em;">&copy; Copyright 2014 Bookism. All rights reserved.</p>
+        <div style="height:1em;"></div>
+
+    </div>
+    
+</div>
+    
+    <script src="http://code.jquery.com/jquery.js">
+    </script>
+    
+    <!--nav bar-->
+    <script>
+        // Show the off-canvas navigation
+        $('#off-canvas-toggle').click(function() {
+            $('#nav-primary').toggleClass('off-canvas-show');
+        });
+
+        $('#nav-primary').removeClass('off-canvas-show');
+
+        // Hide the off-canvas nav when clicking a link
+        $('#nav-primary').find('a').on('click', function(e) {
+            $('#nav-primary').removeClass('off-canvas-show');
+        });
+
+        // Show the off-canvas navigation
+        $('#chapter-toggle').click(function() {
+            $('#chap-primary').toggleClass('chap-show');
+        });
+        $('#chap-primary').removeClass('chap-show');
+
+        // Hide the off-canvas nav when clicking a link
+        $('#chap-primary').find('a').on('click', function(e) {
+            $('#chap-primary').removeClass('chap-show');
+        });
+
+        // Hide the off-canvas nav when clicking outside
+        $('#page-content').on('click', function(e) {
+            $('#nav-primary').removeClass('off-canvas-show');
+            $('#chap-primary').removeClass('chap-show');
+        });
+    </script>
+    
+    <!--social share-->
+    <script>
+        // JavaScript Document
+        'use strict';
+
+        var currentURL = document.URL;
+        var currentTitle = document.title;
+
+        function socialShare() {
+            var fbShare = document.getElementById("fbShare");
+            var twitterShare = document.getElementById("twitterShare");
+            var pinShare = document.getElementById("pinShare");
+            var gplusShare = document.getElementById("gplusShare");
+            var imgSource = document.getElementById("headimg").src;
+            
+            fbShare.onclick = function() {
+                window.open("https://www.facebook.com/sharer.php?u="+currentURL,"","height=368,width=600,left=100,top=100,menubar=0");
+                return false;
+            }
+            twitterShare.onclick = function() {
+                window.open("https://twitter.com/share?url="+currentURL+"&text="+currentTitle,"","height=260,width=500,left=100,top=100,menubar=0");
+                return false;
+            }
+            pinShare.onclick = function() {
+                window.open("http://pinterest.com/pin/create/button/?media="+imgSource+"&url="+currentURL+"&description="+currentTitle,"");
+                return false;
+            }	
+            gplusShare.onclick = function() {
+                window.open("https://plus.google.com/share?url="+currentURL,"","height=550,width=525,left=100,top=100,menubar=0");
+                return false;
+            }	
+            fbShare.setAttribute("href","http://www.facebook.com/sharer.php?u="+currentURL);
+            gplusShare.setAttribute("href","https://plus.google.com/share?url="+currentURL);
+            twitterShare.setAttribute("href","https://twitter.com/share?url="+currentURL+"&text="+currentTitle);
+        }
+
+
+        window.onload = function() {
+            socialShare();
+        }
+    </script>
+
+</body>
+</html>
+
