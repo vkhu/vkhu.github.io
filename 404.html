@@ -1,177 +1,284 @@
 <!DOCTYPE html>
 <html>
-<head>    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Kho truyện online miễn phí, đa dạng, dễ dàng tiếp cận ngay cả trên điện thoại, tablet,... đọc mọi lúc, mọi nơi!">
-    <title>bookism</title>
-    <link rel="icon" href="images/favicon.png">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,vietnamese' rel='stylesheet' type='text/css'/>
-    <link href="style.css" rel="stylesheet" type='text/css'/>
-    <link href="reset.css" rel="stylesheet" type='text/css'/>
-    <link rel="stylesheet" href="css/bootstrap.min.css" type='text/css'/>
-    <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"/>
-    <style>
-		body{
-			background-color: #65afce;
-            background-image: url(images/404_code.png);
-            overflow-x:hidden;
-            background-size:auto 100%;
-            font-family: 'Gotham', sans-serif;
-		}
-	</style>
-</head>
+    <head>    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Gian sách cho fan truyện Sci fi, Fantasy, Trinh thám.">
+        <title>Bookism - Bước vào trang truyện. Mở ra thế giới.</title>
+        <link rel="icon" href="images/favicon.png">
+        <link href="style.css" rel="stylesheet" type='text/css'/>
+        <link href="reset.css" rel="stylesheet" type='text/css'/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
+        <style>
+            body{
+                background-color: #65afce;
+                background-image: url(images/404_code.png);
+                overflow-x:hidden;
+                background-size:auto 100%;
+                font-family: 'Gotham', sans-serif;
+            }
+        </style>
+    </head>
 
-<body>
-<!-- nav items -->
-    <nav class="nav-primary" id="nav-primary">
+    <body>
+        <!-- nav items -->
+        <nav class="nav-primary" id="nav-primary">
 
-        <!--ava/log in-->
-        <a href="login.html">
-            <div class="menu_ava">
-                <span class="mid-align"></span><img class="mid-align" src="images/question_mark.jpg">
-            </div>
-        </a>
-        <div class="log_in_txt">
-            <a href="registration_form.html" style="color:#fff;text-decoration:none;">đăng<br>nhập</a>
-        </div>
+            <!--main menu-->
+            <div class="row menu_main" style="margin:auto;">
 
-        <!--main menu-->
-        <div class="row menu_main" style="margin:auto;">
-
-            <!--home-->
-            <div class="col-xs-6" style="margin-top:1em;">
+                <!--home-->
                 <a href="index.html" style="color:#fff;text-decoration:none;">
-                    <img src="images/home_menu_icon.jpg" style="width:1.8em;">
-                    <p style="font-size:.8em;margin-top:1em;">trang<br>chủ</p>
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/home_menu_icon.png" style="width:1.8em;" alt="menu home">
+                        <p style="font-size:.8em;margin-top:1em;">trang<br>chủ</p>
+                    </div>
                 </a>
-            </div>
 
-            <!--library-->
-            <div class="col-xs-6" style="margin-top:1em;">
+                <!--library-->
                 <a href="gian-sach.html" style="color:#fff;text-decoration:none;">
-                    <img src="images/lib_menu_icon.jpg" style="width:1.8em;">
-                    <p style="font-size:.8em;margin-top:1em;">thư<br>viện</p>
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/lib_menu_icon.png" style="width:1.8em;" alt="menu library">
+                        <p style="font-size:.8em;margin-top:1em;">gian<br>sách</p>
+                    </div>
                 </a>
-            </div>
 
-            <!--article-->
-            <div class="col-xs-6" style="margin-top:1em;">
+                <!--article-->
                 <a href="articles.html" style="color:#fff;text-decoration:none;">
-                    <img src="images/article_menu_icon.jpg" style="width:1.8em;">
-                    <p style="font-size:.8em;margin-top:1em;">bài<br>viết</p>
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/article_menu_icon.png" style="width:1.8em;" alt="menu blog">
+                        <p style="font-size:.8em;margin-top:1em;">bài<br>viết</p>
+                    </div>
                 </a>
-            </div>
 
-            <!--about-->
-            <div class="col-xs-6" style="margin-top:1em;">
+                <!--about-->
                 <a href="about.html" style="color:#fff;text-decoration:none;">
-                    <img src="images/about_menu_icon.jpg" style="width:1.8em;">
-                    <p style="font-size:.8em;margin-top:1em;">về<br>bookism</p>
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/about_menu_icon.png" style="width:1.8em;" alt="menu about">
+                        <p style="font-size:.8em;margin-top:1em;">về<br>bookism</p>
+                    </div>
                 </a>
-            </div>
 
-            <!--FAQ-->
-            <div class="col-xs-6" style="margin-top:1em;">
+                <!--FAQ-->
                 <a href="faq.html" style="color:#fff;text-decoration:none;">
-                    <img src="images/faq_menu_icon.jpg" style="width:1.8em;">
-                    <p style="font-size:.8em;margin-top:1em;">faq</p>
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/faq_menu_icon.png" style="width:1.8em;" alt="menu faq">
+                        <p style="font-size:.8em;margin-top:1em;">faq</p>
+                    </div>
                 </a>
-            </div>
 
-            <!--contact-->
-            <div class="col-xs-6" style="margin-top:1em;">
+                <!--contact-->
                 <a href="contact.html" style="color:#fff;text-decoration:none;">
-                    <img src="images/contact_menu_icon.jpg" style="width:1.8em;">
-                    <p style="font-size:.8em;margin-top:1em;">liên<br>hệ</p>
+                    <div class="col-xs-12 nav_item">
+                        <img src="images/contact_menu_icon.png" style="width:1.8em;" alt="menu contact">
+                        <p style="font-size:.8em;margin-top:1em;">liên<br>hệ</p>
+                    </div>
                 </a>
+
             </div>
 
-        </div>
+        </nav>
 
-        <!--for logged in user-->
-        <div class="row menu_main" style="margin:auto;">
+        <!-- cart items -->
+        <nav class="cart-primary" id="cart-primary">
 
-            <!--setting-->
-            <div class="col-xs-6" style="margin-top:1em;">
-                <a href="setting.html" style="color:#fff;text-decoration:none;">
-                    <img src="images/setting_menu_icon.jpg" style="width:1.8em;">
-                    <p style="font-size:.8em;margin-top:1em;">tùy<br>chỉnh</p>
-                </a>
-            </div>
-
-            <!--logout-->
-            <div class="col-xs-6" style="margin-top:1em;">
-                <a href="log_out.html" style="color:#fff;text-decoration:none;">
-                    <img src="images/logout_menu_icon.jpg" style="width:1.8em;">
-                    <p style="font-size:.8em;margin-top:1em;">đăng<br>xuất</p>
-                </a>
-            </div>
-
-        </div>
-
-    </nav>
-
-<!-- header bar -->
-    <header class="mobile-helper-bar" style="background:rgba(101,175,206,.25);">
-		<!-- menu -->
-		<button class="hamburger" id="off-canvas-toggle"><i class="fa fa-bars"></i></button>
-        <form class="search">
-            <input class="searchTerm" placeholder="Tìm kiếm&hellip;"/>
-        </form>
-    </header>
-
-<!-- main content -->
-<div class="page-content" id="page-content">
-
-	<!-- placeholder -->
-	<div class="header_ph"></div>
-    
-    <!-- icon -->
-    <div style="position:relative;width:100%;">
-        <div class="top-page-image" style="margin-top:5em;position:relative;z-index:200;">
-            <img src="images/404_icon.png" alt="library" style="width:100%;z-index:1;">
-        </div>
-    </div>
-    <div style="position:absolute;top:20%;width:100%;">
-        <p class="back404" style="line-height:1em;">404</p>
-    </div>
-    <p style="color:#fff;text-align:center;font-size:1.5em;">Trang bạn tìm kiếm<br>không tồn tại.</p>
-    <!-- CTA -->	
-    <div style="margin-top:2.5em;text-align:center;margin-bottom:2em;position:relative;z-index:100;">
-        <div class="CTA_button_home">
-            <a href="index.html" style="text-decoration:none;">
-                <div style="width:100%;padding:1.4em 0 1.4em 0;">
-                    <span>về trang chủ</span>
+            <!--item 1-->
+            <div class="cart_item">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div>
+                            <a href="preview.html">
+                                <img src="images/book7.jpg" style="width:100%;height:auto;box-shadow: 2px 2px 5px rgba(0,0,0,.5);">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="three_dot">
+                            <a href="preview.html" style="color:#000;font-weight:700;">Nào phải anh hùng</a>
+                        </p>
+                        <p style="opacity:.5;">120.000đ x 1</p>
+                    </div>
                 </div>
-            </a>
+            </div>
+
+            <!--item 2-->
+            <div class="cart_item">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div>
+                            <a href="preview.html">
+                                <img src="images/book2.jpg" style="width:100%;height:auto;box-shadow: 2px 2px 5px rgba(0,0,0,.5);">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-8">
+                        <p class="three_dot">
+                            <a href="preview.html" style="color:#000;font-weight:700;">Chiến tranh giữa các vì sao</a>
+                        </p>
+                        <p style="opacity:.5;">67.000đ x 1</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--total + checkout-->
+            <div class="cart_item">
+                <p style="text-transform:uppercase;text-align:center;color:#1a5970;margin:0;">tổng cộng&#58;</p>
+                <p style="font-weight:700;font-size:1.5em;text-align:center;color:#1a5970">187.000đ</p>
+                <a href="checkout.html" style="color:#fff;text-transform:uppercase;text-decoration:none;">
+                    <div class="checkout_button">
+                        đặt mua
+                    </div>
+                </a>
+            </div>
+
+            <p style="text-align:center;margin-top:1em;">
+                <a href="cart.html">Xem giỏ hàng</a>
+            </p>
+
+        </nav>
+
+        <!-- header bar -->
+        <header class="mobile-helper-bar">
+
+            <!-- menu -->
+            <button class="hamburger" id="off-canvas-toggle"><i class="fa fa-bars"></i></button>
+
+            <!--cart-->
+            <div class="hotdog cursor_hover off-cart-toggle" style="float:right;">
+                <i class="fa fa-shopping-cart"></i> <span style="color:#d93816;font-weight:700;">&#40;2&#41;</span><span class="hidden-xs"> Giỏ hàng</span>
+            </div>
+
+        </header>
+
+        <!-- main content -->
+        <div class="page-content" id="page-content">
+
+            <!-- placeholder -->
+            <div class="header_ph"></div>
+
+            <!-- icon -->
+            <div style="position:relative;width:100%;">
+                <div class="top-page-image" style="margin-top:5em;position:relative;z-index:200;">
+                    <img src="images/404_icon.png" alt="library" style="width:100%;z-index:1;">
+                </div>
+            </div>
+            <div style="position:absolute;top:20%;width:100%;">
+                <p class="back404" style="line-height:1em;">404</p>
+            </div>
+            <p style="color:#fff;text-align:center;font-size:1.5em;">Trang bạn tìm kiếm<br>không tồn tại.</p>
+            <!-- CTA -->	
+            <div style="margin-top:2.5em;text-align:center;margin-bottom:9em;position:relative;z-index:100;">
+                <div class="CTA_button_home">
+                    <a href="index.html" style="text-decoration:none;">
+                        <div style="width:100%;padding:1.4em 0 1.4em 0;">
+                            <span>về trang chủ</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!--footer-->
+            <div class="footer_main">
+
+                <!--quicklink menu-->
+                <div style="margin:auto;text-align:center;">
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="index.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">trang chủ</a>
+                    </div>
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="gian-sach.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">gian sách</a>
+                    </div>
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="articles.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">bài viết</a>
+                    </div>
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="about.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">về bookism</a>
+                    </div>
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="faq.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">faq</a>
+                    </div>
+                    <div style="display:inline-block;margin:1em;">
+                        <a href="contact.html" style="text-transform:uppercase;color:#fff;font-size:1.1em;font-weight:700;text-decoration:none;">liên hệ</a>
+                    </div>
+                </div>
+
+                <!--term-->
+                <div style="margin:auto;text-align:center;">
+                    <div style="display:inline-block;margin:0 1em 1em 1em;">
+                        <a href="term.html" style="color:#fff;text-decoration:none;">Điều khoản</a>
+                    </div>
+                    <div style="display:inline-block;margin:0 1em 1em 1em;">
+                        <a href="privacy.html" style="color:#fff;text-decoration:none;">Quyền riêng tư</a>
+                    </div>
+                </div>
+
+                <!--fb + mail-->
+                <div style="margin:auto;text-align:center;">
+
+                    <a href="https://www.facebook.com/BookismVietNam" target="_blank">
+                        <div class="social-home-end">
+                            <i class="fa fa-facebook" style="line-height:2em;"></i>
+                        </div>
+                    </a>
+
+                    <a href="mailto:bookism.net@gmail.com" target="_blank">
+                        <div class="social-home-end">
+                            <i class="fa fa-envelope" style="line-height:2em;"></i>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!--copyright-->
+                <p style="color:#fff;text-align:center;line-height:1.5em;margin-top:1em;"><i class="fa fa-phone"></i> 0904 968 269<br><i class="fa fa-map-marker"></i> 211 nhà B, tập thể Bộ Y Tế, Lò Đúc</p>
+                <p style="color:#fff;text-align:center;margin-top:1em;line-height:1.5em;">&copy; Copyright 2014 by Bookism.</p>
+                <div style="height:1em;"></div>
+
+            </div>
+
         </div>
-    </div>
 
-</div>
-    
-<script src="http://code.jquery.com/jquery.js">
-</script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<script>
-// Show the off-canvas navigation
-$('#off-canvas-toggle').click(function() {
-	$('#nav-primary').toggleClass('off-canvas-show');
-});
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js">
+        </script>
+        <script>
+            // Show the off-canvas navigation
+            $(document).ready(function() {
+                $('#off-canvas-toggle').click(function() {
+                    $('#nav-primary').toggleClass('off-canvas-show');
+                });
 
-	$('#nav-primary').removeClass('off-canvas-show');
+                $('#nav-primary').removeClass('off-canvas-show');
 
-// Hide the off-canvas nav when clicking a link
-$('#nav-primary').find('a').on('click', function(e) {
-	$('#nav-primary').removeClass('off-canvas-show');
-});
+                // Hide the off-canvas nav when clicking a link
+                $('#nav-primary').find('a').on('click', function(e) {
+                    $('#nav-primary').removeClass('off-canvas-show');
+                });
 
-// Hide the off-canvas nav when clicking outside
-$('#page-content').on('click', function(e) {
-	$('#nav-primary').removeClass('off-canvas-show');
-});
-</script>
+                // Hide the off-canvas nav when clicking outside
+                $('#page-content').on('click', function(e) {
+                    $('#nav-primary').removeClass('off-canvas-show');
+                });
 
-</body>
+                // Show the cart
+                $('.off-cart-toggle').click(function() {
+                    $('#cart-primary').toggleClass('off-cart-show');
+                });
+
+                $('#cart-primary').removeClass('off-cart-show');
+
+                // Hide the off-canvas nav when clicking a link
+                $('#cart-primary').find('a').on('click', function(e) {
+                    $('#cart-primary').removeClass('off-cart-show');
+                });
+
+                // Hide the off-canvas nav when clicking outside
+                $('#page-content').on('click', function(e) {
+                    $('#cart-primary').removeClass('off-cart-show');
+                });
+
+            });
+
+        </script>
+    </body>
 </html>

@@ -17,32 +17,6 @@
                 overflow-x: hidden;			
                 font-family: 'Gotham', sans-serif;
             }
-            .slick-center{
-                -webkit-transform: scale(1,1)!important;
-                -moz-transform: scale(1,1)!important;
-                -ms-transform: scale(1,1)!important;
-                -o-transform: scale(1,1)!important;
-                transform: scale(1,1)!important;
-                opacity:1!important;
-                -webkit-transition: .4s ease;
-                -moz-transition: .4s ease;
-                -ms-transition: .4s ease;
-                -o-transition: .4s ease;
-                transition: .4s ease;
-            }
-            .slick-slide{
-                -webkit-transform: scale(.4,.4);
-                -moz-transform: scale(.4,.4);
-                -ms-transform: scale(.4,.4);
-                -o-transform: scale(.4,.4);
-                transform: scale(.4,.4);
-                opacity:.5;
-                -webkit-transition: .4s ease;
-                -moz-transition: .4s ease;
-                -ms-transition: .4s ease;
-                -o-transition: .4s ease;
-                transition: .4s ease;            
-            }
         </style>
     </head>
 
@@ -182,144 +156,187 @@
         <!--1st sect INTRO-->
         <div style="background-image:url(images/about/intro_bg.jpg);background-size:cover;padding:10em 1em 8em 1em;border-bottom:1px solid rgba(41,113,139,.5);text-align:center;">
 
-            <!--top text-->
-            <h1 style="text-transform:uppercase;margin:0;color:#fff;line-height:1.6em;letter-spacing:4px;font-weight:700;" class="resize_txt_top">chúng mình làm quen nhé&#33;</h1>
-
             <!-- icon -->
-            <div class="top-page-image" style="margin-bottom:3em;">
-                <span class="mid-align"></span><img src="images/about/about_icon.png" alt="library" style="width:100%;">
+            <div class="top-page-image">
+                <img src="images/about/about_icon.png" alt="library" style="width:100%;">
             </div>
 
-            <!--multilingual-->
-            <div style="padding:1em;">
-                <div class="hello" style="max-width:35em;margin:auto;">
-                    <div>
-                        <p style="text-transform:uppercase;margin:0;line-height:1.6em;letter-spacing:4px;color:#fff;" class="resize_txt_bottom">chào bạn</p>
-                    </div>
-                    <div>
-                        <p style="text-transform:uppercase;margin:0;line-height:1.6em;letter-spacing:4px;color:#fff;" class="resize_txt_bottom">hello</p>
-                    </div>
-                    <div>
-                        <p style="text-transform:uppercase;margin:0;line-height:1.6em;letter-spacing:4px;color:#fff;" class="resize_txt_bottom">こんにちは</p>
-                    </div>
-                    <div>
-                        <p style="text-transform:uppercase;margin:0;line-height:1.6em;letter-spacing:4px;color:#fff;" class="resize_txt_bottom">bonjour</p>
-                    </div>
-                    <div>
-                        <p style="text-transform:uppercase;margin:0;line-height:1.6em;letter-spacing:4px;color:#fff;" class="resize_txt_bottom">嗨</p>
-                    </div>
-                    <div>
-                        <p style="text-transform:uppercase;margin:0;line-height:1.6em;letter-spacing:4px;color:#fff;" class="resize_txt_bottom">привет</p>
-                    </div>
-                    <div>
-                        <p style="text-transform:uppercase;margin:0;line-height:1.6em;letter-spacing:4px;color:#fff;" class="resize_txt_bottom">hola</p>
-                    </div>
-                    <div>
-                        <p style="text-transform:uppercase;margin:0;line-height:1.6em;letter-spacing:4px;color:#fff;" class="resize_txt_bottom">안녕</p>
-                    </div>
-                    <div>
-                        <p style="text-transform:uppercase;margin:0;line-height:1.6em;letter-spacing:4px;color:#fff;" class="resize_txt_bottom">ciao</p>
-                    </div>
-                    <div>
-                        <p style="text-transform:uppercase;margin:0;line-height:1.6em;letter-spacing:4px;color:#fff;" class="resize_txt_bottom">مرحبا</p>
-                    </div>
+            <!--quicklink-->
+            <div class="row">
+
+                <!--history-->
+                <div class="col-md-3 col-sm-6">
+                    <a href="#un" style="text-decoration:none;">
+                        <div class="contact-quicklink">
+                            <div class="outter-border"></div>
+                            <span class="mid-align"></span><img src="images/about/history_icon.png" style="max-height:3em;">
+                        </div>
+                        <p style="font-size:1.5em;text-transform:uppercase;color:#fff;margin-top:1em;">lược sử<br>bookism</p>
+                    </a>
                 </div>
+
+                <!--value-->
+                <div class="col-md-3 col-sm-6">
+                    <a href="#deux" style="text-decoration:none;">
+                        <div class="contact-quicklink">
+                            <div class="outter-border"></div>
+                            <span class="mid-align"></span><img src="images/about/value_icon.png" style="max-height:3em;">
+                        </div>
+                        <p style="font-size:1.5em;text-transform:uppercase;color:#fff;margin-top:1em;">giá trị<br>cốt lõi</p>             
+                    </a>
+                </div>
+
+                <div class="clearfix visible-md-block"></div>
+
+                <!--parnership-->
+                <div class="col-md-3 col-sm-6">
+                    <a href="#trois" style="text-decoration:none;">
+                        <div class="contact-quicklink">
+                            <div class="outter-border"></div>
+                            <span class="mid-align"></span><img src="images/about/partner_icon.png" style="max-height:3em;">
+                        </div>
+                        <p style="font-size:1.5em;text-transform:uppercase;color:#fff;margin-top:1em;">các bên<br>đối tác</p>             
+                    </a>
+                </div>
+
+                <!--team-->
+                <div class="col-md-3 col-sm-6">
+                    <a href="#quatre" style="text-decoration:none;">
+                        <div class="contact-quicklink">
+                            <div class="outter-border"></div>
+                            <span class="mid-align"></span><img src="images/about/team_icon.png" style="max-height:3em;">
+                        </div>
+                        <p style="font-size:1.5em;text-transform:uppercase;color:#fff;margin-top:1em;">đôi ngũ<br>hoạt động</p>             
+                    </a>
+                </div>
+
             </div>
 
         </div>
 
-        <!--2nd section SCI FI-->
-        <div style="background-color:#3c93b3;background-image:url(images/library/scifi_bg.jpg);padding:3em 1em;border-bottom:1px solid rgba(41,113,139,.5);border-top:1px solid rgba(255,255,255,.3);" class="lib_sect">
-            <div class="row padding-2em" style="max-width:100em;margin:auto;">
 
-                <!--header-->
-                <div class="col-sm-12">
-                    <div class="choose_home" style="box-shadow: inset 0 0 0 5px #3c93b3;">
-                        <h2 style="text-transform:uppercase;margin:0;color:#fff;line-height:1.6em;letter-spacing:4px;text-align:center;" class="resize_txt_top">khoa học viễn tưởng</h2>
-                        <h5 class="tagline" style="margin:1em 0 3em 0;padding:0 10px 0 10px;">Khoa học là sức mạnh.</h5>
+        <!--bottom bar-->
+        <div style="max-width:45em;height:2em;margin:auto;border-left:1px solid #fff;border-right:1px solid #fff;border-bottom:1px solid #fff;"></div>
 
-                        <!--cat icon-->
-                        <div style="margin:auto;max-width:25em;margin-top:2em;margin-bottom:1em;">
-                            <img src="images/library/scifi_icon.jpg" style="width:100%;" alt="scifi">
-                        </div>
-                    </div>
+        <!--white col-->
+        <div class="white-col-about"></div>
+
+        <!--white cir-->
+        <div class="white-cir-about" id="un"><p>I</p></div>
+
+        <!--history headline-->
+        <p class="about-sec-head">lược sử<br>bookism</p>
+        <div style="max-width:40em;margin:auto;margin-top:2em;margin-bottom:2em;">
+            <img src="images/about/timeline.jpg" style="max-width:100%;height:auto;">
+        </div>
+
+        <!--history full-->
+        <div class="row" style="max-width:50em;margin:auto;color:#fff;line-height:1.5em;text-align:justify;">
+            <div class="col-sm-6" style="margin-top:1em;">Ấy nhưng các anh em khác không như chúng ta. Các anh em ta không được khỏe. Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</div>
+            <div class="col-sm-6" style="margin-top:1em;">Ấy nhưng các anh em khác không như chúng ta. Các anh em ta không được khỏe. Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</div>
+        </div>
+
+        <!--small white circle-->
+        <div style="background:#fff;border-radius:100%;height:1em;width:1em;border:1px solid #fff;box-shadow:0 0 0 .2em #65b0cc inset;margin:auto;margin-top:2em;"></div>
+
+        <!--white col-->
+        <div class="white-col-about"></div>
+
+        <!--white cir-->
+        <div class="white-cir-about" id="deux"><p>II</p></div>
+
+        <!--value headline-->
+        <p class="about-sec-head">giá trị<br>cốt lõi</p>
+        <div style="max-width:30em;margin:auto;margin-top:2em;margin-bottom:2em;">
+            <img src="images/about/value.jpg" style="max-width:100%;height:auto;">
+        </div>
+
+        <!--value full-->
+        <div class="row" style="max-width:50em;margin:auto;color:#fff;line-height:1.5em;text-align:justify;">
+            <div class="col-sm-6" style="margin-top:1em;"><span style="text-transform:uppercase;font-weight:900;">Cộng đồng &mdash;</span> Ấy nhưng các anh em khác không như chúng ta. Các anh em ta không được khỏe. Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</div>
+            <div class="col-sm-6" style="margin-top:1em;"><span style="text-transform:uppercase;font-weight:900;">sáng tạo &mdash;</span> Ấy nhưng các anh em khác không như chúng ta. Các anh em ta không được khỏe. Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</div>
+            <div class="col-sm-6" style="margin-top:1em;"><span style="text-transform:uppercase;font-weight:900;">phát triển &mdash;</span> Ấy nhưng các anh em khác không như chúng ta. Các anh em ta không được khỏe. Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</div>
+            <div class="col-sm-6" style="margin-top:1em;"><span style="text-transform:uppercase;font-weight:900;">chất lượng &mdash;</span> Ấy nhưng các anh em khác không như chúng ta. Các anh em ta không được khỏe. Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</div>
+        </div>
+
+        <!--small white circle-->
+        <div style="background:#fff;border-radius:100%;height:1em;width:1em;border:1px solid #fff;box-shadow:0 0 0 .2em #65b0cc inset;margin:auto;margin-top:2em;"></div>
+
+        <!--white col-->
+        <div class="white-col-about"></div>
+
+        <!--white cir-->
+        <div class="white-cir-about" id="trois"><p>III</p></div>
+
+        <p class="about-sec-head">các bên<br>đối tác</p>
+        <div style="max-width:16em;margin:auto;margin-top:2em;margin-bottom:2em;">
+            <img src="images/about/partner.jpg" style="max-width:100%;height:auto;">
+        </div>
+
+        <!--partner full-->
+        <div class="row" style="max-width:70em;margin:auto;text-align:center;">
+
+            <!--NXB 1-->
+            <div class="col-sm-6" style="padding:1.5em;">
+                <div class="nxb_card">
+                    <div class="nxb_logo_fit_w" style="background-image: url(images/about/nxb_1.jpg);"></div>
                 </div>
+            </div>
 
-                <!--subcat apo-->
-                <div class="col-sm-12" style="margin-top:3em;color:#fff;">
-                    <div class="choose_home padding-2em lib_cat_img" style="box-shadow: inset 0 0 0 5px #3c93b3;">
-                        <div class="row">
-
-                            <!--icon-->
-                            <div class="col-sm-4">
-                                <div style="max-width:15em;margin:auto;margin-top:2em;">
-                                    <img src="images/library/scifi_apo_icon.png" style="width:100%" alt="icon for subcategory apocalypse">
-                                </div>
-                            </div>
-
-                            <!--info-->
-                            <div class="col-sm-8" style="padding:0 2em;">
-                                <h3 style="text-transform:uppercase;margin:1em 0 0 0;color:#fff;line-height:1.6em;letter-spacing:4px;" class="resize_txt_top">ngày tận thế</h3>
-                                <p>Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...</p>
-                                <a href="cat_scifi_apo.html" style="color:#fff;text-decoration:none">
-                                    <div class="white_cta" style="border: 2px solid #fff;margin:1em auto">
-                                        xem tất cả
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
+            <!--NXB 2-->
+            <div class="col-sm-6" style="padding:1.5em;">
+                <div class="nxb_card">
+                    <div class="nxb_logo_fit_h" style="background-image: url(images/about/nxb_2.jpg);"></div>
                 </div>
+            </div>
 
+            <!--NXB 3-->
+            <div class="col-sm-6" style="padding:1.5em;">
+                <div class="nxb_card">
+                    <div class="nxb_logo_fit_h" style="background-image: url(images/about/nxb_3.jpg);"></div>
+                </div>
+            </div>
+
+            <!--NXB 4-->
+            <div class="col-sm-6" style="padding:1.5em;">
+                <div class="nxb_card">
+                    <div class="nxb_logo_fit_h" style="background-image: url(images/about/nxb_4.jpg);"></div>
+                </div>
+            </div>
+
+            <div class="col-md-12" style="margin-top:2em;color:#fff;">
+                <p>Để hợp tác phát hành truyện tại bookism<br>xin hãy <a href="contact.html" style="color:#000;font-weight:700;text-decoration:underline;">liên hệ</a> với chúng tôi</p>
             </div>
         </div>
 
-        <!--3rd section FANTASY-->
-        <div style="background-image:url(images/library/fanta_bg.jpg);padding:3em 1em;border-top:1px solid rgba(255,255,255,.3);border-bottom:1px solid rgba(41,113,139,.5);" class="lib_sect">
-            <div class="row padding-2em" style="max-width:100em;margin:auto;">
+        <!--small white circle-->
+        <div style="background:#fff;border-radius:100%;height:1em;width:1em;border:1px solid #fff;box-shadow:0 0 0 .2em #65b0cc inset;margin:auto;margin-top:2em;"></div>
 
-                <!--header-->
-                <div class="col-sm-12">
-                    <div class="choose_home" style="box-shadow: inset 0 0 0 5px #65afce;">
-                        <h2 style="text-transform:uppercase;margin:0;color:#fff;line-height:1.6em;letter-spacing:4px;text-align:center;" class="resize_txt_top">truyện kì ảo</h2>
+        <!--white col-->
+        <div class="white-col-about"></div>
 
-                        <!--cat icon-->
-                        <div style="margin:auto;max-width:25em;margin-top:2em;margin-bottom:1em;">
-                            <img src="images/library/fantasy_icon.jpg" style="width:100%;" alt="fantasy">
-                        </div>
-                    </div>
-                </div>
+        <!--white cir-->
+        <div class="white-cir-about" id="quatre"><p>IV</p></div>
 
-                <!--subcat magic-->
-                <div class="col-sm-12" style="margin-top:3em;color:#fff;">
-                    <div class="choose_home padding-2em lib_cat_img" style="box-shadow: inset 0 0 0 5px #65afce;">
-                        <div class="row">
+        <p class="about-sec-head">đội ngũ<br>hoạt động</p>
+        <div class="row" style="max-width:70em;margin:auto;margin-top:2em;margin-bottom:4em;">
 
-                            <!--icon-->
-                            <div class="col-sm-4">
-                                <div style="max-width:15em;margin:auto;margin-top:2em;">
-                                    <img src="images/library/fanta_magic_icon.png" style="width:100%" alt="icon for subcategory magic">
-                                </div>
-                            </div>
-
-                            <!--info-->
-                            <div class="col-sm-8" style="padding:0 2em;">
-                                <h3 style="text-transform:uppercase;margin:1em 0 0 0;color:#fff;line-height:1.6em;letter-spacing:4px;" class="resize_txt_top">phép thuật</h3>
-                                <p>Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...Face it, you’re never gonna finish War and Peace. And that’s okay. Give your cerebral reading list a night off...</p>
-                                <a href="cat_fanta_magic.html" style="color:#fff;text-decoration:none">
-                                    <div class="white_cta" style="border: 2px solid #fff;margin:1em auto">
-                                        xem tất cả
-                                    </div>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+            <div class="col-sm-4">
+                <div style="border:.5em solid #2e748e;height:11em;width:11em;border-radius:50%;margin:auto;background:#fff;"></div>
+                <p style="padding:1em;color:#fff;text-align:center;max-width:15em;margin:auto;">UN<br>&mdash; Truyền thông &mdash;<br><br>Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</p>            
             </div>
-        </div>
 
+            <div class="col-sm-4">
+                <div style="border:.5em solid #2e748e;height:11em;width:11em;border-radius:50%;margin:auto;background:#fff;"></div>
+                <p style="padding:1em;color:#fff;text-align:center;max-width:15em;margin:auto;">DEUX<br>&mdash; Quản trị nội dung &mdash;<br><br>Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</p>            
+            </div>
+
+            <div class="col-sm-4">
+                <div style="border:.5em solid #2e748e;height:11em;width:11em;border-radius:50%;margin:auto;background:#fff;"></div>
+                <p style="padding:1em;color:#fff;text-align:center;max-width:15em;margin:auto;">TROIS<br>&mdash; Thiết kế &mdash;<br><br>Huynh Đệ 2-5503, một người trầm tính với cặp mắt lanh lợi, hiền hòa, cứ thỉnh thoảng lại đột ngột rú lên khóc, bất kể ngày hay đêm,</p>            
+            </div>
+
+        </div>
         <!--footer-->
         <div class="footer_main">
 
@@ -383,7 +400,6 @@
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js">
     </script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
     <script>
         // Show the off-canvas navigation
         $(document).ready(function() {
@@ -420,26 +436,6 @@
                 $('#cart-primary').removeClass('off-cart-show');
             });
 
-            $('.hello').slick({
-                dots: false,
-                infinite: true,
-                speed: 500,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 1500,
-                centerMode: true,
-                responsive: [
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            dots: false,
-                        }
-                    }
-                ]
-            });
         });
     </script>
     <script>

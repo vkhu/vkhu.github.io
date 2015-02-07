@@ -819,10 +819,8 @@
                 $('#page-content').on('click', function(e) {
                     $('#nav-primary').removeClass('off-canvas-show');
                 });
-            });
 
-            // Show the cart
-            $(document).ready(function() {
+                // Show the cart
                 $('.off-cart-toggle').click(function() {
                     $('#cart-primary').toggleClass('off-cart-show');
                 });
@@ -840,31 +838,13 @@
                 });
                 
                 //show confirmation
-                //show confirmation
                 $('.CTA_button_small').click(function() {
                     $('.success').animate({
                         opacity: 1,}, 100 ).delay(1000).animate({
                         opacity: 0,}, 700 );
-                });});
-
-            // smooth scroll
-            $(function() {
-                $('a[href*=#]:not([href=#])').click(function() {
-                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                        if (target.length) {
-                            $('html,body').animate({
-                                scrollTop: target.offset().top
-                            }, 1000);
-                            return false;
-                        }
-                    }
                 });
-            });
-
-            //carousel
-            $(document).ready(function(){
+                
+                //carousel
                 $('.carousel').slick({
                     dots: true,
                     infinite: true,
@@ -913,6 +893,23 @@
                     ]
                 });
             });
+
+            // smooth scroll
+            $(function() {
+                $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+
         </script>
 
     </body>

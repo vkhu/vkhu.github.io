@@ -10,9 +10,10 @@
         <link href="reset.css" rel="stylesheet" type='text/css'/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
         <style>
             body{
-                background-color:#65afce;
+                background-color:#2e748e;
                 overflow-x: hidden;			
                 font-family: 'Gotham', sans-serif;
             }
@@ -80,7 +81,7 @@
 
         <!-- cart items -->
         <nav class="cart-primary" id="cart-primary">
-            
+
             <!--item 1-->
             <div class="cart_item">
                 <div class="row">
@@ -99,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!--item 2-->
             <div class="cart_item">
                 <div class="row">
@@ -118,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!--total + checkout-->
             <div class="cart_item">
                 <p style="text-transform:uppercase;text-align:center;color:#1a5970;margin:0;">tổng cộng&#58;</p>
@@ -129,19 +130,19 @@
                     </div>
                 </a>
             </div>
-            
+
             <p style="text-align:center;margin-top:1em;">
                 <a href="cart.html">Xem giỏ hàng</a>
             </p>
-            
+
         </nav>
-        
+
         <!-- header bar -->
         <header class="mobile-helper-bar">
-            
+
             <!-- menu -->
             <button class="hamburger" id="off-canvas-toggle"><i class="fa fa-bars"></i></button>
-            
+
             <!--cart-->
             <div class="hotdog cursor_hover off-cart-toggle" style="float:right;">
                 <i class="fa fa-shopping-cart"></i> <span style="color:#d93816;font-weight:700;">&#40;2&#41;</span><span class="hidden-xs"> Giỏ hàng</span>
@@ -151,101 +152,101 @@
 
         <!-- main content -->
         <div class="page-content" id="page-content">
-
-            <!--intro 1st sect-->
-            <div style="background-image:url(images/contact/intro_bg.jpg);background-size:cover;padding:8.5em 0 2em 0;border-bottom:1px solid rgba(41,113,139,.5);">
-                <div style="text-align:center;width:100%;padding:0 1em;">
-
-                    <!-- icon -->
-                    <div class="top-page-image">
-                        <img src="images/contact/contact_icon.png" style="width:100%;margin:.4em 0 1em 0;" alt="home logo">
-                    </div>
-                    
-                    <!--quicklink-->
-                    <div class="row">
-                        
-                        <!--mail-->
-                        <div class="col-md-3 col-sm-6">
-                            <a href="mailto:bookism.net@gmail.com" style="text-decoration:none;">
-                                <div class="contact-quicklink">
-                                    <div class="outter-border"></div>
-                                    <i class="fa fa-envelope-o" style="line-height:4em;color:#000;font-size:3em;"></i>
-                                </div>
-                                <p style="font-size:1.5em;text-transform:uppercase;color:#fff;margin-top:1em;">email</p>
-                                <p style="color:#65afce;text-decoration:underline;font-weight:900;margin-bottom:3em;">bookism.net@gmail.com</p>
-                            </a>
-                        </div>
-
-                        <!--message-->
-                        <div class="col-md-3 col-sm-6">
-                            <a href="#contact-head" style="text-decoration:none;">
-                                <div class="contact-quicklink">
-                                    <div class="outter-border"></div>
-                                    <i class="fa fa-pencil-square-o" style="line-height:4em;color:#000;font-size:3em;"></i>
-                                </div>
-                                <p style="font-size:1.5em;text-transform:uppercase;color:#fff;margin-top:1em;">gửi tin nhanh</p>
-                                <p style="color:#fff;margin-bottom:3em;">Xuống mẫu gửi</p>
-                            </a>
-                        </div>
-
-                        <div class="clearfix visible-md-block"></div>
-                        
-                        <!--facebook-->
-                        <div class="col-md-3 col-sm-6">
-                            <a href="https://www.facebook.com/BookismVietNam" style="text-decoration:none;">
-                                <div class="contact-quicklink">
-                                    <div class="outter-border"></div>
-                                    <i class="fa fa-facebook-square" style="line-height:4em;color:#000;font-size:3em;"></i>
-                                </div>
-                                <p style="font-size:1.5em;text-transform:uppercase;color:#fff;margin-top:1em;">facebook</p>
-                                <p style="color:#65afce;text-decoration:underline;font-weight:900;margin-bottom:3em;">BookismVietNam</p>
-                            </a>
-                        </div>
-
-                        <!--cell-->
-                        <div class="col-md-3 col-sm-6">
-                                <div class="contact-quicklink">
-                                    <div class="outter-border"></div>
-                                    <i class="fa fa-tablet" style="line-height:4em;color:#000;font-size:3em;"></i>
-                                </div>
-                                <p style="font-size:1.5em;text-transform:uppercase;color:#fff;margin-top:1em;">hotline</p>
-                            <p style="color:#fff;margin-bottom:3em;">0904 968 269</p>
-                        </div>
-
-                    </div>
-                    
+            
+            
+            <!-- results -->
+            <div style="background:#fff">
+                <div class="header_ph"></div>
+                
+                <!-- number of results -->
+                <div class="src_res_top_txt">
+                    <p>
+                        <span style="font-size:1.5em;text-transform:uppercase;">12 kết quả </span>cho từ khóa &ldquo;div&rdquo;.
+                    </p>
                 </div>
-            </div>
-
-            <!--2nd sect - inquiry box-->
-            <div style="background-color:#65b0cc;background-image:url(images/contact/main_bg.jpg);padding:3em 0 6em 0;border-top:1px solid rgba(255,255,255,.3);">
                 
-                
-                <!-- contact form -->
-                <div style="padding:0 1em;">
+                <!--results-->
+                <div class="src_res_dis">
                     
-                    <div class="choose_home" style="max-width:80em;margin:auto;box-shadow: inset 0 0 0 5px #3c93b3;" id="contact-head">
-                        <p class="h1-cat" style="margin:1em 0;">Gửi tin nhanh</p>
-                        <form id="contact">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <input type="text" placeholder="Họ tên">
+                    <!-- 1st result -->
+                    <div class="row new" style="border-bottom:1px solid rgba(0,0,0,.2);">
+
+                        <!-- prev img -->
+                        <div class="col-sm-4">
+                            <a href="preview.html">
+                                <div style="border: 4px solid #1a5970;border-radius:5px;margin:2em 0;">
+                                    <div class="choose_home padding-2em" style="position:relative;border:5px solid rgba(0,0,0,0);background:0;border-radius:0px;overflow:hidden;min-height:15em;">
+
+                                        <!--image-->
+                                        <img src="images/article/article-7.jpg" class="bg-cover-img brightness">
+                                    </div>
                                 </div>
-                                <div class="col-sm-12">
-                                    <input type="text" placeholder="E-mail">
-                                </div>
-                                <div class="col-sm-12">
-                                    <textarea placeholder="Nội dung cần gửi..."></textarea>
-                                </div>
-                                <div class="col-sm-12">
-                                    <input type="submit" value="gửi">
-                                </div>
+                            </a>
+                        </div>
+
+                        <!-- content -->
+                        <div class="col-sm-8">
+                            <div style="margin:2em 0;">
+
+                                <!-- post title -->
+                                <a href="preview.html" style="color:#000;text-decoration:none;">
+                                    <p class="src_res_title">43 great examples of WordPress website with Div</p>
+
+                                <!-- post content -->
+                                <p class="headrest" style="font-style: italic;max-height:8em;">...Div Nam cursus, est sed mattis consectetur, magna felis tristique. Early Years: Nulla facilisi mauris fermentum iaculis ligula, eget fermentum neque ornare in. Div In hac habitasse platea dictumst. Curabitur at mi mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per…</p>
+                                </a>
                             </div>
-                        </form>
+                        </div>
+
+                    </div>
+                    
+                    <!-- 2nd result -->
+                    <div class="row new" style="border-bottom:1px solid rgba(0,0,0,.2);">
+
+                        <!-- prev img -->
+                        <div class="col-sm-4">
+                            <a href="preview.html">
+                                <div style="border: 4px solid #1a5970;border-radius:5px;margin:2em 0;">
+                                    <div class="choose_home padding-2em" style="position:relative;border:5px solid rgba(0,0,0,0);background:0;border-radius:0px;overflow:hidden;min-height:15em;">
+
+                                        <!--image-->
+                                        <img src="images/article/article-9.jpg" class="bg-cover-img brightness">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- content -->
+                        <div class="col-sm-8">
+                            <div style="margin:2em 0;">
+
+                                <!-- post title -->
+                                <a href="preview.html" style="color:#000;text-decoration:none;">
+                                    <p class="src_res_title">43 great examples of WordPress website with Div</p>
+
+                                    <!-- post content -->
+                                    <p class="headrest" style="font-style: italic;max-height:8em;">...Div Nam cursus, est sed mattis consectetur, magna felis tristique. Early Years: Nulla facilisi mauris fermentum iaculis ligula, eget fermentum neque ornare in. Div In hac habitasse platea dictumst. Curabitur at mi mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per…</p>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 
                 </div>
- 
+
+                <!--pages-->
+                <div class="paging" style="width:100%;margin-top:2em;;">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>...</li>
+                        <li>5</li>
+                        <li>6</li>
+                    </ul>
+                </div>
+                
+                <div style="height:2px;"></div>
+            
             </div>
 
             <!--footer-->
@@ -311,6 +312,8 @@
 
         <script src="https://code.jquery.com/jquery-2.1.3.min.js">
         </script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script src="js/jquery.dotdotdot.min.js"></script>
         <script>
             // Show the off-canvas navigation
             $(document).ready(function() {
@@ -346,27 +349,15 @@
                 $('#page-content').on('click', function(e) {
                     $('#cart-primary').removeClass('off-cart-show');
                 });
-                
-            });
-
-            // smooth scroll
-            $(function() {
-                $('a[href*=#]:not([href=#])').click(function() {
-                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                        if (target.length) {
-                            $('html,body').animate({
-                                scrollTop: target.offset().top
-                            }, 1000);
-                            return false;
-                        }
-                    }
+                //three dot
+                $(".headrest").dotdotdot({
+                    ellipsis: '... ',
+                    wrap: 'word',
+                    watch: "window",
                 });
             });
 
         </script>
-
     </body>
 </html>
 
