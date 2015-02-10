@@ -1513,6 +1513,25 @@ table {
 
 /*media queries*/
 @media (min-width: 1024px){
+    .about-section{
+        padding:8em 1em;
+        text-align:center;
+    }
+    .about-h2{
+        font-size:4em;
+        color:#1a5970;
+        font-weight:700;
+        text-transform:uppercase;
+        margin-bottom:.8em;
+        line-height:1em;
+    }
+    .about-main-p{
+        max-width:40em;
+        margin:auto;
+        font-size:1.5em;
+        letter-spacing:1px;
+        margin-bottom:2em;
+    }
     .ribbon{
         position:relative;
         background-color:#2e748e;
@@ -1727,6 +1746,25 @@ table {
     }
 }
 @media (min-width: 750px) and (max-width: 1024px) {
+    .about-section{
+        padding:7em 1em;
+        text-align:center;
+    }
+    .about-h2{
+        font-size:3.5em;
+        color:#1a5970;
+        font-weight:700;
+        text-transform:uppercase;
+        margin-bottom:.8em;
+        line-height:1em;
+    }
+    .about-main-p{
+        max-width:40em;
+        margin:auto;
+        font-size:1.4em;
+        letter-spacing:1px;
+        margin-bottom:2em;
+    }
     .ribbon{
         position:relative;
         background-color:#2e748e;
@@ -1940,6 +1978,25 @@ table {
     }
 }
 @media (min-width: 500px) and (max-width: 750px) {
+    .about-section{
+        padding:6em 1em;
+        text-align:center;
+    }
+    .about-main-p{
+        max-width:40em;
+        margin:auto;
+        font-size:1.2em;
+        letter-spacing:1px;
+        margin-bottom:2em;
+    }
+    .about-h2{
+        font-size:3em;
+        color:#1a5970;
+        font-weight:700;
+        text-transform:uppercase;
+        margin-bottom:.8em;
+        line-height:1.2em;
+    }
     .ribbon{
         position:relative;
         background-color:#2e748e;
@@ -2156,6 +2213,25 @@ table {
     }
 }
 @media (max-width: 500px){
+    .about-section{
+        padding:5em 1em;
+        text-align:center;
+    }
+    .about-h2{
+        font-size:2em;
+        color:#1a5970;
+        font-weight:700;
+        text-transform:uppercase;
+        margin-bottom:.8em;
+        line-height:1.2em;
+    }
+    .about-main-p{
+        max-width:40em;
+        margin:auto;
+        font-size:1.1em;
+        letter-spacing:1px;
+        margin-bottom:2em;
+    }
     .ribbon{
         position:relative;
         background-color:#2e748e;
@@ -2789,7 +2865,36 @@ table {
     -o-transition: ease-out .2s;
     transition: ease-out .2s;
 }
+.about-border{
+    border:1px solid #3c93b3;
+    opacity: 0;
+    height:100%;
+    width:100%;
+    border-radius:50%;
+    position:absolute;
+    margin:auto;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    -webkit-transition: ease-out .2s;
+    -moz-transition: ease-out .2s;
+    -o-transition: ease-out .2s;
+    transition: ease-out .2s;
+}
 .outter-border:hover{
+    opacity: 1;
+    -webkit-transition: ease-out .2s;
+    -moz-transition: ease-out .2s;
+    -o-transition: ease-out .2s;
+    transition: ease-out .2s;
+    -webkit-transform: scale(1.15,1.15);
+    -moz-transform: scale(1.15,1.15);
+    -ms-transform: scale(1.15,1.15);
+    -o-transform: scale(1.15,1.15);
+    transform: scale(1.15,1.15);
+}
+.about-border:hover{
     opacity: 1;
     -webkit-transition: ease-out .2s;
     -moz-transition: ease-out .2s;
@@ -2813,6 +2918,18 @@ table {
     -o-transition: ease-out .2s;
     transition: ease-out .2s;
 }
+.about_cat{
+    margin:1em auto;
+    height:12em;
+    width:12em;
+    border-radius:50%;
+    background:#3c93b3;
+    position:relative;
+    -webkit-transition: ease-out .2s;
+    -moz-transition: ease-out .2s;
+    -o-transition: ease-out .2s;
+    transition: ease-out .2s;
+}
 .contact-quicklink:hover{
     -webkit-transition: ease-out .2s;
     -moz-transition: ease-out .2s;
@@ -2823,4 +2940,19 @@ table {
     -ms-transform: scale(.95,.95);
     -o-transform: scale(.95,.95);
     transform: scale(.95,.95);
+}
+.about_cat:hover{
+    -webkit-transition: ease-out .2s;
+    -moz-transition: ease-out .2s;
+    -o-transition: ease-out .2s;
+    transition: ease-out .2s;
+    -webkit-transform: scale(.95,.95);
+    -moz-transform: scale(.95,.95);
+    -ms-transform: scale(.95,.95);
+    -o-transform: scale(.95,.95);
+    transform: scale(.95,.95);
+}
+.about-step{
+    max-width:60em;
+    border-top:1px solid rgba(0,0,0,.1);
 }
