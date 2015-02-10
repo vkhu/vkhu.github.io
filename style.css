@@ -1739,7 +1739,7 @@ table {
         border-radius:10px;
         box-shadow: 2px 2px 5px rgba(0,0,0,.5);
     }
-    .resize_txt{
+    .resize_txt_top{
         font-size: 250%;
     }
     .resize_txt_bottom{
@@ -1971,7 +1971,7 @@ table {
         border-radius:10px;
         box-shadow: 2px 2px 5px rgba(0,0,0,.5);
     }
-    .resize_txt{
+    .resize_txt_top{
         font-size: 220%;
     }
     .resize_txt_bottom{
@@ -2206,7 +2206,7 @@ table {
     .hide-cell{
         display:none;
     }
-    .resize_txt{
+    .resize_txt_top{
         font-size: 200%;
     }
     .resize_txt_bottom{
