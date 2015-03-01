@@ -2979,4 +2979,17 @@ table {
 }
 .normal-ul{
     list-style-type:disc;
+    padding:0 0 0 2em;
+}
+.out-CTA{
+    padding:1em;
+    background:#eaeaea;
+    max-width:8em;
+    margin:auto;
+    border-radius:10px;
+    margin:.8em auto 1em auto;
+    box-shadow: .1em .1em rgba(0,0,0,.6);
+    text-transform:uppercase;
+    color:#d93816;
+    font-weight:900;
 }
