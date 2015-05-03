@@ -6,8 +6,8 @@
         <meta name="description" content="Gian truyện của những người yêu Sci fi, Fantasy, Trinh thám.">
         <title>Bookism - Bước vào trang truyện. Mở ra thế giới.</title>
         <link rel="icon" href="images/favicon.png">
-        <link href="style.css" rel="stylesheet" type='text/css'/>
-        <link href="reset.css" rel="stylesheet" type='text/css'/>
+        <link href="css/style.css" rel="stylesheet" type='text/css'/>
+        <link href="css/reset.css" rel="stylesheet" type='text/css'/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
@@ -239,78 +239,783 @@
                             <!--address-->
                             <div class="row" style="opacity:.8;font-size:16px;">
                                 <form>
+                                    
+                                    <!--cities-->
                                     <div class="col-md-6" style="margin:.5em 0;">
                                         <p>Tỉnh&#47;Thành phố&#58;</p>
-                                        <select class="checkout-input" required>
-                                            <option value="An Giang">An Giang</option>
-                                            <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
-                                            <option value="Bạc Liêu">Bạc Liêu</option>
-                                            <option value="Bắc Kạn">Bắc Kạn</option>
-                                            <option value="Bắc Giang">Bắc Giang</option>
-                                            <option value="Bắc Ninh">Bắc Ninh</option>
-                                            <option value="Bến Tre">Bến Tre</option>
-                                            <option value="Bình Dương">Bình Dương</option>
-                                            <option value="Bình Định">Bình Định</option>
-                                            <option value="Bình Phước">Bình Phước</option>
-                                            <option value="Bình Thuận">Bình Thuận</option>
-                                            <option value="Cà Mau">Cà Mau</option>
-                                            <option value="Cao Bằng">Cao Bằng</option>
-                                            <option value="Cần Thơ">Cần Thơ</option>
-                                            <option value="Đà Nẵng">Đà Nẵng</option>
-                                            <option value="Đắk Lắk">Đắk Lắk</option>
-                                            <option value="Đắk Nông">Đắk Nông</option>
-                                            <option value="Đồng Nai">Đồng Nai</option>
-                                            <option value="Đồng Tháp">Đồng Tháp</option>
-                                            <option value="Điện Biên">Điện Biên</option>
-                                            <option value="Gia Lai">Gia Lai</option>
-                                            <option value="Hà Giang">Hà Giang</option>
-                                            <option value="Hà Nam">Hà Nam</option>
-                                            <option value="Hà Nội" selected>Hà Nội</option>
-                                            <option value="Hà Tĩnh">Hà Tĩnh</option>
-                                            <option value="Hải Dương">Hải Dương</option>
-                                            <option value="Hải Phòng">Hải Phòng</option>
-                                            <option value="Hòa Bình">Hòa Bình</option>
-                                            <option value="Hậu Giang">Hậu Giang</option>
-                                            <option value="Hưng Yên">Hưng Yên</option>
-                                            <option value="Hồ Chí Minh">Hồ Chí Minh</option>
-                                            <option value="Khánh Hòa">Khánh Hòa</option>
-                                            <option value="Kiên Giang">Kiên Giang</option>
-                                            <option value="Kon Tum">Kon Tum</option>
-                                            <option value="Lai Châu">Lai Châu</option>
-                                            <option value="Lào Cai">Lào Cai</option>
-                                            <option value="Lạng Sơn">Lạng Sơn</option>
-                                            <option value="Lâm Đồng">Lâm Đồng</option>
-                                            <option value="Long An">Long An</option>
-                                            <option value="Nam Định">Nam Định</option>
-                                            <option value="Nghệ An">Nghệ An</option>
-                                            <option value="Ninh Bình">Ninh Bình</option>
-                                            <option value="Ninh Thuận">Ninh Thuận</option>
-                                            <option value="Phú Thọ">Phú Thọ</option>
-                                            <option value="Phú Yên">Phú Yên</option>
-                                            <option value="Quảng Bình">Quảng Bình</option>
-                                            <option value="Quảng Nam">Quảng Nam</option>
-                                            <option value="Quảng Ngãi">Quảng Ngãi</option>
-                                            <option value="Quảng Ninh">Quảng Ninh</option>
-                                            <option value="Quảng Trị">Quảng Trị</option>
-                                            <option value="Sóc Trăng">Sóc Trăng</option>
-                                            <option value="Sơn La">Sơn La</option>
-                                            <option value="Tây Ninh">Tây Ninh</option>
-                                            <option value="Thái Bình">Thái Bình</option>
-                                            <option value="Thái Nguyên">Thái Nguyên</option>
-                                            <option value="Thanh Hóa">Thanh Hóa</option>
-                                            <option value="Thừa Thiên - Huế">Thừa Thiên - Huế</option>
-                                            <option value="Tiền Giang">Tiền Giang</option>
-                                            <option value="Trà Vinh">Trà Vinh</option>
-                                            <option value="Tuyên Quang">Tuyên Quang</option>
-                                            <option value="Vĩnh Long">Vĩnh Long</option>
-                                            <option value="Vĩnh Phúc">Vĩnh Phúc</option>
-                                            <option value="Yên Bái">Yên Bái</option>
+                                        <select class="checkout-input" id="city" name="city" required>
+                                            <option value="angiang">An Giang</option>
+                                            <option value="baria">Bà Rịa - Vũng Tàu</option>
+                                            <option value="baclieu">Bạc Liêu</option>
+                                            <option value="backan">Bắc Kạn</option>
+                                            <option value="bacgiang">Bắc Giang</option>
+                                            <option value="bacninh">Bắc Ninh</option>
+                                            <option value="bentre">Bến Tre</option>
+                                            <option value="binhduong">Bình Dương</option>
+                                            <option value="binhdinh">Bình Định</option>
+                                            <option value="binhphuoc">Bình Phước</option>
+                                            <option value="binhthuan">Bình Thuận</option>
+                                            <option value="camau">Cà Mau</option>
+                                            <option value="caobang">Cao Bằng</option>
+                                            <option value="cantho">Cần Thơ</option>
+                                            <option value="danang">Đà Nẵng</option>
+                                            <option value="daklak">Đắk Lắk</option>
+                                            <option value="daknong">Đắk Nông</option>
+                                            <option value="dongnai">Đồng Nai</option>
+                                            <option value="dongthap">Đồng Tháp</option>
+                                            <option value="dienbien">Điện Biên</option>
+                                            <option value="gialai">Gia Lai</option>
+                                            <option value="hagiang">Hà Giang</option>
+                                            <option value="hanam">Hà Nam</option>
+                                            <option value="hanoi" selected>Hà Nội</option>
+                                            <option value="hatinh">Hà Tĩnh</option>
+                                            <option value="haiduong">Hải Dương</option>
+                                            <option value="haiphong">Hải Phòng</option>
+                                            <option value="hoabinh">Hòa Bình</option>
+                                            <option value="haugiang">Hậu Giang</option>
+                                            <option value="hungyen">Hưng Yên</option>
+                                            <option value="hochiminh">Hồ Chí Minh</option>
+                                            <option value="khanhhoa">Khánh Hòa</option>
+                                            <option value="kiengiang">Kiên Giang</option>
+                                            <option value="kontum">Kon Tum</option>
+                                            <option value="laichau">Lai Châu</option>
+                                            <option value="laocai">Lào Cai</option>
+                                            <option value="langson">Lạng Sơn</option>
+                                            <option value="lamdong">Lâm Đồng</option>
+                                            <option value="longan">Long An</option>
+                                            <option value="namdinh">Nam Định</option>
+                                            <option value="nghean">Nghệ An</option>
+                                            <option value="ninhbinh">Ninh Bình</option>
+                                            <option value="ninhthuan">Ninh Thuận</option>
+                                            <option value="phutho">Phú Thọ</option>
+                                            <option value="phuyen">Phú Yên</option>
+                                            <option value="quangbinh">Quảng Bình</option>
+                                            <option value="quangnam">Quảng Nam</option>
+                                            <option value="quangngai">Quảng Ngãi</option>
+                                            <option value="quangninh">Quảng Ninh</option>
+                                            <option value="quangtri">Quảng Trị</option>
+                                            <option value="soctrang">Sóc Trăng</option>
+                                            <option value="sonla">Sơn La</option>
+                                            <option value="tayninh">Tây Ninh</option>
+                                            <option value="thaibinh">Thái Bình</option>
+                                            <option value="thainguyen">Thái Nguyên</option>
+                                            <option value="thanhhoa">Thanh Hóa</option>
+                                            <option value="thuathienhue">Thừa Thiên - Huế</option>
+                                            <option value="tiengiang">Tiền Giang</option>
+                                            <option value="travinh">Trà Vinh</option>
+                                            <option value="tuyenquang">Tuyên Quang</option>
+                                            <option value="vinhlong">Vĩnh Long</option>
+                                            <option value="vinhphuc">Vĩnh Phúc</option>
+                                            <option value="yenbai">Yên Bái</option>
                                         </select>
                                     </div>
+                                    
+                                    <!--districts-->
                                     <div class="col-md-6" style="margin:.5em 0;">
                                         <p>Quận&#47;huyện&#58;</p>
-                                        <input class="checkout-input" required placeholder="VD: Đống Đa">
+                                        <select class="checkout-input" id="district" name="district" required>
+                                            <option value="1" class="angiang">Long Xuyên</option>
+                                            <option value="2" class="angiang">Châu Đốc</option>
+                                            <option value="3" class="angiang">Tân Châu</option>
+                                            <option value="4" class="angiang">Chợ Mới</option>
+                                            <option value="5" class="angiang">Tri Tôn</option>
+                                            <option value="6" class="angiang">Phú Tân</option>
+                                            <option value="7" class="angiang">Châu Thành</option>
+                                            <option value="8" class="angiang">Thoại Sơn</option>
+                                            <option value="9" class="angiang">Tịnh Biên</option>
+                                            <option value="10" class="angiang">An Phú</option>
+                                            <option value="11" class="angiang">Châu Phú</option>
+                                            <option value="12" class="baria">Bà Rịa</option>
+                                            <option value="13" class="baria">Vũng Tàu</option>
+                                            <option value="14" class="baria">Đất Đỏ</option>
+                                            <option value="15" class="baria">Long Điền</option>
+                                            <option value="16" class="baria">Tân Thành</option>
+                                            <option value="17" class="baria">Xuyên Mộc</option>
+                                            <option value="18" class="baria">Châu Đức</option>
+                                            <option value="19" class="baria">Côn Đảo</option>
+                                            <option value="20" class="baclieu">Bạc Liêu</option>
+                                            <option value="21" class="baclieu">Giá Rai</option>
+                                            <option value="22" class="baclieu">Hòa Bình</option>
+                                            <option value="23" class="baclieu">Hồng Dân</option>
+                                            <option value="24" class="baclieu">Phước Long</option>
+                                            <option value="25" class="baclieu">Vĩnh Lợi</option>
+                                            <option value="26" class="baclieu">Đông Hải</option>
+                                            <option value="27" class="backan">Bắc Kạn</option>
+                                            <option value="28" class="backan">Ba Bể</option>
+                                            <option value="29" class="backan">Bạch Thông</option>
+                                            <option value="30" class="backan">Chợ Đồn</option>
+                                            <option value="31" class="backan">Chợ Mới</option>
+                                            <option value="32" class="backan">Na Rì</option>
+                                            <option value="33" class="backan">Ngân Sơn</option>
+                                            <option value="34" class="backan">Pác Nặm</option>
+                                            <option value="35" class="bacgiang">Bắc Giang</option>
+                                            <option value="36" class="bacgiang">Hiệp Hòa</option>
+                                            <option value="37" class="bacgiang">Lạng Giang</option>
+                                            <option value="38" class="bacgiang">Lục Nam</option>
+                                            <option value="39" class="bacgiang">Lục Ngạn</option>
+                                            <option value="40" class="bacgiang">Sơn Động</option>
+                                            <option value="41" class="bacgiang">Tân Yên</option>
+                                            <option value="42" class="bacgiang">Việt Yên</option>
+                                            <option value="43" class="bacgiang">Yên Dũng</option>
+                                            <option value="44" class="bacgiang">Yên Thế</option>
+                                            <option value="45" class="bacninh">Bắc Ninh</option>
+                                            <option value="46" class="bacninh">Lương Tài</option>
+                                            <option value="47" class="bacninh">Quế Võ</option>
+                                            <option value="48" class="bacninh">Thuận Thành</option>
+                                            <option value="49" class="bacninh">Tiên Du</option>
+                                            <option value="50" class="bacninh">Từ Sơn</option>
+                                            <option value="51" class="bacninh">Yên Phong</option>
+                                            <option value="52" class="bacninh">Gia Bình</option>
+                                            <option value="53" class="bentre">Bến Tre</option>
+                                            <option value="54" class="bentre">Bình Đại</option>
+                                            <option value="55" class="bentre">Châu Thành</option>
+                                            <option value="56" class="bentre">Chợ Lách</option>
+                                            <option value="57" class="bentre">Giồng Trôm</option>
+                                            <option value="58" class="bentre">Thạnh Phú</option>
+                                            <option value="59" class="bentre">Ba Tri</option>
+                                            <option value="60" class="bentre">Mỏ Cày Bắc</option>
+                                            <option value="61" class="bentre">Mỏ Cày Nam</option>
+                                            <option value="62" class="binhduong">Thủ Dầu Một</option>
+                                            <option value="63" class="binhduong">Dĩ An</option>
+                                            <option value="64" class="binhduong">Thuận An</option>
+                                            <option value="65" class="binhduong">Phú Giáo</option>
+                                            <option value="66" class="binhduong">Tân Uyên</option>
+                                            <option value="67" class="binhduong">Dầu Tiếng</option>
+                                            <option value="68" class="binhduong">Lái Thiêu</option>
+                                            <option value="69" class="binhduong">Bến Cát</option>
+                                            <option value="70" class="binhdinh">An Lão</option>
+                                            <option value="71" class="binhdinh">An Nhơn</option>
+                                            <option value="72" class="binhdinh">Hoài  n</option>
+                                            <option value="73" class="binhdinh">Hoài Nhơn</option>
+                                            <option value="74" class="binhdinh">Phù Cát</option>
+                                            <option value="75" class="binhdinh">Phù Mỹ</option>
+                                            <option value="76" class="binhdinh">Tây Sơn</option>
+                                            <option value="77" class="binhdinh">Tuy Phước</option>
+                                            <option value="78" class="binhdinh">Vân Canh</option>
+                                            <option value="79" class="binhdinh">Vĩnh Thạnh</option>
+                                            <option value="80" class="binhdinh">Quy Nhơn</option>
+                                            <option value="81" class="binhphuoc">Bình Long</option>
+                                            <option value="82" class="binhphuoc">Phước Long</option>
+                                            <option value="83" class="binhphuoc">Đồng Xoài</option>
+                                            <option value="84" class="binhphuoc">Chơn Thành</option>
+                                            <option value="85" class="binhphuoc">Đồng Phú</option>
+                                            <option value="86" class="binhphuoc">Lộc Ninh</option>
+                                            <option value="87" class="binhphuoc">Bù Đăng</option>
+                                            <option value="88" class="binhphuoc">Bù Đốp</option>
+                                            <option value="89" class="binhphuoc">Hớn Quản</option>
+                                            <option value="90" class="binhphuoc">Bù Gia Mập</option>
+                                            <option value="91" class="binhthuan">Phan Thiết</option>
+                                            <option value="92" class="binhthuan">Đức Linh</option>
+                                            <option value="93" class="binhthuan">Hàm Tân</option>
+                                            <option value="94" class="binhthuan">Hàm Thuận Bắc</option>
+                                            <option value="95" class="binhthuan">Hàm Thuận Nam</option>
+                                            <option value="96" class="binhthuan">Tánh Linh</option>
+                                            <option value="97" class="binhthuan">Tuy Phong</option>
+                                            <option value="98" class="binhthuan">Bắc Bình</option>
+                                            <option value="99" class="binhthuan">Đảo Phú Quý</option>
+                                            <option value="100" class="camau">Cà Mau</option>
+                                            <option value="101" class="camau">Đầm Dơi</option>
+                                            <option value="102" class="camau">Năm Căn</option>
+                                            <option value="103" class="camau">Ngọc Hiển</option>
+                                            <option value="104" class="camau">Phú Tân</option>
+                                            <option value="105" class="camau">Thới Bình</option>
+                                            <option value="106" class="camau">Trần Văn Thời</option>
+                                            <option value="107" class="camau">U Minh</option>
+                                            <option value="108" class="camau">Cái Nước</option>
+                                            <option value="109" class="caobang">Cao Bằng</option>
+                                            <option value="110" class="caobang">Bảo Lâm</option>
+                                            <option value="111" class="caobang">Hạ Lang</option>
+                                            <option value="112" class="caobang">Hà Quảng</option>
+                                            <option value="113" class="caobang">Hòa An</option>
+                                            <option value="114" class="caobang">Nguyên Bình</option>
+                                            <option value="115" class="caobang">Phục Hòa</option>
+                                            <option value="116" class="caobang">Quảng Uyên</option>
+                                            <option value="117" class="caobang">Thông Nông</option>
+                                            <option value="118" class="caobang">Thạch An</option>
+                                            <option value="119" class="caobang">Trà Lĩnh</option>
+                                            <option value="120" class="caobang">Trùng Khánh</option>
+                                            <option value="121" class="caobang">Bảo Lạc</option>
+                                            <option value="122" class="cantho">Cờ Đỏ</option>
+                                            <option value="123" class="cantho">Phong Điền</option>
+                                            <option value="124" class="cantho">Thốt Nốt</option>
+                                            <option value="125" class="cantho">Vĩnh Thạnh</option>
+                                            <option value="126" class="cantho">Bình Thủy</option>
+                                            <option value="127" class="cantho">Cái Răng</option>
+                                            <option value="128" class="cantho">Ninh Kiều</option>
+                                            <option value="129" class="cantho">Ô Môn</option>
+                                            <option value="130" class="cantho">Thới Lai</option>            
+                                            <option value="131" class="danang">Cẩm Lệ</option>
+                                            <option value="132" class="danang">Hải Châu</option>
+                                            <option value="133" class="danang">Liên Chiểu</option>
+                                            <option value="134" class="danang">Ngũ Hành Sơn</option>
+                                            <option value="135" class="danang">Sơn Trà</option>
+                                            <option value="136" class="danang">Thanh Khê</option>
+                                            <option value="137" class="danang">Hòa Vang</option>
+                                            <option value="138" class="danang">Hoàng Sa</option>
+                                            <option value="139" class="daklak">Buôn Ma Thuột</option>
+                                            <option value="140" class="daklak">Buôn Hồ</option>
+                                            <option value="141" class="daklak">Cư M'gar</option>
+                                            <option value="142" class="daklak">Ea H'Leo</option>
+                                            <option value="143" class="daklak">Ea Kar</option>
+                                            <option value="144" class="daklak">Ea Súp</option>
+                                            <option value="145" class="daklak">Krông Ana</option>
+                                            <option value="146" class="daklak">Krông Bông</option>
+                                            <option value="147" class="daklak">Krông Buk</option>
+                                            <option value="148" class="daklak">Krông Năng</option>
+                                            <option value="149" class="daklak">Krông Pắc</option>
+                                            <option value="150" class="daklak">Lăk</option>
+                                            <option value="151" class="daklak">M'Đrăk</option>
+                                            <option value="152" class="daklak">Buôn Đôn</option>
+                                            <option value="153" class="daklak">Cư Kuin</option>            
+                                            <option value="154" class="daknong">Gia Nghĩa</option>
+                                            <option value="155" class="daknong">Dăk GLong</option>
+                                            <option value="156" class="daknong">Dăk Mil</option>
+                                            <option value="157" class="daknong">Dăk R'Lấp</option>
+                                            <option value="158" class="daknong">Dăk Song</option>
+                                            <option value="159" class="daknong">Krông Nô</option>
+                                            <option value="160" class="daknong">Tuy Đức</option>
+                                            <option value="161" class="daknong">Cư Jút</option>
+                                            <option value="162" class="dongnai">Biên Hòa</option>
+                                            <option value="163" class="dongnai">Long Khánh</option>
+                                            <option value="164" class="dongnai">Long Thành</option>
+                                            <option value="165" class="dongnai">Nhơn Trạch</option>
+                                            <option value="166" class="dongnai">Tân Phú</option>
+                                            <option value="167" class="dongnai">Thống Nhất</option>
+                                            <option value="168" class="dongnai">Trảng Bom</option>
+                                            <option value="169" class="dongnai">Vĩnh Cửu</option>
+                                            <option value="170" class="dongnai">Xuân Lộc</option>
+                                            <option value="171" class="dongnai">Cẩm Mỹ</option>
+                                            <option value="172" class="dongnai">Định Quán</option>          
+                                            <option value="173" class="dongthap">Sa Đéc</option>
+                                            <option value="174" class="dongthap">TP.Cao Lãnh</option>                                                                             <option value="175" class="dongthap">Hồng Ngự</option>
+                                            <option value="176" class="dongthap">Lai Vung</option>
+                                            <option value="177" class="dongthap">Lấp Vò</option>
+                                            <option value="178" class="dongthap">Tam Nông</option>
+                                            <option value="179" class="dongthap">Tân Hồng</option>
+                                            <option value="180" class="dongthap">Thanh Bình</option>
+                                            <option value="181" class="dongthap">Tháp Mười</option>
+                                            <option value="182" class="dongthap">Cao Lãnh</option>
+                                            <option value="183" class="dongthap">Châu Thành</option>
+                                            <option value="184" class="dienbien">TP Điện Biên Phủ</option>
+                                            <option value="185" class="dienbien">Mường Lay</option>
+                                            <option value="186" class="dienbien">Điện Biên</option>
+                                            <option value="187" class="dienbien">Điện Biên Đông</option>
+                                            <option value="188" class="dienbien">Mường Ảng</option>
+                                            <option value="189" class="dienbien">Mường Chà</option>
+                                            <option value="190" class="dienbien">Mường Nhé</option>
+                                            <option value="191" class="dienbien">Nậm Bồ</option>
+                                            <option value="192" class="dienbien">Tủa Chùa</option>
+                                            <option value="193" class="dienbien">Tuần Giáo</option>
+                                            <option value="194" class="gialai">Pleiku</option>
+                                            <option value="195" class="gialai">An Khê</option>
+                                            <option value="196" class="gialai">Ayun Pa</option>
+                                            <option value="197" class="gialai">Chư Păh</option>
+                                            <option value="198" class="gialai">Chư Sê</option>
+                                            <option value="199" class="gialai">Chưprông</option>
+                                            <option value="200" class="gialai">Đăk Đoa</option>
+                                            <option value="201" class="gialai">Đăk Pơ</option>
+                                            <option value="202" class="gialai">Đức Cơ</option>
+                                            <option value="203" class="gialai">La Grai</option>
+                                            <option value="204" class="gialai">La Pa</option>
+                                            <option value="205" class="gialai">Kbang</option>
+                                            <option value="206" class="gialai">Kông Chro</option>
+                                            <option value="207" class="gialai">Krông Pa</option>
+                                            <option value="208" class="gialai">Mang Yang</option>
+                                            <option value="209" class="gialai">Phú Thiện</option>
+                                            <option value="210" class="gialai">Chư Pưh</option>
+                                            <option value="211" class="hagiang">Hà Giang</option>
+                                            <option value="212" class="hagiang">Bắc Quang</option>
+                                            <option value="213" class="hagiang">Đồng Văn</option>
+                                            <option value="214" class="hagiang">Hoàng Su Phì</option>
+                                            <option value="215" class="hagiang">Mèo Vạc</option>
+                                            <option value="216" class="hagiang">Quản Bạ</option>
+                                            <option value="217" class="hagiang">Quang Bình</option>
+                                            <option value="218" class="hagiang">Vị Xuyên</option>
+                                            <option value="219" class="hagiang">Xín Mần</option>
+                                            <option value="220" class="hagiang">Yên Minh</option>
+                                            <option value="221" class="hagiang">Bắc Mê</option>
+                                            <option value="222" class="hanam">Phủ Lý</option>
+                                            <option value="223" class="hanam">Duy Tiên</option>
+                                            <option value="224" class="hanam">Kim Bảng</option>
+                                            <option value="225" class="hanam">Lý Nhân</option>
+                                            <option value="226" class="hanam">Thanh Liêm</option>
+                                            <option value="227" class="hanam">Bình Lục</option>
+                                            <option value="228" class="hanoi">Hoàn Kiếm</option>
+                                            <option value="229" class="hanoi">Ba Đình</option>
+                                            <option value="230" class="hanoi">Đống Đa</option>
+                                            <option value="231" class="hanoi">Hai Bà Trưng</option>
+                                            <option value="232" class="hanoi">Thanh Xuân</option>
+                                            <option value="233" class="hanoi">Tây Hồ</option>
+                                            <option value="234" class="hanoi">Cầu Giấy</option>
+                                            <option value="235" class="hanoi">Hoàng Mai</option>
+                                            <option value="236" class="hanoi">Long Biên</option>
+                                            <option value="237" class="hanoi">Đông Anh</option>
+                                            <option value="238" class="hanoi">Gia Lâm</option>
+                                            <option value="239" class="hanoi">Sóc Sơn</option>
+                                            <option value="240" class="hanoi">Thanh Trì</option>
+                                            <option value="241" class="hanoi">Từ Liêm</option>
+                                            <option value="242" class="hanoi" >Hà Đông</option>
+                                            <option value="243" class="hanoi">Sơn Tây</option>
+                                            <option value="244" class="hanoi">Mê Linh</option>
+                                            <option value="245" class="hanoi">Ba Vì</option>
+                                            <option value="246" class="hanoi">Phúc Thọ</option>
+                                            <option value="249" class="hanoi">Đan Phượng</option>
+                                            <option value="250" class="hanoi">Hoài Đức</option>
+                                            <option value="251" class="hanoi">Quốc Oai</option>
+                                            <option value="252" class="hanoi">Thạch Thất</option>
+                                            <option value="253" class="hanoi">Chương Mỹ</option>
+                                            <option value="254" class="hanoi">Thanh Oai</option>
+                                            <option value="255" class="hanoi">Thường Tín</option>
+                                            <option value="256" class="hanoi">Phú Xuyên</option>
+                                            <option value="257" class="hanoi">Ứng Hòa</option>
+                                            <option value="258" class="hanoi">Mỹ Đức</option>
+                                            <option value="259" class="hatinh">Hà Tĩnh</option>
+                                            <option value="260" class="hatinh">Hồng Lĩnh</option>
+                                            <option value="261" class="hatinh">Đức Thọ</option>
+                                            <option value="262" class="hatinh">Hương Khê</option>
+                                            <option value="263" class="hatinh">Hương Sơn</option>
+                                            <option value="264" class="hatinh">Kỳ Anh</option>
+                                            <option value="265" class="hatinh">Lộc Hà</option>
+                                            <option value="266" class="hatinh">Nghi Xuân</option>
+                                            <option value="267" class="hatinh">Thạch Hà</option>
+                                            <option value="268" class="hatinh">Vũ Quang</option>
+                                            <option value="269" class="hatinh">Cẩm Xuyên</option>
+                                            <option value="270" class="hatinh">Can Lộc</option>
+                                            <option value="271" class="haiduong">Hải Dương</option>
+                                            <option value="272" class="haiduong">Chí Linh</option>
+                                            <option value="273" class="haiduong">Bình Giang</option>
+                                            <option value="274" class="haiduong">Cẩm Giàng</option>
+                                            <option value="275" class="haiduong">Gia Lộc</option>
+                                            <option value="276" class="haiduong">Kim Thành</option>
+                                            <option value="277" class="haiduong">Kinh Môn</option>
+                                            <option value="278" class="haiduong">Nam Sách</option>
+                                            <option value="279" class="haiduong">Ninh Giang</option>
+                                            <option value="280" class="haiduong">Thanh Hà</option>
+                                            <option value="281" class="haiduong">Thanh Miện</option>
+                                            <option value="282" class="haiduong">Tứ Kỳ</option>
+                                            <option value="283" class="haiphong">Đồ Sơn</option>
+                                            <option value="284" class="haiphong">Dương Kinh</option>
+                                            <option value="285" class="haiphong">Hải An</option>
+                                            <option value="286" class="haiphong">Hồng Bàng</option>
+                                            <option value="287" class="haiphong">Kiến An/</option>
+                                            <option value="288" class="haiphong">Lê Chân</option>
+                                            <option value="289" class="haiphong">Ngô Quyền</option>
+                                            <option value="290" class="haiphong">An Dương</option>
+                                            <option value="291" class="haiphong">An Lão</option>
+                                            <option value="292" class="haiphong">Bạch Long Vĩ</option>
+                                            <option value="293" class="haiphong">Cát Hải</option>
+                                            <option value="294" class="haiphong">Kiến Thụy</option>
+                                            <option value="295" class="haiphong">Thủy Nguyên</option>
+                                            <option value="296" class="haiphong">Tiên Lãng</option>
+                                            <option value="297" class="haiphong">Vĩnh Bảo</option>
+                                            <option value="298" class="hoabinh">Hòa Bình</option>
+                                            <option value="299" class="hoabinh">Đà Bắc</option>
+                                            <option value="300" class="hoabinh">Kim Bôi</option>
+                                            <option value="301" class="hoabinh">Kỳ Sơn</option>
+                                            <option value="302" class="hoabinh">Lạc Sơn</option>
+                                            <option value="303" class="hoabinh">Lạc Thủy</option>
+                                            <option value="304" class="hoabinh">Lương Sơn</option>
+                                            <option value="305" class="hoabinh">Mai Châu</option>
+                                            <option value="306" class="hoabinh">Tân Lạc</option>
+                                            <option value="307" class="hoabinh">Yên Thủy</option>
+                                            <option value="308" class="hoabinh">Cao Phong</option>
+                                            <option value="309" class="haugiang">Vị Thanh</option>
+                                            <option value="310" class="haugiang">Ngã Bảy</option>
+                                            <option value="311" class="haugiang">Long Mỹ</option>
+                                            <option value="312" class="haugiang">Phụng Hiệp</option>
+                                            <option value="313" class="haugiang">Vị Thủy</option>
+                                            <option value="314" class="haugiang">Châu Thành</option>
+                                            <option value="315" class="haugiang">Châu Thành A</option>
+                                            <option value="316" class="hungyen">Hưng Yên</option>
+                                            <option value="317" class="hungyen">Khoái Châu</option>
+                                            <option value="318" class="hungyen">Kim Động</option>
+                                            <option value="319" class="hungyen">Mỹ Hào</option>
+                                            <option value="320" class="hungyen">Phù Cừ</option>
+                                            <option value="321" class="hungyen">Tiên Lữ</option>
+                                            <option value="322" class="hungyen">Văn Giang</option>
+                                            <option value="323" class="hungyen">Văn Lâm</option>
+                                            <option value="324" class="hungyen">Yên Mỹ</option>
+                                            <option value="325" class="hungyen">Ân Thi</option>
+                                            <option value="326" class="hochiminh">Quận 1</option>
+                                            <option value="327" class="hochiminh">Quận 2</option>
+                                            <option value="328" class="hochiminh">Quận 3</option>
+                                            <option value="329" class="hochiminh">Quận 4</option>
+                                            <option value="330" class="hochiminh">Quận 5</option>
+                                            <option value="331" class="hochiminh">Quận 6</option>
+                                            <option value="332" class="hochiminh">Quận 7</option>
+                                            <option value="333" class="hochiminh">Quận 8</option>
+                                            <option value="334" class="hochiminh">Quận 9</option>
+                                            <option value="335" class="hochiminh">Quận 10</option>
+                                            <option value="336" class="hochiminh">Quận 11</option>
+                                            <option value="337" class="hochiminh">Quận 12</option>
+                                            <option value="338" class="hochiminh">Bình Tân</option>
+                                            <option value="339" class="hochiminh">Bình Thạnh</option>
+                                            <option value="340" class="hochiminh">Gò Vấp</option>
+                                            <option value="341" class="hochiminh">Phú Nhuận</option>
+                                            <option value="342" class="hochiminh">Tân Bình</option>
+                                            <option value="343" class="hochiminh">Tân Phú</option>
+                                            <option value="344" class="hochiminh">Thủ Đức</option>
+                                            <option value="345" class="hochiminh">Bình Chánh</option>
+                                            <option value="346" class="hochiminh">Cần Giờ</option>
+                                            <option value="347" class="hochiminh">Củ Chi</option>
+                                            <option value="348" class="hochiminh">Hóc Môn</option>
+                                            <option value="349" class="hochiminh">Nhà Bè</option>
+                                            <option value="350" class="khanhhoa">Nha Trang</option>
+                                            <option value="351" class="khanhhoa">Cam Ranh</option>
+                                            <option value="352" class="khanhhoa">Ninh Hòa</option>
+                                            <option value="353" class="khanhhoa">Cam Lâm</option>
+                                            <option value="354" class="khanhhoa">Diên Khánh</option>
+                                            <option value="355" class="khanhhoa">Khánh Sơn</option>
+                                            <option value="356" class="khanhhoa">Khánh Vĩnh</option>
+                                            <option value="357" class="khanhhoa">Trường Sa</option>
+                                            <option value="358" class="khanhhoa">Vạn Ninh</option>
+                                            <option value="359" class="kiengiang">Rạch Giá</option>
+                                            <option value="360" class="kiengiang">Rạch Giá</option>
+                                            <option value="361" class="kiengiang">Hà Tiên</option>
+                                            <option value="362" class="kiengiang">Châu Thành</option>
+                                            <option value="363" class="kiengiang">Giồng Riềng</option>
+                                            <option value="364" class="kiengiang">Gò Quao</option>
+                                            <option value="365" class="kiengiang">Hòn Đất</option>
+                                            <option value="366" class="kiengiang">Kiên Hải</option>
+                                            <option value="367" class="kiengiang">Kiên Lương</option>
+                                            <option value="368" class="kiengiang">Phú Quốc</option>
+                                            <option value="369" class="kiengiang">ân Hiệp</option>
+                                            <option value="370" class="kiengiang">U minh Thượng</option>
+                                            <option value="371" class="kiengiang">Vĩnh Thuận</option>
+                                            <option value="372" class="kiengiang">An Biên</option>
+                                            <option value="373" class="kiengiang">An Minh</option>
+                                            <option value="374" class="kontum">Kon Tum</option>
+                                            <option value="375" class="kontum">Đăk Hà</option>
+                                            <option value="376" class="kontum">Đăk Tô</option>
+                                            <option value="377" class="kontum">Kon Plong</option>
+                                            <option value="378" class="kontum">Kon Rộy</option>
+                                            <option value="379" class="kontum">Ngọc Hồi</option>
+                                            <option value="380" class="kontum">Sa Thầy</option>
+                                            <option value="381" class="kontum">Tu Mơ Rông</option>
+                                            <option value="382" class="kontum">Đăk Glei</option>
+                                            <option value="383" class="laichau">Lai Châu</option>
+                                            <option value="384" class="laichau">Phong Thổ</option>
+                                            <option value="385" class="laichau">Sìn Hồ</option>
+                                            <option value="386" class="laichau">Tam Đường</option>
+                                            <option value="387" class="laichau">Than Uyên</option>
+                                            <option value="388" class="laichau">Mường Tè</option>
+                                            <option value="389" class="laichau">Tân Uyên</option>
+                                            <option value="390" class="laichau">Nậm Nhùn</option>
+                                            <option value="391" class="laocai">Lào Cai</option>
+                                            <option value="392" class="laocai">Bảo Thắng</option>
+                                            <option value="393" class="laocai">Bảo Yên</option>
+                                            <option value="394" class="laocai">Bát Xát</option>
+                                            <option value="395" class="laocai">Mường Khương</option>
+                                            <option value="396" class="laocai">Sa Pa</option>
+                                            <option value="397" class="laocai">Văn Bàn</option>
+                                            <option value="398" class="laocai">Xi Ma Cai</option>
+                                            <option value="399" class="laocai">Cam Đường</option>
+                                            <option value="400" class="laocai">Bắc Hà</option>
+                                            <option value="402" class="langson">Lạng Sơn</option>
+                                            <option value="402" class="langson">Bình Gia</option>
+                                            <option value="403" class="langson">Cao Lộc</option>
+                                            <option value="404" class="langson">Chi Lăng</option>
+                                            <option value="405" class="langson">Đình Lập</option>
+                                            <option value="406" class="langson">Hữu Lũng</option>
+                                            <option value="407" class="langson">Lộc Bình</option>
+                                            <option value="408" class="langson">Tràng Định</option>
+                                            <option value="409" class="langson">Văn Lãng</option>
+                                            <option value="410" class="langson">Văn Quan</option>
+                                            <option value="411" class="langson">Bắc Sơn</option>
+                                            <option value="412" class="lamdong">Đà Lạt</option>
+                                            <option value="413" class="lamdong">Bảo Lộc</option>
+                                            <option value="414" class="lamdong">Đạ Huoai</option>
+                                            <option value="415" class="lamdong">Đạ Tẻh</option>
+                                            <option value="416" class="lamdong">Đam Rông</option>
+                                            <option value="417" class="lamdong">Di Linh</option>
+                                            <option value="418" class="lamdong">Đơn Dương</option>
+                                            <option value="419" class="lamdong">Đức Trọng</option>
+                                            <option value="420" class="lamdong">Lạc Dương</option>
+                                            <option value="421" class="lamdong">Lâm Hà</option>
+                                            <option value="422" class="lamdong">Bảo Lâm</option>
+                                            <option value="423" class="lamdong">Cát Tiên</option>
+                                            <option value="424" class="longan">Tân An</option>
+                                            <option value="425" class="longan">Kiến Tường</option>
+                                            <option value="426" class="longan">Cần Đước</option>
+                                            <option value="427" class="longan">Châu Thành</option>
+                                            <option value="428" class="longan">Đức Hòa</option>
+                                            <option value="429" class="longan">Đức Huệ</option>
+                                            <option value="430" class="longan">Mộc Hóa</option>
+                                            <option value="431" class="longan">Tân Hưng</option>
+                                            <option value="432" class="longan">Tân Thạnh</option>
+                                            <option value="433" class="longan">Tân Trụ</option>
+                                            <option value="434" class="longan">Thạnh Hóa</option>
+                                            <option value="435" class="longan">Thủ Thừa</option>
+                                            <option value="436" class="longan">Vĩnh Hưng</option>
+                                            <option value="437" class="longan">Bến Lức</option>
+                                            <option value="438" class="longan">Cần Giuộc</option>
+                                            <option value="439" class="namdinh">Nam Định</option>
+                                            <option value="440" class="namdinh">Hải Hậu</option>
+                                            <option value="441" class="namdinh">Mỹ Lộc</option>
+                                            <option value="442" class="namdinh">Nam Trực</option>
+                                            <option value="443" class="namdinh">Nghĩa Hưng</option>
+                                            <option value="444" class="namdinh">Trực Ninh</option>
+                                            <option value="445" class="namdinh">Vụ Bản</option>
+                                            <option value="446" class="namdinh">Xuân Trường</option>
+                                            <option value="447" class="namdinh">Ý Yên</option>
+                                            <option value="448" class="namdinh">Giao Thủy</option>
+                                            <option value="449" class="nghean">Vinh</option>
+                                            <option value="450" class="nghean">Cửa Lò</option>
+                                            <option value="451" class="nghean">Diễn Châu</option>
+                                            <option value="452" class="nghean">Đô Lương</option>
+                                            <option value="453" class="nghean">Hưng Nguyên</option>
+                                            <option value="454" class="nghean">Kỳ Sơn</option>
+                                            <option value="455" class="nghean">Nam Đàn</option>
+                                            <option value="456" class="nghean">Nghi Lộc</option>
+                                            <option value="457" class="nghean">Nghĩa Đàn</option>
+                                            <option value="458" class="nghean">Quế Phong</option>
+                                            <option value="459" class="nghean">Quỳ Châu</option>
+                                            <option value="460" class="nghean">Quỳ Hợp</option>
+                                            <option value="461" class="nghean">Quỳnh Lưu</option>
+                                            <option value="462" class="nghean">Tân Kỳ</option>
+                                            <option value="463" class="nghean">Thanh Chương</option>
+                                            <option value="464" class="nghean">Tương Dương</option>
+                                            <option value="465" class="nghean">Yên Thành</option>
+                                            <option value="466" class="nghean">H.Anh Sơn</option>
+                                            <option value="467" class="nghean">Con Cuông</option>
+                                            <option value="468" class="nghean">Thái Hòa</option>
+                                            <option value="469" class="ninhbinh">Ninh Bình</option>
+                                            <option value="470" class="ninhbinh">Tam Điệp</option>
+                                            <option value="471" class="ninhbinh">Kim Sơn</option>
+                                            <option value="472" class="ninhbinh">Nho Quan</option>
+                                            <option value="473" class="ninhbinh">Yên Khánh</option>
+                                            <option value="474" class="ninhbinh">Yên Mô</option>
+                                            <option value="475" class="ninhbinh">Gia Viễn</option>
+                                            <option value="476" class="ninhbinh">Hoa Lư</option>
+                                            <option value="477" class="ninhthuan">Phan Rang-Tháp Chàm/option>
+                                            <option value="478" class="ninhthuan">Bác Ái</option>
+                                            <option value="479" class="ninhthuan">Ninh Hải/option>
+                                            <option value="480" class="ninhthuan">Ninh Phước</option>
+                                            <option value="481" class="ninhthuan">Ninh Sơn</option>
+                                            <option value="482" class="ninhthuan">Thuận Bắc</option>
+                                            <option value="483" class="ninhthuan">Thuận Nam</option>
+                                            <option value="484" class="phutho">Phú Thọ</option>
+                                            <option value="485" class="phutho">Việt Trì</option>
+                                            <option value="486" class="phutho">Phú Thọ</option>
+                                            <option value="487" class="phutho">Hạ Hòa</option>
+                                            <option value="488" class="phutho">Lâm Thao</option>
+                                            <option value="489" class="phutho">Phù Ninh</option>
+                                            <option value="490" class="phutho">Tam Nông</option>
+                                            <option value="491" class="phutho">Tân Sơn</option>
+                                            <option value="492" class="phutho">Thanh Ba</option>
+                                            <option value="493" class="phutho">Thanh Sơn</option>
+                                            <option value="494" class="phutho">Thanh Thủy</option>
+                                            <option value="495" class="phutho">Yên Lập</option>
+                                            <option value="496" class="phutho">Sông Thao</option>
+                                            <option value="497" class="phutho">Cẩm Khê</option>
+                                            <option value="498" class="phutho">Đoan Hùng</option>
+                                            <option value="499" class="phuyen">TP Tuy Hòa</option>
+                                            <option value="500" class="phuyen">Sông Cầu</option>
+                                            <option value="501" class="phuyen">Đồng Xuân</option>
+                                            <option value="502" class="phuyen">Phú Hòa</option>
+                                            <option value="503" class="phuyen">Sơn Hòa</option>
+                                            <option value="504" class="phuyen">Tây Hòa</option>
+                                            <option value="505" class="phuyen">Tuy An</option>
+                                            <option value="506" class="quangbinh">Đồng Hới</option>
+                                            <option value="507" class="quangbinh">Lệ Thủy</option>
+                                            <option value="508" class="quangbinh">Minh Hóa</option>
+                                            <option value="509" class="quangbinh">Quảng Ninh</option>
+                                            <option value="510" class="quangbinh">Quảng Trạch</option>
+                                            <option value="511" class="quangbinh">Tuyên Hóa</option>
+                                            <option value="512" class="quangbinh">Bố Trạch</option>
+                                            <option value="513" class="quangnam">Hội An</option>
+                                            <option value="514" class="quangnam">Tam Kỳ</option>
+                                            <option value="515" class="quangnam">Điện Bàn</option>
+                                            <option value="516" class="quangnam">Đông Giang</option>
+                                            <option value="517" class="quangnam">Duy Xuyên</option>
+                                            <option value="518" class="quangnam">Hiệp Đức</option>
+                                            <option value="519" class="quangnam">Nam Giang</option>
+                                            <option value="520" class="quangnam">Nam Trà My</option>
+                                            <option value="521" class="quangnam">Núi Thành</option>
+                                            <option value="522" class="quangnam">Phú Ninh</option>
+                                            <option value="523" class="quangnam">Phước Sơn</option>
+                                            <option value="524" class="quangnam">Quế Sơn</option>
+                                            <option value="525" class="quangnam">Tây Giang</option>
+                                            <option value="526" class="quangnam">Thăng Bình</option>
+                                            <option value="527" class="quangnam">Tiên Phước</option>
+                                            <option value="528" class="quangnam">Bắc Trà My</option>
+                                            <option value="529" class="quangnam">Đại Lộc</option>
+                                            <option value="530" class="quangnam">Nông Sơn</option>
+                                            <option value="531" class="quangngai">Quảng Ngãi</option>
+                                            <option value="532" class="quangngai">Bình Sơn</option>
+                                            <option value="533" class="quangngai">Đức Phổ</option>
+                                            <option value="534" class="quangngai">Lý Sơn</option>
+                                            <option value="535" class="quangngai">Minh Long</option>
+                                            <option value="536" class="quangngai">Mộ Đức</option>
+                                            <option value="537" class="quangngai">Nghĩa Hành</option>
+                                            <option value="538" class="quangngai">Sơn Hà</option>
+                                            <option value="539" class="quangngai">Sơn Tây</option>
+                                            <option value="540" class="quangngai">Sơn Tịnh</option>
+                                            <option value="541" class="quangngai">Tây Trà</option>
+                                            <option value="542" class="quangngai">Trà Bồng</option>
+                                            <option value="543" class="quangngai">Tư Nghĩa</option>
+                                            <option value="544" class="quangngai">Ba Tơ</option>
+                                            <option value="545" class="quangninh">Hạ Long</option>
+                                            <option value="546" class="quangninh">Cẩm Phả</option>
+                                            <option value="547" class="quangninh">Móng Cái</option>
+                                            <option value="548" class="quangninh">Uông Bí</option>
+                                            <option value="549" class="quangninh">Quảng Yên</option>
+                                            <option value="550" class="quangninh">Hoành Bồ</option>
+                                            <option value="551" class="quangninh">Tiên Yên</option>
+                                            <option value="552" class="quangninh">Vân Đồn</option>
+                                            <option value="553" class="quangninh">Đông Triều</option>
+                                            <option value="554" class="quangninh">Đầm Hà</option>
+                                            <option value="555" class="quangninh">Cô Tô</option>
+                                            <option value="556" class="quangninh">Bình Liêu</option>
+                                            <option value="557" class="quangninh">Ba Chẽ</option>
+                                            <option value="558" class="quangtri">Đông Hà</option>
+                                            <option value="559" class="quangtri">Quảng Trị</option>
+                                            <option value="560" class="quangtri">Đảo Cồn cỏ</option>
+                                            <option value="561" class="quangtri">Gio Linh</option>
+                                            <option value="562" class="quangtri">Hải Lăng</option>
+                                            <option value="563" class="quangtri">Hướng Hóa</option>
+                                            <option value="564" class="quangtri">Triệu Phong</option>
+                                            <option value="565" class="quangtri">Vĩnh Linh</option>
+                                            <option value="566" class="quangtri">Cam Lộ</option>
+                                            <option value="567" class="quangtri">Đăk Rông</option>
+                                            <option value="568" class="soctrang">Sóc Trăng</option>
+                                            <option value="569" class="soctrang">Vĩnh Châu</option>
+                                            <option value="570" class="soctrang">Long Phú</option>
+                                            <option value="571" class="soctrang">Mỹ Tú</option>
+                                            <option value="572" class="soctrang">Mỹ Xuyên</option>
+                                            <option value="573" class="soctrang">Ngã Năm</option>
+                                            <option value="574" class="soctrang">Thạnh Trị</option>
+                                            <option value="575" class="soctrang">Kế Sách</option>
+                                            <option value="576" class="soctrang">Cù Lao Dung</option>
+                                            <option value="577" class="soctrang">Châu Thành</option>
+                                            <option value="578" class="soctrang">Trần Đề</option>
+                                            <option value="579" class="sonla">Sơn La</option>
+                                            <option value="580" class="sonla">Mai Sơn</option>
+                                            <option value="581" class="sonla">Mộc Châu</option>
+                                            <option value="582" class="sonla">Mường La</option>
+                                            <option value="583" class="sonla">Phù Yên</option>
+                                            <option value="584" class="sonla">Quỳnh Nhai</option>
+                                            <option value="585" class="sonla">Sông Mã</option>
+                                            <option value="586" class="sonla">Sốp Cộp</option>
+                                            <option value="587" class="sonla">Thuận Châu</option>
+                                            <option value="588" class="sonla">Yên Châu</option>
+                                            <option value="589" class="sonla">Bắc Yên</option>
+                                            <option value="590" class="tayninh">Tây Ninh</option>
+                                            <option value="591" class="tayninh">Châu Thành</option>
+                                            <option value="592" class="tayninh">Dương Minh Châu</option>
+                                            <option value="593" class="tayninh">Gò Dầu</option>
+                                            <option value="594" class="tayninh">Hòa Thành</option>
+                                            <option value="595" class="tayninh">Tân Biên</option>
+                                            <option value="596" class="tayninh">Tân Châu</option>
+                                            <option value="597" class="tayninh">Trảng Bàng</option>
+                                            <option value="598" class="tayninh">Bến Cầu</option>
+                                            <option value="599" class="thaibinh">Thái Bình</option>
+                                            <option value="600" class="thaibinh">Hưng Hà</option>
+                                            <option value="601" class="thaibinh">Kiến Xương</option>
+                                            <option value="602" class="thaibinh">Quỳnh Phụ</option>
+                                            <option value="603" class="thaibinh">Thái Thuỵ</option>
+                                            <option value="604" class="thaibinh">Tiền Hải</option>
+                                            <option value="605" class="thaibinh">Vũ Thư</option>
+                                            <option value="606" class="thaibinh">Đông Hưng</option>
+                                            <option value="607" class="thainguyen">Thái Nguyên</option>
+                                            <option value="608" class="thainguyen">Sông Công</option>
+                                            <option value="609" class="thainguyen">Đồng Hỷ</option>
+                                            <option value="610" class="thainguyen">Phổ Yên</option>
+                                            <option value="611" class="thainguyen">Phú Bình</option>
+                                            <option value="612" class="thainguyen">Phú Lương</option>
+                                            <option value="613" class="thainguyen">Võ Nhai</option>
+                                            <option value="614" class="thainguyen">Đại Từ</option>
+                                            <option value="615" class="thainguyen">Định Hóa</option>
+                                            <option value="616" class="thanhhoa">Thanh Hóa</option>
+                                            <option value="617" class="thanhhoa">Bỉm Sơn</option>
+                                            <option value="618" class="thanhhoa">Sầm Sơn</option>
+                                            <option value="619" class="thanhhoa">Hà Trung</option>
+                                            <option value="620" class="thanhhoa">Hậu Lộc</option>
+                                            <option value="621" class="thanhhoa">Hoằng Hóa</option>
+                                            <option value="622" class="thanhhoa">Lang Chánh</option>
+                                            <option value="623" class="thanhhoa">Mường Lát</option>
+                                            <option value="624" class="thanhhoa">Nga Sơn</option>
+                                            <option value="625" class="thanhhoa">Ngọc Lặc</option>
+                                            <option value="626" class="thanhhoa">Như Thanh</option>
+                                            <option value="627" class="thanhhoa">Như Xuân</option>
+                                            <option value="628" class="thanhhoa">Nông Cống</option>
+                                            <option value="629" class="thanhhoa">Quan Hóa</option>
+                                            <option value="630" class="thanhhoa">Quan Sơn</option>
+                                            <option value="631" class="thanhhoa">Quảng Xương</option>
+                                            <option value="632" class="thanhhoa">Thạch Thành</option>
+                                            <option value="633" class="thanhhoa">Thiệu Hóa</option>
+                                            <option value="634" class="thanhhoa">Thọ Xuân</option>
+                                            <option value="635" class="thanhhoa">Thường Xuân</option>
+                                            <option value="636" class="thanhhoa">Tĩnh Gia</option>
+                                            <option value="637" class="thanhhoa">Triệu Sơn</option>
+                                            <option value="638" class="thanhhoa">Vĩnh Lộc</option>
+                                            <option value="639" class="thanhhoa">Yên Định</option>
+                                            <option value="640" class="thanhhoa">Cẩm Thủy</option>
+                                            <option value="641" class="thanhhoa">Bá Thước</option>
+                                            <option value="642" class="thanhhoa">Đông Sơn</option>
+                                            <option value="643" class="thuathienhue">Huế</option>
+                                            <option value="644" class="thuathienhue">Hương Thủy</option>
+                                            <option value="645" class="thuathienhue">Hương Trà</option>
+                                            <option value="646" class="thuathienhue">Nam Đông</option>
+                                            <option value="647" class="thuathienhue">Phong Điền</option>
+                                            <option value="648" class="thuathienhue">Phú Lộc</option>
+                                            <option value="649" class="thuathienhue">Phú Vang</option>
+                                            <option value="650" class="thuathienhue">Quảng Điền</option>
+                                            <option value="651" class="thuathienhue">A Lưới</option>
+                                            <option value="652" class="tiengiang">Mỹ Tho</option>
+                                            <option value="653" class="tiengiang">Gò Công</option>
+                                            <option value="654" class="tiengiang">Châu Thành</option>
+                                            <option value="655" class="tiengiang">Chợ Gạo</option>
+                                            <option value="656" class="tiengiang">Gò Công Đông</option>
+                                            <option value="657" class="tiengiang">Gò Công Tây</option>
+                                            <option value="658" class="tiengiang">Tân Phước</option>
+                                            <option value="659" class="tiengiang">Tân Phú Đông</option>
+                                            <option value="660" class="tiengiang">Cái Bè</option>
+                                            <option value="661" class="tiengiang">Cai Lậy</option>
+                                            <option value="662" class="travinh">Trà Vinh</option>
+                                            <option value="663" class="travinh">Cầu Kè</option>
+                                            <option value="664" class="travinh">Cầu Ngang</option>
+                                            <option value="665" class="travinh">Châu Thành</option>
+                                            <option value="666" class="travinh">Duyên Hải</option>
+                                            <option value="667" class="travinh">Tiểu Cần</option>
+                                            <option value="668" class="travinh">Trà Cú</option>
+                                            <option value="669" class="travinh">Càng Long</option>
+                                            <option value="670" class="tuyenquang">Tuyên Quang</option>
+                                            <option value="671" class="tuyenquang">Hàm Yên</option>
+                                            <option value="672" class="tuyenquang">Na Hang</option>
+                                            <option value="673" class="tuyenquang">Sơn Dương</option>
+                                            <option value="674" class="tuyenquang">Yên Sơn</option>
+                                            <option value="675" class="tuyenquang">Chiêm Hóa</option>
+                                            <option value="676" class="tuyenquang">Lâm Bình</option>
+                                            <option value="677" class="vinhlong">Vĩnh Long</option>
+                                            <option value="678" class="vinhlong">Bình Minh</option>
+                                            <option value="679" class="vinhlong">Bình Tân</option>
+                                            <option value="680" class="vinhlong">Long Hồ</option>
+                                            <option value="681" class="vinhlong">Mang Thít</option>
+                                            <option value="682" class="vinhlong">Tam Bình</option>
+                                            <option value="683" class="vinhlong">Trà Ôn</option>
+                                            <option value="684" class="vinhlong">Vũng Liêm</option>
+                                            <option value="685" class="vinhphuc">Vĩnh Yên</option>
+                                            <option value="686" class="vinhphuc">Phúc Yên</option>
+                                            <option value="687" class="vinhphuc">Tam Đảo</option>
+                                            <option value="688" class="vinhphuc">Tam Dương</option>
+                                            <option value="689" class="vinhphuc">Vĩnh Tường</option>
+                                            <option value="690" class="vinhphuc">Yên Lạc</option>
+                                            <option value="691" class="vinhphuc">Bình Xuyên</option>
+                                            <option value="692" class="vinhphuc">Lập Thạch</option>
+                                            <option value="693" class="vinhphuc">Sông Lô</option>
+                                            <option value="694" class="yenbai">Yên Bái</option>
+                                            <option value="695" class="yenbai">Nghĩa Lộ</option>
+                                            <option value="696" class="yenbai">Trạm Tấu</option>
+                                            <option value="697" class="yenbai">Trấn Yên</option>
+                                            <option value="698" class="yenbai">Văn Chấn</option>
+                                            <option value="699" class="yenbai">Văn Yên</option>
+                                            <option value="700" class="yenbai">Yên Bình</option>
+                                            <option value="701" class="yenbai">Lục Yên</option>
+                                            <option value="702" class="yenbai">Mù Cang Chải</option>
+                                        </select>
                                     </div>
+                       
                                     <div class="col-sm-12" style="margin:.5em 0;">
                                         <p>Địa chỉ nhà&#58;</p><input class="checkout-input" required placeholder="Số nhà, tên đường, tên tòa nhà (nếu có), phường xã">
                                     </div>
@@ -329,7 +1034,7 @@
                             </form> 
                             <br>
                             <p>Lưu ý&#58; Nếu bạn sống ở nội thành Hà Nội, truyện sẽ được chính tay đội ngũ Bookism chuyển đến với bạn. Nếu bạn sống ở ngoại thành hoặc các tỉnh thành khác, truyện sẽ được chuyển thông qua dịch vụ chuyển phát hoặc bưu điện.</p>
-                            <!--personal info-->
+                            
                             <div class="row" style="opacity:.8;margin-bottom:2em;font-size:16px;">
                                 <form>
                                     <div class="col-sm-12" style="margin:.5em 0;">
@@ -414,10 +1119,15 @@
         <script src="https://code.jquery.com/jquery-2.1.3.min.js">
         </script>
         <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript" src="js/jquery.chained.min.js"></script>
         <script src="js/jquery.dotdotdot.min.js"></script>
         <script>
             // Show the off-canvas navigation
             $(document).ready(function() {
+                
+                // Chained selection
+                $("#district").chained("#city");
+                
                 $('#off-canvas-toggle').click(function() {
                     $('#nav-primary').toggleClass('off-canvas-show');
                 });
