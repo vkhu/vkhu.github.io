@@ -9,6 +9,7 @@
         <link href="css/style.css" rel="stylesheet" type='text/css'/>
         <link href="css/reset.css" rel="stylesheet" type='text/css'/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/jquery.rateyo.min.css"/>
         <link rel="stylesheet" href="css/font-awesome.min.css" type='text/css'/>
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
         <style>
@@ -184,14 +185,14 @@
                                 <h1 class="h1-cat col-sm-12" style="margin-bottom:.7em;">công lí bổ trợ &#40;ancillary justice&#41;</h1>
                                 
                                 <!--rating general-->
-                                <div class="col-sm-4 col-sm-push-8" style="text-align:center;">
+                                <div class="col-md-4 col-md-push-8" style="text-align:center;">
                                     <p class="rating_prev">4.0</p>
-                                    <p style="font-size:2em">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-                                    <p>89 lượt bầu</p>
+                                    <div id="rateavg" style="margin:auto;"></div>
+                                    <p style="margin-top:1em;">89 lượt bầu</p>
                                 </div>
                                 
                                 <!--rating details-->
-                                <div class="col-sm-8 col-sm-pull-4">
+                                <div class="col-md-8 col-md-pull-4">
                                     <div class="row">
                                         <div style="float:left;width:20%;text-align:center;line-height:1em;margin-top:1em;">
                                             <span>&#9733; 5</span>
@@ -322,219 +323,226 @@
                     <div style="border-top:solid 1px rgba(0,0,0,.2);margin-bottom:2em;">
                         <div class="padding-2em" style="margin:2em 0;">
                             <p class="h2prev center-on-small">có thể bạn sẽ thích</p>
-                            
+
                             <div class="choose_home" style="padding:2.5em;box-shadow:inset 0 0 0 4px #fff;"><!--carousel-->
-                            <div class="book-carousel">
+                                <div class="book-carousel">
 
-                                <!--book 1-->
-                                <div>
-                                    <div style="text-align:center;margin:auto;margin-top:2em;position:relative;">
-                                        <a href="preview.html" style="color:#fff;text-decoration:none;">
+                                    <!--book 1-->
+                                    <div>
+                                        <div style="text-align:center;margin:auto;margin-top:2em;position:relative;">
+                                            <a href="preview.html" style="color:#fff;text-decoration:none;">
 
-                                            <!--cover-->
-                                            <div class="book_showcase hover_expand" style="max-width:10em;">
-                                                <img src="images/book1.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover 1">
-                                            </div>
-
-                                        </a>
-                                        <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#fff;text-decoration:none;">Công viên kỉ jura</a></p>
-                                        <p style="margin-bottom:1em;color:#fff;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-
-                                        <!--price-->
-                                        <div class="price-white">
-                                            <span>78.000đ</span>
-                                        </div>                                        
-                                        <!--small cta-->
-                                        <div class="CTA_button_small cursor_hover">
-                                            <div style="width:100%;padding:.6em;">
-                                                <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            
-                                <!--book 2-->
-                                <div>
-                                    <div style="text-align:center;margin:auto;margin-top:2em;position:relative;">
-                                        <a href="preview.html" style="color:#fff;text-decoration:none;">
-
-                                            <!--cover-->
-                                            <div class="book_showcase hover_expand" style="max-width:10em;">
-                                                <div class="sale_mark">
-                                                    -20&#37;
+                                                <!--cover-->
+                                                <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                    <img src="images/book1.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover 1">
                                                 </div>
-                                                <img src="images/book2.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover 2">
-                                            </div>
 
-                                        </a>
-                                        <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#fff;text-decoration:none;">Chiến tranh giữa các vì sao</a></p>
-                                        <p style="margin-bottom:1em;color:#fff;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                                            </a>
+                                            <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#fff;text-decoration:none;">Công viên kỉ jura</a></p>
+                                            <p style="margin-bottom:1em;color:#fff;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
 
-                                        <!--price-->
-                                        <span style="text-decoration:line-through;color:#ed431f;font-weight:900;">140.000đ</span>
-                                        <div class="price-white">
-                                            <span>65.000đ</span>
-                                        </div>                                        
-                                        <!--small cta-->
-                                        <div class="CTA_button_small cursor_hover">
-                                            <div style="width:100%;padding:.6em;">
-                                                <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
-                                            </div>
-                                        </div>
-                                    
-                                    </div>
-                                </div>
-
-                                <!--book 3-->
-                                <div>
-                                    <div style="text-align:center;margin:auto;margin-top:2em;position:relative;">
-                                        <a href="preview.html" style="color:#fff;text-decoration:none;">
-
-                                            <!--cover-->
-                                            <div class="book_showcase hover_expand" style="max-width:10em;">
-                                                <div class="sale_mark">
-                                                    -10&#37;
+                                            <!--price-->
+                                            <div class="price-white">
+                                                <span>78.000đ</span>
+                                            </div>                                        
+                                            <!--small cta-->
+                                            <div class="CTA_button_small cursor_hover">
+                                                <div style="width:100%;padding:.6em;">
+                                                    <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
                                                 </div>
-                                                <img src="images/book3.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover 3">
                                             </div>
 
-                                        </a>
-                                        <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#fff;text-decoration:none;">không trận</a></p>
-                                        <p style="margin-bottom:1em;color:#fff;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-
-                                        <!--price-->
-                                        <span style="text-decoration:line-through;color:#ed431f;font-weight:900;">140.000đ</span>
-                                        <div class="price-white">
-                                            <span>150.000đ</span>
-                                        </div>                                        
-                                        <!--small cta-->
-                                        <div class="CTA_button_small cursor_hover">
-                                            <div style="width:100%;padding:.6em;">
-                                                <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
-                                            </div>
                                         </div>
-
                                     </div>
-                                </div>
 
-                                <!--book 4-->
-                                <div>
-                                    <div style="text-align:center;margin:auto;margin-top:2em;position:relative;">
-                                        <a href="preview.html" style="color:#fff;text-decoration:none;">
+                                    <!--book 2-->
+                                    <div>
+                                        <div style="text-align:center;margin:auto;margin-top:2em;position:relative;">
+                                            <a href="preview.html" style="color:#fff;text-decoration:none;">
 
-                                            <!--cover-->
-                                            <div class="book_showcase hover_expand" style="max-width:10em;">
-                                                <img src="images/book4.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover 4">
-                                            </div>
-
-                                        </a>
-                                        <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#fff;text-decoration:none;">thế chiến z</a></p>
-                                        <p style="margin-bottom:1em;color:#fff;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-
-                                        <!--price-->
-                                        <div class="price-white">
-                                            <span>119.000đ</span>
-                                        </div>                                        
-                                        <!--small cta-->
-                                        <div class="CTA_button_small cursor_hover">
-                                            <div style="width:100%;padding:.6em;">
-                                                <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <!--book 5-->
-                                <div>
-                                    <div style="text-align:center;margin:auto;margin-top:2em;position:relative;">
-                                        <a href="preview.html" style="color:#fff;text-decoration:none;">
-
-                                            <!--cover-->
-                                            <div class="book_showcase hover_expand" style="max-width:10em;">
-                                                <div class="sale_mark">
-                                                    -20&#37;
+                                                <!--cover-->
+                                                <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                    <div class="sale_mark">
+                                                        -20&#37;
+                                                    </div>
+                                                    <img src="images/book2.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover 2">
                                                 </div>
-                                                <img src="images/book5.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover 5">
+
+                                            </a>
+                                            <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#fff;text-decoration:none;">Chiến tranh giữa các vì sao</a></p>
+                                            <p style="margin-bottom:1em;color:#fff;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+
+                                            <!--price-->
+                                            <span style="text-decoration:line-through;color:#ed431f;font-weight:900;">140.000đ</span>
+                                            <div class="price-white">
+                                                <span>65.000đ</span>
+                                            </div>                                        
+                                            <!--small cta-->
+                                            <div class="CTA_button_small cursor_hover">
+                                                <div style="width:100%;padding:.6em;">
+                                                    <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                                </div>
                                             </div>
 
-                                        </a>
-                                        <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#fff;text-decoration:none;">rèn giũa dưới lửa</a></p>
-                                        <p style="margin-bottom:1em;color:#fff;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-
-                                        <!--price-->
-                                        <span style="text-decoration:line-through;color:#ed431f;font-weight:900;">140.000đ</span>
-                                        <div class="price-white">
-                                            <span>150.000đ</span>
-                                        </div>                                        
-                                        <!--small cta-->
-                                        <div class="CTA_button_small cursor_hover">
-                                            <div style="width:100%;padding:.6em;">
-                                                <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
-                                            </div>
                                         </div>
-
                                     </div>
-                                </div>
 
+                                    <!--book 3-->
+                                    <div>
+                                        <div style="text-align:center;margin:auto;margin-top:2em;position:relative;">
+                                            <a href="preview.html" style="color:#fff;text-decoration:none;">
+
+                                                <!--cover-->
+                                                <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                    <div class="sale_mark">
+                                                        -10&#37;
+                                                    </div>
+                                                    <img src="images/book3.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover 3">
+                                                </div>
+
+                                            </a>
+                                            <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#fff;text-decoration:none;">không trận</a></p>
+                                            <p style="margin-bottom:1em;color:#fff;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+
+                                            <!--price-->
+                                            <span style="text-decoration:line-through;color:#ed431f;font-weight:900;">140.000đ</span>
+                                            <div class="price-white">
+                                                <span>150.000đ</span>
+                                            </div>                                        
+                                            <!--small cta-->
+                                            <div class="CTA_button_small cursor_hover">
+                                                <div style="width:100%;padding:.6em;">
+                                                    <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!--book 4-->
+                                    <div>
+                                        <div style="text-align:center;margin:auto;margin-top:2em;position:relative;">
+                                            <a href="preview.html" style="color:#fff;text-decoration:none;">
+
+                                                <!--cover-->
+                                                <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                    <img src="images/book4.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover 4">
+                                                </div>
+
+                                            </a>
+                                            <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#fff;text-decoration:none;">thế chiến z</a></p>
+                                            <p style="margin-bottom:1em;color:#fff;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+
+                                            <!--price-->
+                                            <div class="price-white">
+                                                <span>119.000đ</span>
+                                            </div>                                        
+                                            <!--small cta-->
+                                            <div class="CTA_button_small cursor_hover">
+                                                <div style="width:100%;padding:.6em;">
+                                                    <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!--book 5-->
+                                    <div>
+                                        <div style="text-align:center;margin:auto;margin-top:2em;position:relative;">
+                                            <a href="preview.html" style="color:#fff;text-decoration:none;">
+
+                                                <!--cover-->
+                                                <div class="book_showcase hover_expand" style="max-width:10em;">
+                                                    <div class="sale_mark">
+                                                        -20&#37;
+                                                    </div>
+                                                    <img src="images/book5.jpg" style="width:100%;height:100%;border-radius:10px;" alt="book cover 5">
+                                                </div>
+
+                                            </a>
+                                            <p style="margin:auto;text-transform:uppercase;margin-top:1em;" class="three_dot"><a href="preview.html" style="color:#fff;text-decoration:none;">rèn giũa dưới lửa</a></p>
+                                            <p style="margin-bottom:1em;color:#fff;">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+
+                                            <!--price-->
+                                            <span style="text-decoration:line-through;color:#ed431f;font-weight:900;">140.000đ</span>
+                                            <div class="price-white">
+                                                <span>150.000đ</span>
+                                            </div>                                        
+                                            <!--small cta-->
+                                            <div class="CTA_button_small cursor_hover">
+                                                <div style="width:100%;padding:.6em;">
+                                                    <span><i class="fa fa-hand-o-right"></i> <i class="fa fa-shopping-cart"></i></span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
-                            </div>
-                            
+
                         </div>
                     </div>
 
                     <!--review-->
-                    <div style="border-top:solid 1px rgba(0,0,0,.2);margin-bottom:2em;" id="review">
+                    <div style="border-top:solid 1px rgba(0,0,0,.2);margin-bottom:2em;">
                         <div class="padding-2em">
                             <div class="row">
 
                                 <!--write your review-->
-                                <div class="col-md-6" style="margin-top:2em;">
+                                <div class="col-md-5 col-md-push-7" style="margin-top:2em;">
+                                    <div style="max-width:40em;margin:auto;">
 
-                                    <!-- header -->
-                                    <div>
-                                        <p class="h2prev center-on-small">đánh giá của bạn:</p>
-                                    </div>
-
-                                    <p class="center-on-small" style="color:#2e748e;font-size:2em;">&#9734;&#9734;&#9734;&#9734;&#9734;</p>
-
-                                    <form id="new_review" style="margin-top:2em">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <input type="text" placeholder="Tên hiển thị">
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <textarea placeholder="Đánh giá..."></textarea>
-                                            </div>
-                                            <div class="col-sm-12">
-                                                <input type="submit" value="Gửi">
-                                            </div>
+                                        <!-- header -->
+                                        <div>
+                                            <p class="h2prev" style="text-align:center;margin-bottom:1.5em;">đánh giá của bạn:</p>
                                         </div>
-                                    </form>
+
+                                        <div style="margin:auto;" id="ratebyuser"></div>
+
+                                        <form id="new_review" style="margin-top:2em;padding:0 .5em;">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <input type="text" placeholder="Tên hiển thị">
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <input type="text" placeholder="Tiêu đề...">
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <textarea placeholder="Đánh giá chi tiết..."></textarea>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <input type="submit" value="Gửi">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
 
                                 <!-- recent review -->
-                                <div class="col-md-6" style="margin-top:2em;">
+                                <div class="col-md-7 col-md-pull-5" style="margin-top:2em;">
 
                                     <!-- header -->
-                                    <div>
-                                        <p class="h2prev center-on-small">các đánh giá gần đây:</p>
+                                    <div id="review">
+                                        <p class="h2prev" style="text-align:center;">các đánh giá gần đây:</p>
                                     </div>
 
                                     <!-- 1st reviewer -->
                                     <div class="row" style="margin-top:2em;">
 
-                                        <!-- name -->
-                                        <div class="col-xs-3">
-                                            <p style="text-align:center;font-weight:900;">alan moore</p>
-                                        </div>
-
                                         <!-- content -->
-                                        <div class="col-xs-9">
-                                            <p style="font-size:1.2em;">
-                                                <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-                                                <span style="margin-left:1em;">đọc cũng hay, giọng văn hơi cổ, nhưng nhìn chung là tốt</span>
+                                        <div class="col-xs-12">
+                                            <div class="ratebyuser1" style="margin-bottom:1em;"></div>
+                                            <p class="review-content" style="font-weight:900;">đọc cũng hay
+                                            </p>
+                                            <p class="review-content">viết bởi: <span class="review-username">nguyễn trần đức mạnh</span>
+                                            </p>
+                                            <p class="review-content">Mới nhận được sách tiki gửi chiều hôm qua. Với mình thì cuốn sách này không lạ bởi mình đã đọc hầu như tất cả các bài viết của tác giả trên một diễn đàn của những người du lịch bụi Việt Nam. Mình có một số nhận xét thế này:</p>
+                                            <p class="review-content">Về nội dung: cuốn sách là tập hợp những cảm xúc chân thật của một người luôn tỉ mỉ quan sát cuộc sống xung quanh. Ví dụ đối với người đã từng đến Bangan thì khi đọc về Bangan sẽ hiểu lòng mình đang nghĩ gì. Các chương sau về Châu Âu mùa đông trắng hay 60 ngày trên đất Mỹ cũng vậy.</p>
+                                            <p class="review-content">Tất nhiên với một người viết nghiệp dư như tác giả Huy Tâm thì mình nghĩ đây là một sự nỗ lực không mệt mỏi cho tác phẩm đầu tay (dày ngót 400 trang sách) là những hành trình có khi thong dong có khi vội vã, và lại cũng có lúc vui đến tột cùng hay buồn đến câm lặng...Cuối cùng thì chỉ có trải nghiệm thực sự mới khiến con người ta bật được ra tiếng lòng như vậy.</p>
+                                            <p class="review-content">Về hình thức và trình bày: Mình là người thích đọc sách và tương đối khó tính nên điểm trừ cho một tác phẩm của NXB Trẻ mà vẫn mắc những lỗi cơ bản như lỗi chính tả và lỗi căn chỉnh văn bản khi in ấn.</p>
+                                            <p class="review-content">"Bước qua thành phố lạ" không phải là một tác phẩm văn học nhưng nó đã làm được điều mà một người thích du lịch bụi như mình đang cần đó là tiếp thêm động lực để vững tin hơn cho những hành trình bước ra thế giới.
                                             </p>
                                         </div>
 
@@ -543,16 +551,18 @@
                                     <!-- 2nd reviewer -->
                                     <div class="row" style="margin-top:2em;">
 
-                                        <!-- name -->
-                                        <div class="col-xs-3">
-                                            <p style="text-align:center;font-weight:900;">jack ryder</p>
-                                        </div>
-
                                         <!-- content -->
-                                        <div class="col-xs-9">
-                                            <p style="font-size:1.2em;">
-                                                <span style="color:#2e748e;">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-                                                <span style="margin-left:1em;">đọc cũng hay, giọng văn hơi cổ, nhưng nhìn chung là tốt</span>
+                                        <div class="col-xs-12">
+                                            <div class="ratebyuser1" style="margin-bottom:1em;"></div>
+                                            <p class="review-content" style="font-weight:900;">đọc cũng hay
+                                            </p>
+                                            <p class="review-content">viết bởi: <span class="review-username">nguyễn trần đức mạnh</span>
+                                            </p>
+                                            <p class="review-content">Mới nhận được sách tiki gửi chiều hôm qua. Với mình thì cuốn sách này không lạ bởi mình đã đọc hầu như tất cả các bài viết của tác giả trên một diễn đàn của những người du lịch bụi Việt Nam. Mình có một số nhận xét thế này:</p>
+                                            <p class="review-content">Về nội dung: cuốn sách là tập hợp những cảm xúc chân thật của một người luôn tỉ mỉ quan sát cuộc sống xung quanh. Ví dụ đối với người đã từng đến Bangan thì khi đọc về Bangan sẽ hiểu lòng mình đang nghĩ gì. Các chương sau về Châu Âu mùa đông trắng hay 60 ngày trên đất Mỹ cũng vậy.</p>
+                                            <p class="review-content">Tất nhiên với một người viết nghiệp dư như tác giả Huy Tâm thì mình nghĩ đây là một sự nỗ lực không mệt mỏi cho tác phẩm đầu tay (dày ngót 400 trang sách) là những hành trình có khi thong dong có khi vội vã, và lại cũng có lúc vui đến tột cùng hay buồn đến câm lặng...Cuối cùng thì chỉ có trải nghiệm thực sự mới khiến con người ta bật được ra tiếng lòng như vậy.</p>
+                                            <p class="review-content">Về hình thức và trình bày: Mình là người thích đọc sách và tương đối khó tính nên điểm trừ cho một tác phẩm của NXB Trẻ mà vẫn mắc những lỗi cơ bản như lỗi chính tả và lỗi căn chỉnh văn bản khi in ấn.</p>
+                                            <p class="review-content">"Bước qua thành phố lạ" không phải là một tác phẩm văn học nhưng nó đã làm được điều mà một người thích du lịch bụi như mình đang cần đó là tiếp thêm động lực để vững tin hơn cho những hành trình bước ra thế giới.
                                             </p>
                                         </div>
 
@@ -563,7 +573,7 @@
                             </div>
                         </div>
                     </div>
-                        
+
                 </div>
             </div>
 
@@ -629,6 +639,7 @@
         </div>
         <script src="https://code.jquery.com/jquery-2.1.3.min.js">
         </script>
+        <script src="js/jquery.rateyo.min.js"></script>
         <script type="text/javascript" src="js/slick.min.js"></script>
         <script>
             // Show the off-canvas navigation
@@ -648,35 +659,35 @@
                 $('#page-content').on('click', function(e) {
                     $('#nav-primary').removeClass('off-canvas-show');
                 });
-                
+
                 //show confirmation
                 $('.CTA_button_red, .CTA_button_small').click(function() {
                     $('.success').animate({
                         opacity: 1,}, 100 ).delay(1000).animate({
                         opacity: 0,}, 700 );
                 });
-                
+
                 //flip cover
                 $('#front').click(function(){
 
                     if($('#front-cover').attr('src') == 'images/preview/preview_front.jpg'){
                         $('#front-cover')
-                        .fadeOut(200, function(){
+                            .fadeOut(200, function(){
                             $('#front-cover').attr('src', 'images/preview/preview_back.jpg');
                         })
-                        .fadeIn(200);
+                            .fadeIn(200);
                     }
 
                     else{
                         $('#front-cover')
-                        .fadeOut(200, function(){
+                            .fadeOut(200, function(){
                             $('#front-cover').attr('src', 'images/preview/preview_front.jpg');
                         })
-                        .fadeIn(200);
+                            .fadeIn(200);
                     }
 
                 });
-                
+
                 //carousel
                 $('.feature').slick({
                     dots: false,
@@ -799,6 +810,22 @@
             });
         </script>
 
+        <script>
+            $(function () {
+                $("#rateavg").rateYo({
+                    starWidth: "25px",
+                    readOnly: true
+                });
+                $("#ratebyuser").rateYo({
+                    starWidth: "20px",
+                    halfStar: true
+                });
+                $(".ratebyuser1").rateYo({
+                    starWidth: "20px",
+                    rating: 4.5,
+                    readOnly: true
+                });
+            });
+        </script>
     </body>
 </html>
-
