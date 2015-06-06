@@ -949,7 +949,7 @@ table {
 }
 
 
-#new_review input[type="text"], #new_review input[type="submit"] {
+#new_review input[type="text"], #new_review input[type="submit"], #new_review input[type="email"] {
     font-family: Gotham;
     width: 100%;
     padding: .5em;
@@ -958,13 +958,13 @@ table {
     -webkit-border-radius: .5em;
     border-radius: .5em;
 }
-#new_review input[type="text"] {
+#new_review input[type="text"], #new_review input[type="email"] {
     background: #fff;
     color:#000;
     margin: 0 0 1em 0;
     border: solid 2px #2e748e;
 }
-#new_review input[type="text"]:focus, #new_review textarea:focus {
+#new_review input[type="text"]:focus, #new_review textarea:focus, #new_review input[type="email"]:focus {
     outline: none;
 }
 #new_review input[type="submit"] {
